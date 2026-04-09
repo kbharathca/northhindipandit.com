@@ -18,7 +18,7 @@ export default function ContactUsPage() {
     <main className="min-h-screen relative selection:bg-saffron/30">
       <SiteHeader />
 
-      <section className="relative overflow-hidden px-6 pt-36 pb-20">
+      <section className="relative overflow-hidden px-6 pt-8 md:pt-12 pb-20">
         <div className="absolute inset-0 hero-aura opacity-85" />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="max-w-4xl">

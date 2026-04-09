@@ -71,7 +71,7 @@ export default function HomePage() {
       <LotusParticles />
       <SiteHeader />
 
-      <section className="relative pt-28 px-4 md:px-6 overflow-hidden">
+      <section className="relative pt-6 md:pt-8 px-4 md:px-6 overflow-hidden">
         <div className="absolute inset-0 hero-aura opacity-90" />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="hero-banner-shell">

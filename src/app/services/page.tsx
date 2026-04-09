@@ -28,11 +28,9 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen relative selection:bg-saffron/30">
       <SiteHeader />
-      <section className="relative overflow-hidden px-6 pt-16 pb-20">
+      <section className="relative overflow-hidden px-6 pt-8 md:pt-12 pb-20">
         <div className="absolute inset-0 hero-aura opacity-85" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="py-10 mb-10" />
-
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/75 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-saffron shadow-soft mb-6">
               <Sparkles size={14} />

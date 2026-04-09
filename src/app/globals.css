@@ -22,6 +22,7 @@
       radial-gradient(circle at top left, rgba(255, 209, 171, 0.55), transparent 30%),
       radial-gradient(circle at bottom right, rgba(212, 175, 55, 0.18), transparent 22%),
       linear-gradient(180deg, #fffdf9 0%, #f6f0e8 100%);
+    padding-top: 4.5rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -220,7 +221,7 @@
   }
 
   .mobile-sticky-shell {
-    @apply fixed inset-x-0 bottom-0 z-[120] px-3 pb-3;
+    @apply fixed inset-x-0 bottom-0 z-[110] px-3 pb-3;
     background: linear-gradient(180deg, rgba(246, 240, 232, 0), rgba(246, 240, 232, 0.98) 55%, rgba(246, 240, 232, 1) 100%);
   }
 
@@ -341,6 +342,11 @@
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 5.5rem;
+    padding-bottom: 7rem;
+  }
+
   .hero-banner-content {
     @apply static px-5 py-8 mt-4 rounded-[2rem];
     background: linear-gradient(135deg, rgba(28, 23, 15, 0.96) 0%, rgba(77, 36, 8, 0.9) 100%);
@@ -364,9 +370,5 @@
 
   .floating-whatsapp {
     @apply hidden;
-  }
-
-  body {
-    padding-bottom: 7rem;
   }
 }

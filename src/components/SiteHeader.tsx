@@ -153,8 +153,8 @@ export function SiteHeader() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[90] bg-paper/95 backdrop-blur-xl overflow-y-auto p-6">
-          <div className="flex min-h-full flex-col items-center justify-center gap-6">
+        <div className="fixed inset-0 z-[95] bg-paper/95 backdrop-blur-xl overflow-y-auto p-6">
+          <div className="flex flex-col items-center justify-center gap-6 min-h-screen pt-20">
             <Link href="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif">
               Home
             </Link>

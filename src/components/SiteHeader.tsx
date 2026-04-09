@@ -11,6 +11,7 @@ import {
   HousePlus,
   Instagram,
   Landmark,
+  Mail,
   Menu,
   Mountain,
   Phone,
@@ -153,61 +154,135 @@ export function SiteHeader() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[95] bg-paper/95 backdrop-blur-xl overflow-y-auto p-6">
-          <div className="flex flex-col items-center justify-center gap-6 min-h-screen pt-20">
-            <Link href="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif">
-              Home
-            </Link>
-            <div className="w-full max-w-md rounded-[2rem] border border-ink/8 bg-white/90 p-4 shadow-soft">
-              <button
-                type="button"
-                onClick={() => setIsMobileServicesOpen((value) => !value)}
-                className="flex w-full items-center justify-between text-2xl font-serif text-ink"
-              >
-                <span>Services</span>
-                <ChevronDown size={22} className={`transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              {isMobileServicesOpen && (
-                <div className="mt-4 grid gap-2">
-                  <Link href="/services/" onClick={() => setIsMenuOpen(false)} className="rounded-[1.2rem] bg-paper px-4 py-3 font-bold text-ink">
-                    All Puja Services
-                  </Link>
-                  {pujas.map((puja, index) => {
-                    const Icon = pujaIcons[index % pujaIcons.length];
-                    return (
-                      <Link
-                        key={puja.slug}
-                        href={`/services/${puja.slug}/`}
-                        onClick={() => setIsMenuOpen(false)}
-                        className="flex items-center gap-3 rounded-[1.2rem] px-4 py-3 text-ink transition-colors hover:bg-paper hover:text-saffron"
-                      >
-                        <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-saffron/10 text-saffron">
-                          <Icon size={16} />
-                        </span>
-                        <span className="font-semibold">{puja.shortTitle}</span>
-                      </Link>
-                    );
-                  })}
-                </div>
-              )}
+        <div className="mobile-menu-overlay">
+          <div className="mobile-menu-content">
+            {/* Menu Header */}
+            <div className="mobile-menu-header">
+              <div>
+                <h2 className="font-serif text-2xl font-bold text-ink">Menu</h2>
+                <p className="text-xs uppercase tracking-widest text-saffron font-bold mt-1">Puja Booking Service</p>
+              </div>
             </div>
-            <Link href="/contact-us/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-serif">
-              Contact Us
-            </Link>
-          <div className="flex items-center gap-5">
-            <a href="https://www.instagram.com/north.indian.pandit.bangalore" target="_blank" rel="noreferrer" aria-label="Instagram" className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-ink shadow-soft transition-all hover:-translate-y-1 hover:text-saffron">
-              <Instagram size={24} />
-            </a>
-            <a href="https://www.facebook.com/nileshkumarpandey46365" target="_blank" rel="noreferrer" aria-label="Facebook" className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-ink shadow-soft transition-all hover:-translate-y-1 hover:text-saffron">
-              <Facebook size={24} />
-            </a>
-            <a href="https://www.youtube.com/@Pandit.Ji.Bangalore" target="_blank" rel="noreferrer" aria-label="YouTube" className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-ink shadow-soft transition-all hover:-translate-y-1 hover:text-saffron">
-              <Youtube size={24} />
-            </a>
-          </div>
-          <a href={`tel:${phoneNumber}`} className="cta-button cta-call text-lg px-10 py-4">
-            <Phone size={22} /> Call Now
-          </a>
+
+            {/* Navigation Links */}
+            <nav className="mobile-menu-nav">
+              <Link 
+                href="/" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="mobile-menu-link"
+              >
+                <div className="flex items-center gap-3 w-full">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-saffron/10 text-saffron">
+                    <Sparkles size={20} />
+                  </span>
+                  <span className="text-lg font-semibold text-ink">Home</span>
+                </div>
+              </Link>
+
+              {/* Services Section */}
+              <div className="mobile-menu-section">
+                <button
+                  type="button"
+                  onClick={() => setIsMobileServicesOpen((value) => !value)}
+                  className="mobile-menu-section-title"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gold/15 text-gold">
+                      <ScrollText size={20} />
+                    </span>
+                    <span>Services</span>
+                  </div>
+                  <ChevronDown size={22} className={`service-chevron ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                {isMobileServicesOpen && (
+                  <div className="mobile-menu-submenu">
+                    <Link 
+                      href="/services/" 
+                      onClick={() => setIsMenuOpen(false)} 
+                      className="mobile-menu-submenu-item main-service"
+                    >
+                      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-saffron text-white">
+                        <Sparkles size={16} />
+                      </span>
+                      <span className="font-bold">All Puja Services</span>
+                    </Link>
+                    
+                    {pujas.map((puja, index) => {
+                      const Icon = pujaIcons[index % pujaIcons.length];
+                      return (
+                        <Link
+                          key={puja.slug}
+                          href={`/services/${puja.slug}/`}
+                          onClick={() => setIsMenuOpen(false)}
+                          className="mobile-menu-submenu-item"
+                        >
+                          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-saffron/10 text-saffron">
+                            <Icon size={16} />
+                          </span>
+                          <span className="font-medium text-sm">{puja.shortTitle}</span>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+
+              <Link 
+                href="/contact-us/" 
+                onClick={() => setIsMenuOpen(false)} 
+                className="mobile-menu-link"
+              >
+                <div className="flex items-center gap-3 w-full">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink/10 text-ink">
+                    <Mail size={20} />
+                  </span>
+                  <span className="text-lg font-semibold text-ink">Contact Us</span>
+                </div>
+              </Link>
+            </nav>
+
+            {/* Social Media Links */}
+            <div className="mobile-menu-section mt-6">
+              <p className="text-xs uppercase tracking-[0.2em] font-bold text-ink/50 mb-4 px-4">Follow Us</p>
+              <div className="flex items-center justify-center gap-4 px-4">
+                <a 
+                  href="https://www.instagram.com/north.indian.pandit.bangalore" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  aria-label="Instagram" 
+                  className="mobile-social-button"
+                >
+                  <Instagram size={24} />
+                </a>
+                <a 
+                  href="https://www.facebook.com/nileshkumarpandey46365" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  aria-label="Facebook" 
+                  className="mobile-social-button"
+                >
+                  <Facebook size={24} />
+                </a>
+                <a 
+                  href="https://www.youtube.com/@Pandit.Ji.Bangalore" 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  aria-label="YouTube" 
+                  className="mobile-social-button"
+                >
+                  <Youtube size={24} />
+                </a>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="mobile-menu-cta">
+              <a href={`tel:${phoneNumber}`} className="cta-button cta-call-premium w-full text-lg py-5 justify-center">
+                <Phone size={22} />
+                <span>Call Now</span>
+              </a>
+            </div>
           </div>
         </div>
       )}

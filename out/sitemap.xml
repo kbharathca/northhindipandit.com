@@ -2,57 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://northhindipandit.com/</loc>
-    <changefreq>daily</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services</loc>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/contact-us</loc>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/griha-pravesh-puja-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/satyanarayan-puja-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/ganesh-puja-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/maha-mrityunjaya-jaap-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/bhoomi-puja-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/marriage-puja-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/rudrabhishek-puja-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://northhindipandit.com/services/shraadh-puja-bangalore</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 </urlset>

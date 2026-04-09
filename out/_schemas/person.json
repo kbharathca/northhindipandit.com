@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pandit Nilesh Kumar Pandey",
+  "jobTitle": "Hindu Priest / Vedic Pandit",
+  "description": "Expert North Indian Pandit with deep knowledge of Vedic rituals and pujas",
+  "telephone": "+91-62-0647-1543",
+  "areaServed": "Bangalore",
+  "knowsAbout": [
+    "Vedic Rituals",
+    "Griha Pravesh Puja",
+    "Satyanarayan Puja",
+    "Wedding Ceremonies",
+    "Hindu Traditions",
+    "Sanskrit Chanting"
+  ]
+}

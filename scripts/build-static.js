@@ -32,6 +32,10 @@ try {
   console.log('\n🗺️  Generating sitemap.xml...');
   execSync('node scripts/generate-sitemap.js', { stdio: 'inherit' });
 
+  // Generate schema.org structured data
+  console.log('\n📊 Generating schema.org structured data...');
+  execSync('node scripts/generate-schemas.js', { stdio: 'inherit' });
+
   console.log('\n✨ Build complete!');
   console.log('📁 Static files are in the "out/" folder');
   console.log('🚀 Ready to upload to cPanel or Plesk');

@@ -1,0 +1,56 @@
+{
+  "name": "North Hindi Pandit - Bangalore Puja Services",
+  "short_name": "North Hindi Pandit",
+  "description": "Book trusted Hindi Pandit and North Indian Pandit services in Bangalore for authentic Vedic pujas and rituals",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F5F2ED",
+  "theme_color": "#FF6321",
+  "categories": ["service", "religion"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/hindi-pandit-all-puja.webp",
+      "sizes": "540x720",
+      "type": "image/webp"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Griha Pravesh Puja",
+      "short_name": "Griha Pravesh",
+      "description": "Book Griha Pravesh Puja in Bangalore",
+      "url": "/services/griha-pravesh-puja-bangalore",
+      "icons": [{"src": "/favicon.svg", "sizes": "96x96"}]
+    },
+    {
+      "name": "Book Satyanarayan Puja",
+      "short_name": "Satyanarayan",
+      "description": "Book Satyanarayan Puja in Bangalore",
+      "url": "/services/satyanarayan-puja-bangalore",
+      "icons": [{"src": "/favicon.svg", "sizes": "96x96"}]
+    },
+    {
+      "name": "Contact Pandit",
+      "short_name": "Contact",
+      "description": "Contact North Hindi Pandit for bookings",
+      "url": "/contact-us",
+      "icons": [{"src": "/favicon.svg", "sizes": "96x96"}]
+    }
+  ]
+}

@@ -18,9 +18,9 @@ const OUT_DIR = path.join(__dirname, '..', 'out');
 
 // All static routes
 const routes = [
-  { path: '/', priority: '1.0', changefreq: 'daily' },
-  { path: '/services', priority: '0.9', changefreq: 'weekly' },
-  { path: '/contact-us', priority: '0.8', changefreq: 'monthly' },
+  { path: '/', priority: '1.0', changefreq: 'weekly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/services', priority: '0.9', changefreq: 'weekly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/contact-us', priority: '0.8', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
 ];
 
 // Service routes (pujas)
@@ -40,7 +40,8 @@ pujas.forEach((slug) => {
   routes.push({
     path: `/services/${slug}`,
     priority: '0.85',
-    changefreq: 'weekly',
+    changefreq: 'monthly',
+    lastmod: new Date().toISOString().split('T')[0],
   });
 });
 
@@ -53,6 +54,7 @@ function generateSitemapXML() {
       (route) =>
         `  <url>
     <loc>${DOMAIN}${route.path}</loc>
+    <lastmod>${route.lastmod}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority}</priority>
   </url>`

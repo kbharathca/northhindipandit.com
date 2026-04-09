@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description: 'Northhindipandit.com connects you with trusted Hindi Pandit in Bangalore and North Indian Pandit in Bangalore services for authentic Vedic pujas, same-day booking, and complete puja samagri.',
   keywords: ['Hindi Pandit in Bangalore', 'North Indian Pandit in Bangalore', 'North Hindi Pandit', 'Bangalore puja service', 'Vedic pandit Bangalore'],
   metadataBase: new URL('https://northhindipandit.com'),
+  alternates: {
+    canonical: 'https://northhindipandit.com',
+  },
   openGraph: {
     title: 'North Hindi Pandit | Hindi Pandit in Bangalore',
     description: 'Book trusted North Indian Pandit in Bangalore with authentic rituals and full puja support.',
@@ -31,6 +34,9 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  other: {
+    'sitemap': 'https://northhindipandit.com/sitemap.xml',
   },
 };
 

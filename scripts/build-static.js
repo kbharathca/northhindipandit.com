@@ -28,6 +28,10 @@ try {
   console.log('🔨 Building static HTML export...');
   execSync('next build', { stdio: 'inherit' });
 
+  // Generate sitemap.xml after build
+  console.log('\n🗺️  Generating sitemap.xml...');
+  execSync('node scripts/generate-sitemap.js', { stdio: 'inherit' });
+
   console.log('\n✨ Build complete!');
   console.log('📁 Static files are in the "out/" folder');
   console.log('🚀 Ready to upload to cPanel or Plesk');

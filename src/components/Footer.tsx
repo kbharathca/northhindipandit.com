@@ -64,6 +64,7 @@ export const Footer = () => {
         <div className="flex gap-6">
           <span className="text-[10px] uppercase tracking-widest text-ink/40">Bangalore Puja Booking</span>
           <span className="text-[10px] uppercase tracking-widest text-ink/40">North Indian Ritual Services</span>
+          <a href="/sitemap.xml" className="text-[10px] uppercase tracking-widest text-ink/40 hover:text-saffron transition-colors">Sitemap</a>
         </div>
       </div>
 

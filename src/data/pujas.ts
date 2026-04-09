@@ -17,7 +17,7 @@ export type Puja = {
 };
 
 export const phoneNumber = '6206471543';
-export const whatsappNumber = '6206471543';
+export const whatsappNumber = '916206471543';
 
 export const getWhatsAppLink = (service: string) =>
   `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(

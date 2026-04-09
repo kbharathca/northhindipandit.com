@@ -1,122 +1,186 @@
-# cPanel Hosting Steps
+# cPanel Hosting - Complete Setup Guide
 
-This project is ready to upload as a Node.js app on cPanel with `server.js` as the startup file.
+This guide covers **two deployment methods** for North Hindi Pandit on cPanel:
+1. **Static HTML Export** (No terminal access needed) - Recommended for most users
+2. **Node.js App** (Requires terminal access)
 
-## 1. Upload the project
+---
 
-Upload the full project folder to your hosting account, for example:
+## 🚀 Method 1: Static HTML Export (NO TERMINAL ACCESS NEEDED)
 
-- `northhindipandit.com/`
+This method is perfect if you **don't have SSH/terminal access** to cPanel. The website will be served as static HTML files.
 
-Do not upload these local development folders:
+### 1. Build the Static Website on Your Computer
 
-- `node_modules`
-- `.next`
-- `out`
-
-## 2. Create the Node.js app in cPanel
-
-Open cPanel and go to `Setup Node.js App`.
-
-Use values like these:
-
-- Node.js version: `18` or higher
-- Application mode: `Production`
-- Application root: `northhindipandit.com`
-- Application URL: choose your domain or subdomain
-- Application startup file: `server.js`
-
-Then click `Create`.
-
-## 3. Open the terminal in cPanel
-
-Open `Terminal` in cPanel or connect through SSH, then go to your project folder:
-
-```bash
-cd ~/northhindipandit.com
-```
-
-## 4. Install dependencies
-
-Run:
+On your local machine (Windows/Mac/Linux), open a terminal in the project folder and run:
 
 ```bash
 npm install
+npm run build:static
 ```
 
-## 5. Build the Next.js project
+This creates an `out/` folder with all the HTML files ready to upload.
 
-Run:
+### 2. Download FTP Client
 
+Download and install one of these (free):
+- **FileZilla** (https://filezilla-project.org) - Most popular
+- **WinSCP** (https://winscp.net) - Windows only
+- **Cyberduck** (https://cyberduck.io) - Mac/Windows
+
+### 3. Connect to cPanel via FTP
+
+In cPanel, go to **FTP Accounts** and create an FTP account or find existing credentials.
+
+Open your FTP client and enter:
+- **Host:** your domain (e.g., `northhindipandit.com`) or FTP server address
+- **Username:** FTP username from cPanel
+- **Password:** FTP password from cPanel
+- **Port:** 21 (standard FTP) or 22 (SFTP if available)
+
+Click **Connect**.
+
+### 4. Upload the Website
+
+1. In your FTP client, navigate to the `public_html` folder
+2. Clear out any old files from previous deployments
+3. Upload all files from the `out/` folder to `public_html`
+   - Double-click `out/` in your file explorer
+   - Select all files inside (Ctrl+A)
+   - Drag and drop into the FTP `public_html` folder
+   - Wait for upload to complete ✓
+
+**Important folders to upload:**
+- `_next/` (Next.js optimized assets)
+- `images/` (puja images)
+- `robots.txt`
+- `favicon.svg`
+- All `.html` files (index.html, etc.)
+
+### 5. Verify Upload in cPanel
+
+Go to **File Manager** in cPanel:
+- Navigate to `public_html`
+- You should see the same files that you uploaded
+- If no files show, refresh the page
+
+### 6. Test Your Website
+
+Open your domain in a browser:
+- https://northhindipandit.com
+
+Your website should be live! ✓
+
+### 7. Future Updates (No Terminal)
+
+When you update the website:
+1. On your computer, run: `npm run build:static`
+2. Upload the `out/` folder contents to `public_html` (replace old files)
+3. Wait 5-10 seconds for cache to clear
+4. Refresh your website in the browser
+
+---
+
+## 🖥️ Method 2: Node.js App (Requires SSH/Terminal Access)
+
+Use this method if your cPanel account has **SSH terminal access** enabled.
+
+### 1. Prepare Project Files Locally
+
+Remove build artifacts:
 ```bash
-npm run build
+rm -rf node_modules out .next dist
 ```
 
-## 6. Set environment if needed
+### 2. Upload Files via FTP
 
-If cPanel shows an environment file option, keep:
-
-```bash
-NODE_ENV=production
-```
-
-Usually cPanel provides the `PORT` automatically. `server.js` already reads it.
-
-## 7. Start the website
-
-In `Setup Node.js App`, click:
-
-- `Restart`
-
-If there is a `Run NPM Install` button, you can use that before restarting.
-
-## 8. Connect domain to the app
-
-Point your domain or subdomain in cPanel to the Node.js application you created.
-
-Examples:
-
-- main domain: `https://northhindipandit.com`
-- subdomain: `https://www.northhindipandit.com`
-
-## 9. If the website does not open
-
-Check these one by one:
-
-- `server.js` is selected as startup file
-- `npm install` completed without error
-- `npm run build` completed without error
-- Node.js version is `18+`
-- app mode is `Production`
-- domain is attached to the Node.js app
-- click `Restart` after every upload or code change
-
-## 10. For future updates
-
-Whenever you change the code:
-
-```bash
-cd ~/northhindipandit.com
-npm install
-npm run build
-```
-
-Then click `Restart` in cPanel.
-
-## Recommended upload contents
-
-Upload these files and folders:
-
+Use FileZilla or similar FTP client to upload to `public_html`:
 - `src/`
 - `public/`
 - `package.json`
 - `package-lock.json`
 - `next.config.mjs`
 - `tsconfig.json`
-- `next-env.d.ts`
 - `postcss.config.cjs`
-- `server.js`
-- `README-CPANEL.md`
+- `next-env.d.ts`
+
+Do NOT upload:
+- `node_modules/`
+- `.next/`
+- `out/`
+- `legacy_src_backup/`
+
+### 3. Access Terminal in cPanel
+
+In cPanel, find **Terminal** or use SSH client (PuTTY, Terminal.app):
+
+```bash
+cd ~/public_html
+```
+
+### 4. Install Dependencies
+
+```bash
+npm install
+```
+
+### 5. Build the Project
+
+```bash
+npm run build
+```
+
+### 6. Setup Node.js in cPanel
+
+In cPanel, go to **Setup Node.js App**:
+- **Node.js version:** 18 or higher
+- **Application mode:** Production
+- **Application root:** Navigate to your project folder
+- **Application URL:** Select your domain
+- **Startup file:** Leave blank (cPanel will detect next.config.mjs)
+
+Click **Create**.
+
+### 7. Start the Application
+
+Click **Restart** in the Node.js app panel.
+
+### 8. Connect Domain
+
+Point your domain to the Node.js application through cPanel's domain management.
+
+### 9. For Future Updates
+
+```bash
+cd ~/public_html
+npm install
+npm run build
+```
+
+Then click **Restart** in cPanel's Node.js app panel.
+
+---
+
+## 📋 Troubleshooting
+
+### Static HTML Method
+- **Files not showing up:** Make sure you're uploading to `public_html`, not a subfolder
+- **404 errors:** Check that trailing slashes are in URLs (site.com/services/ not site.com/services)
+- **Images not loading:** Verify `_next/` and `images/` folders were uploaded
+
+### Node.js Method
+- **App not starting:** Check error logs in cPanel Node.js app panel
+- **Port conflicts:** cPanel automatically assigns a port
+- **Build fails:** Ensure Node.js version is 18+ in cPanel
+
+---
+
+## 💡 Which Method to Choose?
+
+- **Static HTML (Method 1):** Simple, fast, no terminal needed ✓ RECOMMENDED for most users
+- **Node.js (Method 2):** More features, but requires terminal access
+
+---
 
 You do not need to upload:
 

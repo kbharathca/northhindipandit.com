@@ -1,1 +1,2 @@
-/* /index.html 200
+# Netlify redirects for Next.js
+# The Next.js plugin handles all routing - no SPA fallback needed

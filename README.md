@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# North Hindi Pandit
 
-# Run and deploy your AI Studio app
+This project is a static-export Next.js site prepared for deployment on **Cloudflare Pages**.
 
-This contains everything you need to run your app locally.
+## Local development
 
-View your app in AI Studio: https://ai.studio/apps/8fb76bf0-83cc-49d6-84b7-a05b49001e02
+```bash
+npm install
+npm run dev
+```
 
-## Run Locally
+## Production build
 
-**Prerequisites:**  Node.js
+```bash
+npm run build
+```
 
+This generates the deploy-ready static site in `out/`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Cloudflare Pages
+
+The recommended deployment flow is GitHub -> Cloudflare Pages.
+
+Full setup guide: [README-CLOUDFLARE-PAGES.md](./README-CLOUDFLARE-PAGES.md)

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-static.js",
+    "build:cloudflare": "node scripts/build-static.js",
     "build:static": "node scripts/build-static.js",
     "start": "next start",
     "type-check": "tsc --noEmit"

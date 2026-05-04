@@ -1,12 +1,10 @@
-// Static export configuration for cPanel/Plesk hosting
-// Use: npm run build:static
-// Creates static HTML files in ./out/ folder
+// Static export configuration for Cloudflare Pages and similar static hosts.
+// `next build` will generate deploy-ready files in the default `out/` folder.
 
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
   reactStrictMode: true,
-  distDir: 'out',
   images: {
     unoptimized: true,
     formats: ['image/avif', 'image/webp'],

@@ -1,2 +1,4 @@
-# Netlify redirects for Next.js
-# The Next.js plugin handles all routing - no SPA fallback needed
+# Cloudflare Pages redirects
+/services /services/ 301
+/contact-us /contact-us/ 301
+/services/:slug /services/:slug/ 301

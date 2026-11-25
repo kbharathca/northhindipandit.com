@@ -26,6 +26,7 @@ import {
   Youtube,
 } from 'lucide-react';
 import { getWhatsAppLink, phoneNumber, pujas } from '@/data/pujas';
+import { DeityDarshanStrip } from './DeityDarshanStrip';
 
 const pujaIcons = [
   HousePlus,
@@ -73,11 +74,11 @@ export function SiteHeader() {
       <header
         className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
           isScrolled
-            ? 'bg-white/95 backdrop-blur-md py-2.5 shadow-sm border-b border-ink/5'
-            : 'bg-paper/90 backdrop-blur-sm py-3.5'
+            ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-ink/5'
+            : 'bg-paper/95 backdrop-blur-sm shadow-xs'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-2.5 flex justify-between items-center gap-4">
           {/* Logo / Brand Name */}
           <Link href="/" className="flex flex-col group">
             <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-ink group-hover:text-saffron transition-colors">
@@ -216,6 +217,9 @@ export function SiteHeader() {
             </button>
           </div>
         </div>
+
+        {/* 10 Sacred Deities Darshan Strip in First View Screen */}
+        <DeityDarshanStrip />
       </header>
 
       {/* Native Mobile App Style Drawer Menu */}

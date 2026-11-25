@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: `/services/${puja.slug}/`,
     },
     openGraph: {
-      title: `${puja.seoTitle} | North Hindi Pandit`,
+      title: puja.seoTitle,
       description: puja.seoDescription,
       url: `https://northhindipandit.com/services/${puja.slug}/`,
       type: 'website',
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${puja.seoTitle} | North Hindi Pandit`,
+      title: puja.seoTitle,
       description: puja.seoDescription,
       images: [puja.image],
     },
@@ -220,8 +220,73 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* 5-STAGE VEDIC VIDHI & IMAGE GALLERY (At least 5 AI Images per Puja) */}
+      <section className="px-4 sm:px-6 pb-16 bg-white py-14 border-y border-ink/6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="section-kicker">Visual Ritual Journey</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-ink mb-3">
+              5 Sacred Stages of {puja.shortTitle}
+            </h2>
+            <p className="text-sm sm:text-base text-ink/70 leading-relaxed">
+              Every step is conducted with complete Vedic authenticity, Sanskrit chanting, and clear Hindi guidance by Pandit Nilesh Kumar Pandey.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {puja.steps &&
+              puja.steps.map((st) => (
+                <div
+                  key={st.step}
+                  className="group rounded-3xl border border-ink/8 bg-paper/60 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden bg-paper">
+                    <Image
+                      src={st.image}
+                      alt={`${st.title} - ${puja.shortTitle}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-3 left-3 bg-saffron text-white rounded-xl px-2.5 py-1 text-xs font-extrabold shadow-sm">
+                      Step {st.step} of 5
+                    </div>
+                  </div>
+
+                  <div className="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                      <h3 className="font-serif text-lg sm:text-xl font-bold text-ink mb-2">
+                        {st.title}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-ink/70 leading-relaxed">
+                        {st.description}
+                      </p>
+                    </div>
+
+                    <div className="pt-4 mt-4 border-t border-ink/6 flex items-center justify-between text-xs">
+                      <span className="text-saffron font-bold flex items-center gap-1">
+                        <Sparkles size={13} />
+                        <span>Vedic Vidhi</span>
+                      </span>
+                      <a
+                        href={getWhatsAppLink(`${puja.shortTitle} - ${st.title}`)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-emerald-700 font-bold hover:underline flex items-center gap-1"
+                      >
+                        <MessageCircle size={13} />
+                        <span>Inquire</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+
       {/* Benefits and Ideal For Sections */}
-      <section className="px-4 sm:px-6 pb-16">
+      <section className="px-4 sm:px-6 py-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8">
           {/* Col 1: Benefits */}
           <div className="rounded-3xl border border-ink/8 bg-white p-6 sm:p-10 shadow-xs">
@@ -310,35 +375,6 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Step by Step Process */}
-      <section className="px-4 sm:px-6 pb-16">
-        <div className="max-w-7xl mx-auto rounded-3xl bg-white border border-ink/8 p-6 sm:p-10 shadow-xs">
-          <div className="max-w-2xl mb-8">
-            <span className="section-kicker">Simple 4-Step Process</span>
-            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-2">
-              How Your Puja is Conducted in Bangalore
-            </h2>
-            <p className="text-sm text-ink/70">
-              Clear steps from your initial query to the final aarti and prasad distribution.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {puja.process.map((step, idx) => (
-              <div
-                key={idx}
-                className="p-5 rounded-2xl bg-paper/60 border border-ink/6 relative"
-              >
-                <div className="h-8 w-8 rounded-full bg-saffron text-white font-bold flex items-center justify-center text-xs mb-3">
-                  {idx + 1}
-                </div>
-                <p className="text-xs sm:text-sm text-ink/80 leading-relaxed">{step}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

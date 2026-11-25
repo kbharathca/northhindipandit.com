@@ -28,6 +28,24 @@ import { Footer } from '@/components/Footer';
 import { LotusParticles } from '@/components/LotusParticles';
 import { MobileStickyBar } from '@/components/MobileStickyBar';
 import { SiteHeader } from '@/components/SiteHeader';
+import {
+  ArrowDivider,
+  BookDivider,
+  CloudsDivider,
+  CurveAsymmetricDivider,
+  CurveDivider,
+  DropsDivider,
+  FanOpacityDivider,
+  MountainsDivider,
+  PyramidsDivider,
+  TiltDivider,
+  TiltOpacityDivider,
+  TriangleDivider,
+  WavesBrushDivider,
+  WavesDivider,
+  WavesPatternDivider,
+  ZigzagDivider,
+} from '@/components/ShapeDividers';
 import { getWhatsAppLink, phoneNumber, pujas } from '@/data/pujas';
 
 const faqs = [
@@ -86,15 +104,15 @@ export default function HomePage() {
       <LotusParticles />
       <SiteHeader />
 
-      {/* Hero Section */}
-      <section className="relative pt-4 sm:pt-6 md:pt-8 px-4 sm:px-6 overflow-hidden">
-        <div className="absolute inset-0 hero-aura opacity-85" />
+      {/* 1. HERO SECTION WITH DEVOTIONAL SUNRISE AURA */}
+      <section className="relative pt-4 sm:pt-6 md:pt-8 px-4 sm:px-6 overflow-hidden bg-gradient-to-b from-[#fffcf7] via-[#fff4e3] to-[#ffe5c4]">
+        <div className="absolute inset-0 hero-aura opacity-80" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="rounded-[2.2rem] sm:rounded-[2.6rem] overflow-hidden bg-white/95 border border-ink/8 shadow-lg p-5 sm:p-8 lg:p-12">
+          <div className="rounded-[2.2rem] sm:rounded-[2.6rem] overflow-hidden bg-white/95 border border-ink/8 shadow-xl p-5 sm:p-8 lg:p-12 backdrop-blur-sm">
             <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-12 items-center">
               {/* Left Column: Text & Primary CTAs */}
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-saffron/10 border border-saffron/20 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-saffron mb-5 shadow-xs">
+                <div className="inline-flex items-center gap-2 rounded-full bg-saffron/10 border border-saffron/25 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-saffron mb-5 shadow-xs">
                   <ShieldCheck size={15} />
                   <span>Verified North Indian Pandit in Bangalore</span>
                 </div>
@@ -103,7 +121,7 @@ export default function HomePage() {
                   Book Experienced <span className="text-saffron">Hindi Pandit</span> in Bangalore for Vedic Pujas & Rituals
                 </h1>
 
-                <p className="text-base sm:text-lg text-ink/75 leading-relaxed mb-6 font-normal">
+                <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-6 font-normal">
                   Authentic Sanatana Dharma ceremonies conducted at your home by <strong>Pandit Nilesh Kumar Pandey</strong>. Pure Sanskrit mantras, clear Hindi explanations, shubh muhurat guidance, and complete samagri support across Bangalore.
                 </p>
 
@@ -159,7 +177,7 @@ export default function HomePage() {
 
               {/* Right Column: Hero Visual (Clean AI Generated, 0 text) */}
               <div className="relative">
-                <div className="relative aspect-[16/9] sm:aspect-[4/3] lg:aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-md bg-paper border border-ink/8">
+                <div className="relative aspect-[16/9] sm:aspect-[4/3] lg:aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-paper border border-ink/8">
                   <Image
                     src="/images/hindi-pandit-all-puja.webp"
                     alt="Authentic North Indian Vedic Pandit conducting sacred puja ceremony in Bangalore"
@@ -183,12 +201,18 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
+        {/* SHAPE DIVIDER 1: CLOUDS DIVIDER transitioning into Highlights */}
+        <div className="mt-8">
+          <CloudsDivider position="bottom" fill="#ffffff" height={52} />
+        </div>
       </section>
 
-      {/* Google Ads Compliance Trust Notice */}
-      <section className="px-4 sm:px-6 pt-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-2xl bg-amber-500/10 border border-amber-500/20 px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink/80 text-center sm:text-left">
+      {/* 2. GOOGLE ADS COMPLIANCE & 5 HIGHLIGHTS STRIP */}
+      <section className="bg-white px-4 sm:px-6 pt-4 pb-12">
+        <div className="max-w-7xl mx-auto space-y-6">
+          {/* Google Ads Compliance Trust Notice */}
+          <div className="rounded-2xl bg-gradient-to-r from-amber-500/10 via-saffron/10 to-amber-500/10 border border-amber-500/25 px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-ink/85 text-center sm:text-left">
             <div className="flex items-center gap-2">
               <AlertCircle size={16} className="text-saffron shrink-0" />
               <span>
@@ -202,12 +226,8 @@ export default function HomePage() {
               Read Service Policy &rarr;
             </Link>
           </div>
-        </div>
-      </section>
 
-      {/* 5 Highlights Strip */}
-      <section className="py-10 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+          {/* 5 Highlights Strip with Devotional Accents */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
               { icon: <Star className="text-amber-500" size={20} />, title: '8 Major Pujas', desc: 'Home & Office Visits' },
@@ -218,28 +238,31 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="bg-white rounded-2xl border border-ink/6 p-4 text-center shadow-xs hover:-translate-y-1 transition-transform"
+                className="bg-paper/70 rounded-2xl border border-ink/6 p-4 text-center shadow-xs hover:-translate-y-1 transition-transform"
               >
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-paper mb-2">
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-xs mb-2">
                   {item.icon}
                 </div>
                 <p className="font-bold text-xs sm:text-sm text-ink">{item.title}</p>
-                <p className="text-[11px] text-ink/60 mt-0.5">{item.desc}</p>
+                <p className="text-[11px] text-ink/65 mt-0.5">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Puja Services Grid */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-paper/60">
-        <div className="max-w-7xl mx-auto">
+      {/* SHAPE DIVIDER 2: MOUNTAINS DIVIDER (Himalayan / Kailash peaks leading to Puja Services) */}
+      <MountainsDivider position="top" fill="#fcf6ec" height={60} />
+
+      {/* 3. PUJA SERVICES GRID ON DEVOTIONAL DAWN GRADIENT */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#fcf6ec] via-[#fdf1df] to-[#fae6cc] relative">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="section-kicker">Sacred Ceremonies</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-ink mb-4">
               Explore Our Authentic Puja Services
             </h2>
-            <p className="text-base sm:text-lg text-ink/70 leading-relaxed">
+            <p className="text-base sm:text-lg text-ink/75 leading-relaxed">
               Every puja is conducted with dedicated Vedic sequence, holy hawan, and clear Hindi guidance. Select any ritual below to view complete details, samagri requirements, and instant booking options.
             </p>
           </div>
@@ -248,7 +271,7 @@ export default function HomePage() {
             {pujas.map((puja) => (
               <article
                 key={puja.slug}
-                className="group flex flex-col rounded-3xl border border-ink/8 bg-white overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-1.5"
+                className="group flex flex-col rounded-3xl border border-amber-900/10 bg-white overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1.5"
               >
                 {/* Image Card (Zero text burned in) */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-paper">
@@ -259,7 +282,7 @@ export default function HomePage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-transparent to-transparent" />
                   <div className="absolute left-3 right-3 bottom-3 flex items-center justify-between text-white text-xs">
                     <span className="font-bold bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-lg">
                       {puja.navLabel}
@@ -276,7 +299,7 @@ export default function HomePage() {
                     <h3 className="font-serif text-xl sm:text-2xl font-bold text-ink mb-2">
                       {puja.shortTitle}
                     </h3>
-                    <p className="text-xs sm:text-sm text-ink/65 leading-relaxed mb-5 line-clamp-3">
+                    <p className="text-xs sm:text-sm text-ink/70 leading-relaxed mb-5 line-clamp-3">
                       {puja.tagline}
                     </p>
                   </div>
@@ -316,10 +339,10 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-12">
             <Link
               href="/services/"
-              className="cta-button cta-saffron text-sm sm:text-base px-8 py-4"
+              className="cta-button cta-saffron text-sm sm:text-base px-8 py-4 shadow-md"
             >
               <Sparkles size={18} />
               <span>View All 8 Puja Services Overview</span>
@@ -328,12 +351,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Families Choose Us Block */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      {/* SHAPE DIVIDER 3: BOOK DIVIDER (Twin sacred sanctum arch transitioning into Deep Vedic Havan) */}
+      <BookDivider position="bottom" fill="#220b04" height={60} />
+
+      {/* 4. WHY FAMILIES CHOOSE US (DEEP DEVOTIONAL HAVAN BACKGROUND WITH HIGH CONTRAST) */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-gradient-to-br from-[#220b04] via-[#4d1706] to-[#7f2608] text-white relative">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
           <div>
-            <span className="section-kicker">Sanatana Dharma Integrity</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-ink mb-6">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-400/15 border border-amber-300/30 px-3.5 py-1 text-xs font-bold uppercase tracking-[0.2em] text-amber-300 mb-4 shadow-xs">
+              <Sparkles size={14} /> Sanatana Dharma Integrity
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
               Why North Indian Families in Bangalore Choose Us
             </h2>
             <div className="space-y-4">
@@ -357,14 +385,14 @@ export default function HomePage() {
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="p-4 sm:p-5 rounded-2xl bg-paper/60 border border-ink/6 flex items-start gap-3.5"
+                  className="p-4 sm:p-5 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md flex items-start gap-3.5 hover:bg-white/15 transition-colors"
                 >
-                  <div className="h-8 w-8 rounded-full bg-saffron/10 text-saffron flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="h-8 w-8 rounded-full bg-amber-400 text-ink font-bold flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
                     <Check size={18} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-ink text-sm sm:text-base">{item.title}</h3>
-                    <p className="text-xs sm:text-sm text-ink/70 mt-1 leading-relaxed">{item.desc}</p>
+                    <h3 className="font-bold text-white text-base">{item.title}</h3>
+                    <p className="text-xs sm:text-sm text-white/80 mt-1 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -373,14 +401,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a
                 href={`tel:${phoneNumber}`}
-                className="cta-button cta-call text-sm px-6 py-3.5"
+                className="cta-button bg-white text-ink hover:bg-amber-50 text-sm px-6 py-3.5 font-bold shadow-md"
               >
-                <Phone size={18} />
+                <Phone size={18} className="text-saffron" />
                 <span>Call Pandit Ji ({phoneNumber})</span>
               </a>
               <Link
                 href="/about-us/"
-                className="cta-button cta-saffron text-sm px-6 py-3.5"
+                className="cta-button cta-outline-light text-sm px-6 py-3.5 font-bold"
               >
                 <Award size={18} />
                 <span>Read About Pandit Ji</span>
@@ -389,8 +417,8 @@ export default function HomePage() {
           </div>
 
           {/* About Pandit Ji Card */}
-          <div className="bg-paper rounded-3xl p-6 sm:p-8 border border-ink/8 shadow-sm">
-            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 bg-white">
+          <div className="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/20 shadow-xl text-white">
+            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 bg-paper/20 border border-white/20">
               <Image
                 src="/images/about-pandit-ji.webp"
                 alt="Pandit Nilesh Kumar Pandey portrait"
@@ -402,27 +430,27 @@ export default function HomePage() {
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="font-serif text-2xl font-bold text-ink">
+                  <h3 className="font-serif text-2xl font-bold text-white">
                     Pandit Nilesh Kumar Pandey
                   </h3>
-                  <p className="text-xs text-saffron font-bold uppercase tracking-wider">
+                  <p className="text-xs text-amber-300 font-bold uppercase tracking-wider">
                     Vedic Priest & Ritual Specialist
                   </p>
                 </div>
-                <div className="h-10 w-10 rounded-full bg-white shadow-xs flex items-center justify-center text-gold">
+                <div className="h-10 w-10 rounded-full bg-amber-400 text-ink shadow-xs flex items-center justify-center">
                   <Star size={20} fill="currentColor" />
                 </div>
               </div>
-              <p className="text-sm text-ink/70 leading-relaxed">
+              <p className="text-sm text-white/85 leading-relaxed">
                 Based in Koramangala, Bangalore, Pandit ji has solemnized over 3,500+ pujas, housewarmings, marriages, and sacred kathas for devotees from Uttar Pradesh, Bihar, Delhi-NCR, Rajasthan, and Madhya Pradesh residing in Bangalore.
               </p>
-              <div className="pt-2 flex items-center gap-4 text-xs font-semibold text-ink/60">
+              <div className="pt-2 flex items-center gap-4 text-xs font-semibold text-white/80">
                 <span className="flex items-center gap-1">
-                  <MapPin size={14} className="text-saffron" /> Koramangala, Bangalore
+                  <MapPin size={14} className="text-amber-300" /> Koramangala, Bangalore
                 </span>
                 <span>&bull;</span>
                 <span className="flex items-center gap-1">
-                  <ShieldCheck size={14} className="text-emerald-600" /> 100% Shastriya Vidhi
+                  <ShieldCheck size={14} className="text-emerald-400" /> 100% Shastriya Vidhi
                 </span>
               </div>
             </div>
@@ -430,15 +458,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Customer Reviews Section */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-paper/60">
+      {/* SHAPE DIVIDER 4: WAVES PATTERN (Sacred flowing river waves transitioning to Devotee Reviews) */}
+      <WavesPatternDivider position="bottom" fill="#fff9ef" height={64} />
+
+      {/* 5. DEVOTEE EXPERIENCES ON SANDALWOOD DEVOTIONAL GRADIENT */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-[#fff9ef] via-[#fff3de] to-[#ffeac9]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="section-kicker">Devotee Experiences</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-ink mb-3">
               What Families in Bangalore Say
             </h2>
-            <p className="text-sm sm:text-base text-ink/70">
+            <p className="text-sm sm:text-base text-ink/75">
               Trusted by hundreds of North Indian families across Bangalore for punctuality, authentic vidhi, and respectful ceremonies.
             </p>
           </div>
@@ -447,10 +478,10 @@ export default function HomePage() {
             {reviews.map((review) => (
               <div
                 key={review.name}
-                className="bg-white rounded-3xl border border-ink/6 p-6 sm:p-7 shadow-xs relative flex flex-col justify-between hover:-translate-y-1 transition-transform"
+                className="bg-white rounded-3xl border border-amber-900/10 p-6 sm:p-7 shadow-sm relative flex flex-col justify-between hover:-translate-y-1 transition-transform"
               >
                 <div>
-                  <div className="flex text-amber-400 gap-1 mb-4">
+                  <div className="flex text-amber-500 gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} size={16} fill="currentColor" />
                     ))}
@@ -462,7 +493,7 @@ export default function HomePage() {
                 <div className="pt-4 border-t border-ink/6 flex items-center justify-between">
                   <div>
                     <p className="font-bold text-ink text-sm">{review.name}</p>
-                    <p className="text-xs text-ink/50">{review.location}, Bangalore</p>
+                    <p className="text-xs text-ink/55">{review.location}, Bangalore</p>
                   </div>
                   <span className="text-[11px] font-semibold text-saffron bg-saffron/10 px-2.5 py-1 rounded-full">
                     {review.puja}
@@ -474,8 +505,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Bangalore Locations Served Strip */}
-      <section className="py-12 px-4 sm:px-6 bg-white border-y border-ink/6">
+      {/* SHAPE DIVIDER 5: DROPS DIVIDER (Sacred kalash amrit droplets) */}
+      <DropsDivider position="bottom" fill="#ffffff" height={54} />
+
+      {/* 6. BANGALORE LOCATIONS SERVED STRIP */}
+      <section className="py-12 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           <span className="section-kicker">Local Coverage</span>
           <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-6">
@@ -502,21 +536,24 @@ export default function HomePage() {
             ].map((area) => (
               <div
                 key={area}
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-paper border border-ink/6 text-xs font-semibold text-ink/80"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-paper/80 border border-ink/6 text-xs font-semibold text-ink/85 shadow-2xs hover:border-saffron/40 transition-colors"
               >
                 <MapPin size={13} className="text-saffron" />
                 <span>{area}</span>
               </div>
             ))}
           </div>
-          <p className="text-xs text-ink/60">
+          <p className="text-xs sm:text-sm text-ink/70">
             Need pandit ji in another area? Call <strong>{phoneNumber}</strong> for immediate route confirmation.
           </p>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-paper/60">
+      {/* SHAPE DIVIDER 6: ZIGZAG DIVIDER leading into FAQs */}
+      <ZigzagDivider position="bottom" fill="#fdfaf4" height={42} />
+
+      {/* 7. FREQUENTLY ASKED QUESTIONS */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[#fdfaf4]">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <span className="section-kicker">Answers & Guidance</span>
@@ -561,23 +598,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final Call to Action Conversion Banner */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto rounded-[2.5rem] overflow-hidden shadow-xl bg-gradient-to-br from-[#2a1306] via-[#752a0a] to-[#ff6321] text-white p-8 sm:p-12 lg:p-16 text-center sm:text-left relative">
+      {/* SHAPE DIVIDER 7: CURVE DIVIDER transitioning into final CTA */}
+      <CurveDivider position="bottom" fill="#200a03" height={54} />
+
+      {/* 8. FINAL CALL TO ACTION CONVERSION BANNER (DEEP SURYA AURORA) */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-br from-[#200a03] via-[#521706] to-[#992807] text-white">
+        <div className="max-w-6xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl bg-white/5 border border-white/15 p-8 sm:p-12 lg:p-16 text-center sm:text-left relative backdrop-blur-sm">
           <div className="max-w-3xl relative z-10">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-4">
+            <span className="inline-flex items-center gap-2 rounded-full bg-amber-400/20 border border-amber-300/30 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-amber-300 mb-4">
               <Sparkles size={14} /> Immediate Booking Support
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold leading-tight mb-4 text-white">
               Plan Your Puja in Bangalore with North Hindi Pandit
             </h2>
-            <p className="text-white/85 text-sm sm:text-base md:text-lg leading-relaxed mb-8">
+            <p className="text-white/90 text-sm sm:text-base md:text-lg leading-relaxed mb-8">
               Speak directly with Pandit Nilesh Kumar Pandey. Discuss your preferred dates, shubh muhurat, and complete puja preparations with one simple call or WhatsApp message.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-start">
               <a
                 href={`tel:${phoneNumber}`}
-                className="cta-button bg-white text-ink hover:bg-paper text-sm sm:text-base px-8 py-4 font-bold"
+                className="cta-button bg-white text-ink hover:bg-paper text-sm sm:text-base px-8 py-4 font-bold shadow-lg"
               >
                 <Phone size={18} className="text-saffron" />
                 <span>Call Now: {phoneNumber}</span>
@@ -586,7 +626,7 @@ export default function HomePage() {
                 href={getWhatsAppLink('Final Banner Booking')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="cta-button cta-whatsapp text-sm sm:text-base px-8 py-4"
+                className="cta-button cta-whatsapp text-sm sm:text-base px-8 py-4 shadow-lg"
               >
                 <MessageCircle size={18} />
                 <span>WhatsApp Pandit Ji</span>

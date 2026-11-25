@@ -60,6 +60,43 @@
       radial-gradient(circle at 50% 100%, rgba(255, 99, 33, 0.14), transparent 30%);
   }
 
+  /* Devotional Gradient Backgrounds with Guaranteed High Contrast */
+  .bg-devotional-aurora {
+    background: linear-gradient(135deg, #1f0b03 0%, #451506 40%, #752208 75%, #a83309 100%);
+    color: #ffffff;
+  }
+
+  .bg-devotional-sanctum {
+    background: linear-gradient(180deg, #240a02 0%, #3d1205 50%, #1a0601 100%);
+    color: #ffffff;
+  }
+
+  .bg-devotional-crimson {
+    background: linear-gradient(135deg, #380d03 0%, #5e1606 50%, #8f2307 100%);
+    color: #ffffff;
+  }
+
+  .bg-devotional-havan {
+    background: radial-gradient(circle at 50% 0%, rgba(255, 140, 50, 0.28) 0%, transparent 65%),
+                linear-gradient(180deg, #1f0903 0%, #351005 100%);
+    color: #ffffff;
+  }
+
+  .bg-devotional-sandalwood {
+    background: linear-gradient(180deg, #fffefb 0%, #fef5e9 45%, #fedeb8 100%);
+    color: #1c170f;
+  }
+
+  .bg-devotional-amber {
+    background: linear-gradient(135deg, #fff9f0 0%, #fef2df 50%, #fde7c4 100%);
+    color: #1c170f;
+  }
+
+  .bg-devotional-dawn {
+    background: linear-gradient(180deg, #fffcf7 0%, #fff2e0 50%, #ffe4be 100%);
+    color: #1c170f;
+  }
+
   /* High Converting Call to Action Buttons */
   .cta-button {
     @apply inline-flex items-center justify-center gap-2.5 rounded-full font-bold tracking-[0.03em] transition-all duration-300 text-center select-none active:scale-95;

@@ -21,6 +21,18 @@ import { Footer } from '@/components/Footer';
 import { LotusParticles } from '@/components/LotusParticles';
 import { MobileStickyBar } from '@/components/MobileStickyBar';
 import { SiteHeader } from '@/components/SiteHeader';
+import {
+  BookDivider,
+  CloudsDivider,
+  CurveDivider,
+  DropsDivider,
+  MountainsDivider,
+  TiltDivider,
+  TriangleDivider,
+  WavesBrushDivider,
+  WavesDivider,
+  WavesPatternDivider,
+} from '@/components/ShapeDividers';
 import { getWhatsAppLink, phoneNumber, pujaMap, pujas } from '@/data/pujas';
 
 type PageProps = {
@@ -117,20 +129,20 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       <LotusParticles />
       <SiteHeader />
 
-      {/* Hero Section */}
-      <section className="relative px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-16 overflow-hidden">
+      {/* 1. HERO SECTION WITH DEVOTIONAL SUNRISE GRADIENT */}
+      <section className="relative px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-16 overflow-hidden bg-gradient-to-b from-[#fffcf7] via-[#fff4e3] to-[#ffe5c4]">
         <div className="absolute inset-0 hero-aura opacity-85" />
         <div className="max-w-7xl mx-auto relative z-10">
           {/* Breadcrumb row */}
           <div className="flex flex-wrap items-center justify-between gap-3 py-3 text-xs">
             <Link
               href="/services/"
-              className="inline-flex items-center gap-1.5 font-bold uppercase tracking-wider text-ink/70 hover:text-saffron transition-colors"
+              className="inline-flex items-center gap-1.5 font-bold uppercase tracking-wider text-ink/75 hover:text-saffron transition-colors"
             >
               <ChevronRight size={14} className="rotate-180" />
               <span>All Puja Services</span>
             </Link>
-            <div className="inline-flex items-center gap-1.5 font-semibold text-ink/60">
+            <div className="inline-flex items-center gap-1.5 font-semibold text-ink/70">
               <MapPin size={13} className="text-saffron" />
               <span>Bangalore Home & Office Visits</span>
             </div>
@@ -139,7 +151,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           {/* Main Hero Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-12 items-center pt-4 sm:pt-6">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full bg-saffron/10 border border-saffron/20 px-3.5 py-1 text-xs font-bold uppercase tracking-[0.2em] text-saffron mb-4 shadow-xs">
+              <div className="inline-flex items-center gap-2 rounded-full bg-saffron/10 border border-saffron/25 px-3.5 py-1 text-xs font-bold uppercase tracking-[0.2em] text-saffron mb-4 shadow-xs">
                 <Sparkles size={14} />
                 <span>{puja.navLabel} &bull; Bangalore</span>
               </div>
@@ -148,7 +160,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 {puja.heroTitle}
               </h1>
 
-              <p className="text-base sm:text-lg text-ink/75 leading-relaxed mb-6 font-normal">
+              <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-6 font-normal">
                 {puja.heroDescription}
               </p>
 
@@ -160,7 +172,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
                 <a
                   href={`tel:${phoneNumber}`}
-                  className="cta-button cta-call text-sm sm:text-base px-6 py-4"
+                  className="cta-button cta-call text-sm sm:text-base px-6 py-4 shadow-md"
                   aria-label={`Call to book ${puja.shortTitle}`}
                 >
                   <Phone size={18} className="animate-pulse" />
@@ -171,7 +183,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   href={getWhatsAppLink(puja.shortTitle)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cta-button cta-whatsapp text-sm sm:text-base px-6 py-4"
+                  className="cta-button cta-whatsapp text-sm sm:text-base px-6 py-4 shadow-md"
                   aria-label={`Book ${puja.shortTitle} on WhatsApp`}
                 >
                   <MessageCircle size={18} />
@@ -198,7 +210,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
             {/* Puja Image Banner (Clean AI Image, 0 text) */}
             <div className="relative">
-              <div className="relative aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-md bg-paper border border-ink/8">
+              <div className="relative aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-paper border border-ink/8">
                 <Image
                   src={puja.image}
                   alt={`${puja.title} in Bangalore`}
@@ -208,7 +220,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-transparent to-transparent" />
-                <div className="absolute left-4 right-4 bottom-4 rounded-xl bg-white/90 backdrop-blur-md p-3.5 shadow-xs">
+                <div className="absolute left-4 right-4 bottom-4 rounded-xl bg-white/95 backdrop-blur-md p-3.5 shadow-sm">
                   <p className="text-[10px] uppercase tracking-[0.2em] text-saffron font-extrabold">
                     Authentic North Indian Vidhi
                   </p>
@@ -218,17 +230,22 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </div>
           </div>
         </div>
+
+        {/* SHAPE DIVIDER: WAVES BRUSH DIVIDER */}
+        <div className="mt-10">
+          <WavesBrushDivider position="bottom" fill="#fffcf7" height={52} />
+        </div>
       </section>
 
-      {/* 5-STAGE VEDIC VIDHI & IMAGE GALLERY (At least 5 AI Images per Puja) */}
-      <section className="px-4 sm:px-6 pb-16 bg-white py-14 border-y border-ink/6">
-        <div className="max-w-7xl mx-auto">
+      {/* 2. 5-STAGE VEDIC VIDHI & IMAGE GALLERY (At least 5 AI Images per Puja) */}
+      <section className="px-4 sm:px-6 py-14 bg-gradient-to-b from-[#fffcf7] via-[#fff5e6] to-[#fde9cb] relative">
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="section-kicker">Visual Ritual Journey</span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-ink mb-3">
               5 Sacred Stages of {puja.shortTitle}
             </h2>
-            <p className="text-sm sm:text-base text-ink/70 leading-relaxed">
+            <p className="text-sm sm:text-base text-ink/75 leading-relaxed">
               Every step is conducted with complete Vedic authenticity, Sanskrit chanting, and clear Hindi guidance by Pandit Nilesh Kumar Pandey.
             </p>
           </div>
@@ -238,7 +255,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               puja.steps.map((st) => (
                 <div
                   key={st.step}
-                  className="group rounded-3xl border border-ink/8 bg-paper/60 overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between"
+                  className="group rounded-3xl border border-amber-900/10 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden bg-paper">
                     <Image
@@ -258,7 +275,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                       <h3 className="font-serif text-lg sm:text-xl font-bold text-ink mb-2">
                         {st.title}
                       </h3>
-                      <p className="text-xs sm:text-sm text-ink/70 leading-relaxed">
+                      <p className="text-xs sm:text-sm text-ink/75 leading-relaxed">
                         {st.description}
                       </p>
                     </div>
@@ -285,16 +302,21 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Benefits and Ideal For Sections */}
-      <section className="px-4 sm:px-6 py-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8">
+      {/* SHAPE DIVIDER: BOOK DIVIDER (Sacred scripture arch transitioning to deep hawan background) */}
+      <BookDivider position="bottom" fill="#200a03" height={58} />
+
+      {/* 3. BENEFITS AND INCLUSIONS ON DEEP DEVOTIONAL HAVAN BACKGROUND (HIGH CONTRAST) */}
+      <section className="px-4 sm:px-6 py-16 bg-gradient-to-br from-[#200a03] via-[#4d1606] to-[#7f2608] text-white relative">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 relative z-10">
           {/* Col 1: Benefits */}
-          <div className="rounded-3xl border border-ink/8 bg-white p-6 sm:p-10 shadow-xs">
-            <span className="section-kicker">Vedic Vidhi & Benefits</span>
-            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-3">
+          <div className="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-md p-6 sm:p-10 shadow-xl text-white">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-300/30 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-3">
+              <Sparkles size={13} /> Vedic Vidhi & Benefits
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-3">
               Why Devotees Arrange {puja.shortTitle}
             </h2>
-            <p className="text-sm sm:text-base text-ink/70 leading-relaxed mb-6">
+            <p className="text-sm sm:text-base text-white/85 leading-relaxed mb-6">
               Conducted with strict adherence to Vedic Shastras, holy hawan, and Sanskrit mantras by Pandit Nilesh Kumar Pandey.
             </p>
 
@@ -302,37 +324,37 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               {puja.benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="p-4 rounded-2xl bg-paper/60 border border-ink/6 flex items-start gap-3"
+                  className="p-4 rounded-2xl bg-white/10 border border-white/15 flex items-start gap-3"
                 >
-                  <div className="h-7 w-7 rounded-full bg-saffron/10 text-saffron flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="h-7 w-7 rounded-full bg-amber-400 text-ink flex items-center justify-center shrink-0 mt-0.5 font-bold shadow-xs">
                     <Check size={16} />
                   </div>
-                  <p className="text-sm sm:text-base text-ink/80 leading-relaxed">{benefit}</p>
+                  <p className="text-sm sm:text-base text-white/90 leading-relaxed">{benefit}</p>
                 </div>
               ))}
             </div>
 
             {/* In-content Booking Card */}
-            <div className="mt-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 via-saffron/10 to-emerald-500/10 border border-saffron/20">
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-ink mb-2">
+            <div className="mt-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-amber-500/20 via-saffron/20 to-emerald-500/20 border border-amber-400/30">
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mb-2">
                 Have a date in mind for {puja.shortTitle}?
               </h3>
-              <p className="text-xs sm:text-sm text-ink/70 mb-4 leading-relaxed">
+              <p className="text-xs sm:text-sm text-white/85 mb-4 leading-relaxed">
                 Connect instantly to check shubh muhurat and discuss the exact samagri list.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <a
                   href={`tel:${phoneNumber}`}
-                  className="cta-button cta-call text-xs sm:text-sm py-3 px-4"
+                  className="cta-button bg-white text-ink hover:bg-amber-50 text-xs sm:text-sm py-3 px-4 font-bold shadow-md"
                 >
-                  <Phone size={16} />
+                  <Phone size={16} className="text-saffron" />
                   <span>Call {phoneNumber}</span>
                 </a>
                 <a
                   href={getWhatsAppLink(`${puja.shortTitle} Fast Booking`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cta-button cta-whatsapp text-xs sm:text-sm py-3 px-4"
+                  className="cta-button cta-whatsapp text-xs sm:text-sm py-3 px-4 shadow-md"
                 >
                   <MessageCircle size={16} />
                   <span>WhatsApp Booking</span>
@@ -343,33 +365,37 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
           {/* Col 2: Ideal For & Inclusions */}
           <div className="space-y-6">
-            <div className="rounded-3xl border border-ink/8 bg-paper/70 p-6 sm:p-8 shadow-xs">
-              <span className="section-kicker">Auspicious Occasions</span>
-              <h2 className="text-xl sm:text-2xl font-serif font-bold text-ink mb-4">
+            <div className="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-md p-6 sm:p-8 shadow-xl text-white">
+              <span className="text-xs uppercase tracking-[0.24em] font-bold text-amber-300 mb-3 block">
+                Auspicious Occasions
+              </span>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-white mb-4">
                 When to Perform This Puja
               </h2>
               <div className="space-y-2.5">
                 {puja.idealFor.map((item, index) => (
                   <div
                     key={index}
-                    className="p-3.5 rounded-xl bg-white border border-ink/6 text-xs sm:text-sm text-ink/80 flex items-center gap-2.5"
+                    className="p-3.5 rounded-xl bg-white/10 border border-white/15 text-xs sm:text-sm text-white/90 flex items-center gap-2.5"
                   >
-                    <CalendarCheck size={16} className="text-saffron shrink-0" />
+                    <CalendarCheck size={16} className="text-amber-300 shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-3xl border border-ink/8 bg-white p-6 sm:p-8 shadow-xs">
-              <span className="section-kicker">What We Arrange</span>
-              <h2 className="text-xl sm:text-2xl font-serif font-bold text-ink mb-4">
+            <div className="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-md p-6 sm:p-8 shadow-xl text-white">
+              <span className="text-xs uppercase tracking-[0.24em] font-bold text-amber-300 mb-3 block">
+                What We Arrange
+              </span>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-white mb-4">
                 Ceremony Inclusions
               </h2>
-              <ul className="space-y-2 text-xs sm:text-sm text-ink/75">
+              <ul className="space-y-2 text-xs sm:text-sm text-white/90">
                 {puja.includes.map((inc, i) => (
                   <li key={i} className="flex items-start gap-2.5">
-                    <Check size={16} className="text-emerald-600 shrink-0 mt-0.5" />
+                    <Check size={16} className="text-emerald-400 shrink-0 mt-0.5" />
                     <span>{inc}</span>
                   </li>
                 ))}
@@ -379,8 +405,11 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Frequently Asked Questions */}
-      <section className="px-4 sm:px-6 pb-16">
+      {/* SHAPE DIVIDER: WAVES PATTERN (Leading into FAQs) */}
+      <WavesPatternDivider position="bottom" fill="#fffbf5" height={60} />
+
+      {/* 4. FREQUENTLY ASKED QUESTIONS */}
+      <section className="px-4 sm:px-6 py-14 bg-[#fffbf5]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <span className="section-kicker">Common Questions</span>
@@ -393,13 +422,13 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {puja.faqs.map((faq, i) => (
               <div
                 key={i}
-                className="rounded-2xl border border-ink/6 bg-white p-5 shadow-xs"
+                className="rounded-2xl border border-ink/8 bg-white p-5 shadow-xs"
               >
                 <h3 className="font-bold text-sm sm:text-base text-ink mb-2 flex items-start gap-2.5">
                   <HelpCircle size={18} className="text-saffron shrink-0 mt-0.5" />
                   <span>{faq.question}</span>
                 </h3>
-                <p className="text-xs sm:text-sm text-ink/70 leading-relaxed pl-7">
+                <p className="text-xs sm:text-sm text-ink/75 leading-relaxed pl-7">
                   {faq.answer}
                 </p>
               </div>
@@ -408,24 +437,27 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Related Pujas & Final Action Strip */}
-      <section className="px-4 sm:px-6 pb-20">
-        <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-[#2a1306] via-[#752a0a] to-[#ff6321] text-white p-6 sm:p-10 lg:p-12 shadow-lg">
+      {/* SHAPE DIVIDER: CURVE DIVIDER */}
+      <CurveDivider position="bottom" fill="#200a03" height={52} />
+
+      {/* 5. RELATED PUJAS & FINAL ACTION STRIP */}
+      <section className="px-4 sm:px-6 py-16 bg-gradient-to-br from-[#200a03] via-[#521706] to-[#992807] text-white">
+        <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden bg-white/5 border border-white/15 text-white p-6 sm:p-10 lg:p-12 shadow-2xl backdrop-blur-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-4">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-300/30 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-4">
                 <Sparkles size={14} /> Immediate Bangalore Slot Confirmation
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-3">
                 Book {puja.shortTitle} Today
               </h2>
-              <p className="text-white/85 text-sm sm:text-base leading-relaxed mb-6">
+              <p className="text-white/90 text-sm sm:text-base leading-relaxed mb-6">
                 Speak directly with Pandit Nilesh Kumar Pandey. Discuss your family preferences, gotra sankalp details, and shubh muhurat with one direct call or WhatsApp message.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   href={`tel:${phoneNumber}`}
-                  className="cta-button bg-white text-ink hover:bg-paper text-sm sm:text-base px-6 py-3.5 font-bold"
+                  className="cta-button bg-white text-ink hover:bg-paper text-sm sm:text-base px-6 py-3.5 font-bold shadow-lg"
                 >
                   <Phone size={17} className="text-saffron" />
                   <span>Call {phoneNumber}</span>
@@ -434,7 +466,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   href={getWhatsAppLink(`${puja.shortTitle} Booking Now`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cta-button cta-whatsapp text-sm sm:text-base px-6 py-3.5"
+                  className="cta-button cta-whatsapp text-sm sm:text-base px-6 py-3.5 shadow-lg"
                 >
                   <MessageCircle size={17} />
                   <span>WhatsApp Booking</span>
@@ -443,7 +475,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </div>
 
             {/* Related Pujas list */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 sm:p-6 border border-white/15">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 sm:p-6 border border-white/20">
               <p className="text-xs font-bold uppercase tracking-wider text-amber-300 mb-3">
                 Other Popular Pujas in Bangalore:
               </p>

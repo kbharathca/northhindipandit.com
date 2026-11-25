@@ -5,6 +5,17 @@ import { Check, ChevronRight, MessageCircle, Phone, ShieldCheck, Sparkles, Star 
 import { Footer } from '@/components/Footer';
 import { MobileStickyBar } from '@/components/MobileStickyBar';
 import { SiteHeader } from '@/components/SiteHeader';
+import {
+  CurveAsymmetricDivider,
+  CurveDivider,
+  DropsDivider,
+  MountainsDivider,
+  TiltDivider,
+  TiltOpacityDivider,
+  TriangleDivider,
+  WavesBrushDivider,
+  WavesDivider,
+} from '@/components/ShapeDividers';
 import { getWhatsAppLink, phoneNumber, pujas } from '@/data/pujas';
 
 export const metadata: Metadata = {
@@ -29,20 +40,20 @@ export default function ServicesPage() {
     <main className="min-h-screen relative selection:bg-saffron/30">
       <SiteHeader />
 
-      {/* Header Banner */}
-      <section className="relative px-4 sm:px-6 pt-8 md:pt-12 pb-14 overflow-hidden">
+      {/* 1. HEADER BANNER WITH DEVOTIONAL SUNRISE GRADIENT */}
+      <section className="relative px-4 sm:px-6 pt-8 md:pt-12 pb-14 overflow-hidden bg-gradient-to-b from-[#fffcf7] via-[#fff4e3] to-[#ffe5c4]">
         <div className="absolute inset-0 hero-aura opacity-85" />
         <div className="max-w-7xl mx-auto relative z-10 text-center sm:text-left">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/85 border border-ink/8 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-saffron shadow-xs mb-5">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/90 border border-saffron/25 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-saffron shadow-xs mb-5">
               <Sparkles size={14} />
               <span>Bangalore Vedic Puja Services</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-ink leading-[1.08] mb-5">
               Authentic Vedic Puja Services in Bangalore
             </h1>
-            <p className="text-base sm:text-lg text-ink/75 leading-relaxed mb-6 font-normal">
-              Browse all 8 traditional North Indian ceremonies conducted by Pandit Nilesh Kumar Pandey. From housewarmings and family milestones to sacred wedding rituals and ancestral prayers, we provide sincere vidhi, Sanskrit chanting, and clear Hindi guidance.
+            <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-6 font-normal">
+              Browse all 8 traditional North Indian ceremonies conducted by <strong>Pandit Nilesh Kumar Pandey</strong>. From housewarmings and family milestones to sacred wedding rituals and ancestral prayers, we provide sincere vidhi, Sanskrit chanting, and clear Hindi guidance.
             </p>
             <p className="text-sm sm:text-base text-saffron font-serif italic mb-8">
               &ldquo;पूजा केवल विधि नहीं, परिवार की आस्था और मंगल का पवित्र संकल्प है।&rdquo;
@@ -51,7 +62,7 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-start">
               <a
                 href={`tel:${phoneNumber}`}
-                className="cta-button cta-call text-sm sm:text-base px-7 py-3.5"
+                className="cta-button cta-call text-sm sm:text-base px-7 py-3.5 shadow-md"
               >
                 <Phone size={18} />
                 <span>Call for Booking ({phoneNumber})</span>
@@ -60,7 +71,7 @@ export default function ServicesPage() {
                 href={getWhatsAppLink('All Puja Services Overview')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="cta-button cta-whatsapp text-sm sm:text-base px-7 py-3.5"
+                className="cta-button cta-whatsapp text-sm sm:text-base px-7 py-3.5 shadow-md"
               >
                 <MessageCircle size={18} />
                 <span>WhatsApp All Services</span>
@@ -68,16 +79,31 @@ export default function ServicesPage() {
             </div>
           </div>
         </div>
+
+        {/* SHAPE DIVIDER: WAVES BRUSH DIVIDER */}
+        <div className="mt-8">
+          <WavesBrushDivider position="bottom" fill="#fcf6ec" height={54} />
+        </div>
       </section>
 
-      {/* Services Grid (8 Pujas) */}
-      <section className="px-4 sm:px-6 pb-20">
+      {/* 2. SERVICES GRID (8 PUJAS) ON DEVOTIONAL DAWN BACKGROUND */}
+      <section className="px-4 sm:px-6 pt-6 pb-20 bg-gradient-to-b from-[#fcf6ec] via-[#fdf2e2] to-[#f9e4c8]">
         <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="section-kicker">Sanatana Dharma Vidhi</span>
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-ink mb-3">
+              Eight Auspicious Ceremonies
+            </h2>
+            <p className="text-sm sm:text-base text-ink/70">
+              Each puja includes step-by-step guidance, holy hawan, and doorstep service across Bangalore.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {pujas.map((puja) => (
               <article
                 key={puja.slug}
-                className="group flex flex-col rounded-3xl border border-ink/8 bg-white overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-1.5"
+                className="group flex flex-col rounded-3xl border border-amber-900/10 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5"
               >
                 {/* Visual Banner (Clean AI Image, 0 text) */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-paper">
@@ -105,12 +131,12 @@ export default function ServicesPage() {
                     <h2 className="font-serif text-2xl font-bold text-ink mb-2">
                       {puja.shortTitle}
                     </h2>
-                    <p className="text-xs sm:text-sm text-ink/70 leading-relaxed mb-4">
+                    <p className="text-xs sm:text-sm text-ink/75 leading-relaxed mb-4">
                       {puja.tagline}
                     </p>
 
                     {/* Key Benefits snippet */}
-                    <ul className="space-y-1.5 mb-6 text-xs text-ink/75">
+                    <ul className="space-y-1.5 mb-6 text-xs text-ink/80">
                       {puja.benefits.slice(0, 2).map((b, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <Check size={14} className="text-saffron shrink-0 mt-0.5" />
@@ -157,30 +183,36 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Bangalore Home Service Banner */}
-      <section className="px-4 sm:px-6 pb-20">
-        <div className="max-w-7xl mx-auto rounded-3xl bg-paper border border-ink/8 p-6 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+      {/* SHAPE DIVIDER: TILT OPACITY DIVIDER */}
+      <TiltOpacityDivider position="bottom" fill="#200a03" height={56} />
+
+      {/* 3. BANGALORE HOME SERVICE BANNER WITH DEEP DEVOTIONAL GRADIENT */}
+      <section className="px-4 sm:px-6 py-16 bg-gradient-to-br from-[#200a03] via-[#4d1606] to-[#802508] text-white">
+        <div className="max-w-7xl mx-auto rounded-3xl bg-white/10 border border-white/20 p-6 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 backdrop-blur-md shadow-2xl">
           <div>
-            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-ink mb-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-300/30 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-3">
+              <Sparkles size={13} /> Muhurat Guidance
+            </span>
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-2">
               Need Help Choosing the Right Puja or Shubh Muhurat?
             </h3>
-            <p className="text-sm sm:text-base text-ink/70 leading-relaxed max-w-2xl">
+            <p className="text-sm sm:text-base text-white/85 leading-relaxed max-w-2xl">
               Pandit Nilesh Kumar Pandey is available to consult on the exact tithi, auspicious nakshatra timings, and custom puja samagri requirements for your family.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <a
               href={`tel:${phoneNumber}`}
-              className="cta-button cta-call text-sm px-6 py-3.5"
+              className="cta-button bg-white text-ink hover:bg-amber-50 text-sm px-6 py-3.5 font-bold shadow-lg"
             >
-              <Phone size={16} />
+              <Phone size={16} className="text-saffron" />
               <span>Call Now</span>
             </a>
             <a
               href={getWhatsAppLink('Muhurat Consultation')}
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-button cta-whatsapp text-sm px-6 py-3.5"
+              className="cta-button cta-whatsapp text-sm px-6 py-3.5 shadow-lg"
             >
               <MessageCircle size={16} />
               <span>Ask on WhatsApp</span>

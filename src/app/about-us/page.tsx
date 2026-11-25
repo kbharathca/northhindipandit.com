@@ -5,6 +5,14 @@ import { Award, BookOpen, CheckCircle, Heart, MapPin, MessageCircle, Phone, Shie
 import { Footer } from '@/components/Footer';
 import { SiteHeader } from '@/components/SiteHeader';
 import { MobileStickyBar } from '@/components/MobileStickyBar';
+import {
+  BookDivider,
+  CloudsDivider,
+  CurveDivider,
+  MountainsDivider,
+  WavesBrushDivider,
+  WavesPatternDivider,
+} from '@/components/ShapeDividers';
 import { phoneNumber, getWhatsAppLink, pujas } from '@/data/pujas';
 
 export const metadata: Metadata = {
@@ -20,25 +28,32 @@ export default function AboutUsPage() {
     <main className="min-h-screen relative selection:bg-saffron/30">
       <SiteHeader />
 
-      <section className="relative px-4 sm:px-6 pt-10 pb-16 overflow-hidden">
+      {/* 1. HERO SECTION WITH DEVOTIONAL SUNRISE GRADIENT */}
+      <section className="relative px-4 sm:px-6 pt-10 pb-16 overflow-hidden bg-gradient-to-b from-[#fffcf7] via-[#fff4e3] to-[#ffe5c4]">
         <div className="absolute inset-0 hero-aura opacity-80" />
         <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/85 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-saffron shadow-sm mb-4">
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/90 border border-saffron/25 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-saffron shadow-sm mb-4">
             <Sparkles size={14} /> Vedic Lineage & Authenticity
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-ink mb-4">
             About Pandit Nilesh Kumar Pandey & North Hindi Pandit
           </h1>
-          <p className="text-base sm:text-lg text-ink/70 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-ink/80 leading-relaxed max-w-2xl mx-auto">
             Connecting North Indian families across Bangalore with authentic Vedic pujas, pure Sanskrit mantras, clear Hindi explanations, and respectful spiritual traditions.
           </p>
         </div>
+
+        {/* SHAPE DIVIDER: WAVES BRUSH DIVIDER */}
+        <div className="mt-8">
+          <WavesBrushDivider position="bottom" fill="#ffffff" height={52} />
+        </div>
       </section>
 
-      <section className="px-4 sm:px-6 pb-20">
+      {/* 2. MAIN STORY CARD */}
+      <section className="px-4 sm:px-6 py-14 bg-white">
         <div className="max-w-5xl mx-auto space-y-12">
           {/* Main Story Card */}
-          <div className="bg-white/90 backdrop-blur-md rounded-[2.5rem] border border-ink/8 p-6 sm:p-12 shadow-sm grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="bg-paper/70 rounded-[2.5rem] border border-ink/8 p-6 sm:p-12 shadow-sm grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.25em] text-saffron mb-2">Our Mission</p>
               <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-4">
@@ -52,17 +67,17 @@ export default function AboutUsPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href={`tel:${phoneNumber}`} className="cta-button cta-call text-sm px-6 py-3.5">
+                <a href={`tel:${phoneNumber}`} className="cta-button cta-call text-sm px-6 py-3.5 shadow-md">
                   <Phone size={18} /> Call {phoneNumber}
                 </a>
-                <a href={getWhatsAppLink('About Us Inquiry')} className="cta-button cta-whatsapp text-sm px-6 py-3.5">
+                <a href={getWhatsAppLink('About Us Inquiry')} className="cta-button cta-whatsapp text-sm px-6 py-3.5 shadow-md">
                   <MessageCircle size={18} /> WhatsApp Booking
                 </a>
               </div>
             </div>
 
             <div className="space-y-4">
-              <div className="p-5 rounded-2xl bg-paper/80 border border-ink/5 flex items-start gap-4">
+              <div className="p-5 rounded-2xl bg-white border border-ink/6 flex items-start gap-4 shadow-xs">
                 <div className="h-10 w-10 rounded-full bg-saffron/10 flex items-center justify-center shrink-0 text-saffron">
                   <BookOpen size={20} />
                 </div>
@@ -72,7 +87,7 @@ export default function AboutUsPage() {
                 </div>
               </div>
 
-              <div className="p-5 rounded-2xl bg-paper/80 border border-ink/5 flex items-start gap-4">
+              <div className="p-5 rounded-2xl bg-white border border-ink/6 flex items-start gap-4 shadow-xs">
                 <div className="h-10 w-10 rounded-full bg-saffron/10 flex items-center justify-center shrink-0 text-saffron">
                   <Users size={20} />
                 </div>
@@ -82,7 +97,7 @@ export default function AboutUsPage() {
                 </div>
               </div>
 
-              <div className="p-5 rounded-2xl bg-paper/80 border border-ink/5 flex items-start gap-4">
+              <div className="p-5 rounded-2xl bg-white border border-ink/6 flex items-start gap-4 shadow-xs">
                 <div className="h-10 w-10 rounded-full bg-saffron/10 flex items-center justify-center shrink-0 text-saffron">
                   <MapPin size={20} />
                 </div>
@@ -93,38 +108,57 @@ export default function AboutUsPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Core Values */}
+      {/* SHAPE DIVIDER: BOOK DIVIDER */}
+      <BookDivider position="bottom" fill="#200a03" height={56} />
+
+      {/* 3. CORE VALUES ON DEEP DEVOTIONAL HAVAN BACKGROUND */}
+      <section className="px-4 sm:px-6 py-16 bg-gradient-to-br from-[#200a03] via-[#4d1606] to-[#7f2608] text-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-400/20 text-amber-300 border border-amber-300/30 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-3">
+              <Sparkles size={13} /> Guiding Principles
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-white mb-2">
+              Our Spiritual Commitments
+            </h2>
+            <p className="text-sm sm:text-base text-white/85">
+              Rooted in reverence, discipline, and sincere Sanatana Dharma values.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-            <div className="p-6 rounded-2xl bg-white border border-ink/6 shadow-sm">
-              <div className="h-12 w-12 rounded-full bg-saffron/10 text-saffron flex items-center justify-center mx-auto mb-4">
-                <Award size={24} />
-              </div>
-              <h3 className="font-bold text-ink text-lg mb-2">15+ Years Experience</h3>
-              <p className="text-sm text-ink/70">Over 3,500+ successful pujas conducted with utmost devotion and punctuality.</p>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-white border border-ink/6 shadow-sm">
-              <div className="h-12 w-12 rounded-full bg-saffron/10 text-saffron flex items-center justify-center mx-auto mb-4">
+            <div className="p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-xl text-white">
+              <div className="h-12 w-12 rounded-full bg-amber-400 text-ink flex items-center justify-center mx-auto mb-4 font-bold shadow-md">
                 <ShieldCheck size={24} />
               </div>
-              <h3 className="font-bold text-ink text-lg mb-2">Punctual & Prepared</h3>
-              <p className="text-sm text-ink/70">Arrives on time with complete ritual checklists, ensuring a hassle-free experience.</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-2">Purity & Devotion</h3>
+              <p className="text-xs sm:text-sm text-white/80 leading-relaxed">Pure samagri, disciplined preparation, and strict Vedic adherence for every household.</p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-ink/6 shadow-sm">
-              <div className="h-12 w-12 rounded-full bg-saffron/10 text-saffron flex items-center justify-center mx-auto mb-4">
+            <div className="p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-xl text-white">
+              <div className="h-12 w-12 rounded-full bg-amber-400 text-ink flex items-center justify-center mx-auto mb-4 font-bold shadow-md">
                 <Star size={24} />
               </div>
-              <h3 className="font-bold text-ink text-lg mb-2">High Devotee Trust</h3>
-              <p className="text-sm text-ink/70">Hundreds of 5-star reviews from satisfied North Indian families across Bangalore.</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-2">3,500+ Blessings</h3>
+              <p className="text-xs sm:text-sm text-white/80 leading-relaxed">Hundreds of 5-star reviews from satisfied North Indian families across Bangalore.</p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-white/10 border border-white/20 backdrop-blur-md shadow-xl text-white">
+              <div className="h-12 w-12 rounded-full bg-amber-400 text-ink flex items-center justify-center mx-auto mb-4 font-bold shadow-md">
+                <Heart size={24} />
+              </div>
+              <h3 className="font-serif text-xl font-bold text-white mb-2">Transparent Support</h3>
+              <p className="text-xs sm:text-sm text-white/80 leading-relaxed">Clear pricing, free date rescheduling, and complete guidance from start to finish.</p>
             </div>
           </div>
         </div>
       </section>
 
       <Footer />
-      <MobileStickyBar whatsappLabel="About Us Booking" />
+      <MobileStickyBar whatsappLabel="About Us Inquiry" />
     </main>
   );
 }

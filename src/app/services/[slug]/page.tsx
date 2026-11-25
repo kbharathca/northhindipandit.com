@@ -2,7 +2,21 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Check, ChevronRight, Clock3, MapPin, MessageCircle, Phone, ShieldCheck, Sparkles, Star } from 'lucide-react';
+import {
+  AlertCircle,
+  CalendarCheck,
+  Check,
+  ChevronDown,
+  ChevronRight,
+  Clock3,
+  HelpCircle,
+  MapPin,
+  MessageCircle,
+  Phone,
+  ShieldCheck,
+  Sparkles,
+  Star,
+} from 'lucide-react';
 import { Footer } from '@/components/Footer';
 import { LotusParticles } from '@/components/LotusParticles';
 import { MobileStickyBar } from '@/components/MobileStickyBar';
@@ -22,17 +36,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const puja = pujaMap.get(slug);
 
   if (!puja) {
-    return { title: 'Service | North Hindi Pandit' };
+    return { title: 'Puja Service | North Hindi Pandit' };
   }
 
   return {
-    title: `${puja.seoTitle} | North Hindi Pandit`,
+    title: `${puja.seoTitle} | North Hindi Pandit Bangalore`,
     description: puja.seoDescription,
     keywords: [
       puja.title,
       `${puja.shortTitle} Bangalore`,
       `${puja.shortTitle} booking Bangalore`,
-      `Best ${puja.shortTitle} in Bangalore`,
+      `North Indian ${puja.shortTitle} in Bangalore`,
       'Hindi Pandit Bangalore',
       'North Indian Pandit Bangalore',
     ],
@@ -64,72 +78,141 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   const relatedPujas = pujas.filter((item) => item.slug !== puja.slug).slice(0, 3);
 
+  // Schema for individual puja service
+  const serviceJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: puja.title,
+    description: puja.heroDescription,
+    provider: {
+      '@type': 'LocalBusiness',
+      name: 'North Hindi Pandit',
+      telephone: '+91-6206471543',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'National Games Village, Nearby Passport office, Koramangala',
+        addressLocality: 'Bangalore',
+        postalCode: '560095',
+        addressCountry: 'IN',
+      },
+    },
+    areaServed: {
+      '@type': 'City',
+      name: 'Bangalore',
+    },
+    serviceType: 'Vedic Hindu Religious Ceremony',
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'INR',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+
   return (
     <main className="min-h-screen relative selection:bg-saffron/30">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <LotusParticles />
       <SiteHeader />
 
-      <section className="relative overflow-hidden px-6 pt-10 pb-24">
-        <div className="absolute inset-0 hero-aura opacity-80" />
+      {/* Hero Section */}
+      <section className="relative px-4 sm:px-6 pt-6 sm:pt-8 md:pt-10 pb-16 overflow-hidden">
+        <div className="absolute inset-0 hero-aura opacity-85" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="flex flex-wrap items-center justify-between gap-4 py-4">
-            <Link href="/services/" className="inline-flex items-center gap-2 text-sm font-semibold tracking-[0.18em] uppercase text-ink/70 hover:text-saffron transition-colors">
-              <ChevronRight size={16} className="rotate-180" />
-              Back to Services
+          {/* Breadcrumb row */}
+          <div className="flex flex-wrap items-center justify-between gap-3 py-3 text-xs">
+            <Link
+              href="/services/"
+              className="inline-flex items-center gap-1.5 font-bold uppercase tracking-wider text-ink/70 hover:text-saffron transition-colors"
+            >
+              <ChevronRight size={14} className="rotate-180" />
+              <span>All Puja Services</span>
             </Link>
-            <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.24em] text-ink/50">
-              <MapPin size={14} className="text-saffron" />
-              Bangalore Home Service
+            <div className="inline-flex items-center gap-1.5 font-semibold text-ink/60">
+              <MapPin size={13} className="text-saffron" />
+              <span>Bangalore Home & Office Visits</span>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.9fr] gap-10 items-center pt-8">
-            <div className="stagger-rise">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/75 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-saffron shadow-soft mb-6">
+          {/* Main Hero Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-12 items-center pt-4 sm:pt-6">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-saffron/10 border border-saffron/20 px-3.5 py-1 text-xs font-bold uppercase tracking-[0.2em] text-saffron mb-4 shadow-xs">
                 <Sparkles size={14} />
-                {puja.navLabel}
+                <span>{puja.navLabel} &bull; Bangalore</span>
               </div>
-              <h1 className="text-4xl md:text-6xl font-serif font-bold leading-[1.05] text-ink mb-6">{puja.heroTitle}</h1>
-              <p className="text-lg md:text-xl text-ink/72 max-w-3xl leading-relaxed mb-8">{puja.heroDescription}</p>
-              <p className="text-base md:text-lg text-saffron font-serif italic mb-8">
-                "श्रद्धा, शुद्ध मंत्र और सही विधि से किया गया पूजन घर में मंगल ऊर्जा भर देता है।"
+
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold leading-[1.1] text-ink mb-4">
+                {puja.heroTitle}
+              </h1>
+
+              <p className="text-base sm:text-lg text-ink/75 leading-relaxed mb-6 font-normal">
+                {puja.heroDescription}
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <a href={getWhatsAppLink(puja.shortTitle)} className="cta-button cta-whatsapp text-base md:text-lg">
-                  <MessageCircle size={22} />
-                  Book on WhatsApp
+              <p className="text-sm sm:text-base text-saffron font-serif italic mb-7">
+                &ldquo;श्रद्धा, शुद्ध मंत्र और सही विधि से किया गया पूजन घर में मंगल ऊर्जा भर देता है।&rdquo;
+              </p>
+
+              {/* Conversion Buttons with Vibrant Gradients */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8">
+                <a
+                  href={`tel:${phoneNumber}`}
+                  className="cta-button cta-call text-sm sm:text-base px-6 py-4"
+                  aria-label={`Call to book ${puja.shortTitle}`}
+                >
+                  <Phone size={18} className="animate-pulse" />
+                  <span>Call to Book: {phoneNumber}</span>
                 </a>
-                <a href={`tel:${phoneNumber}`} className="cta-button cta-call text-base md:text-lg">
-                  <Phone size={22} />
-                  Call for Booking
+
+                <a
+                  href={getWhatsAppLink(puja.shortTitle)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button cta-whatsapp text-sm sm:text-base px-6 py-4"
+                  aria-label={`Book ${puja.shortTitle} on WhatsApp`}
+                >
+                  <MessageCircle size={18} />
+                  <span>WhatsApp Booking</span>
                 </a>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="feature-pill"><Clock3 size={18} className="text-saffron" /> Same-Day Support</div>
-                <div className="feature-pill"><ShieldCheck size={18} className="text-saffron" /> Hindi-Speaking Pandit</div>
-                <div className="feature-pill"><Star size={18} className="text-saffron" /> Complete Ritual Guidance</div>
+              {/* Feature Badges */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                <div className="feature-pill">
+                  <Clock3 size={15} className="text-saffron shrink-0" />
+                  <span>Same-Day Muhurat</span>
+                </div>
+                <div className="feature-pill">
+                  <ShieldCheck size={15} className="text-saffron shrink-0" />
+                  <span>Hindi Guidance</span>
+                </div>
+                <div className="feature-pill">
+                  <Star size={15} className="text-saffron shrink-0" />
+                  <span>Complete Samagri</span>
+                </div>
               </div>
             </div>
 
+            {/* Puja Image Banner (Clean AI Image, 0 text) */}
             <div className="relative">
-              <div className="service-hero-card">
-                <div className="relative aspect-[1800/764] overflow-hidden rounded-[2rem] bg-white">
-                  <Image
-                    src={puja.image}
-                    alt={puja.title}
-                    width={1800}
-                    height={764}
-                    className="h-auto w-full object-cover"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
-                  <div className="absolute left-6 right-6 bottom-6 rounded-[1.4rem] bg-white/88 backdrop-blur-md p-5 shadow-soft">
-                    <p className="text-xs uppercase tracking-[0.24em] text-saffron font-bold mb-2">North Hindi Pandit</p>
-                    <p className="font-serif text-2xl font-bold text-ink">{puja.shortTitle}</p>
-                    <p className="text-sm text-ink/65 mt-2">{puja.tagline}</p>
-                  </div>
+              <div className="relative aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-md bg-paper border border-ink/8">
+                <Image
+                  src={puja.image}
+                  alt={`${puja.title} in Bangalore`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-transparent to-transparent" />
+                <div className="absolute left-4 right-4 bottom-4 rounded-xl bg-white/90 backdrop-blur-md p-3.5 shadow-xs">
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-saffron font-extrabold">
+                    Authentic North Indian Vidhi
+                  </p>
+                  <p className="font-serif text-lg font-bold text-ink">{puja.shortTitle}</p>
                 </div>
               </div>
             </div>
@@ -137,174 +220,208 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="px-6 pb-24">
+      {/* Benefits and Ideal For Sections */}
+      <section className="px-4 sm:px-6 pb-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8">
-          <div className="content-panel">
-            <div className="mb-10">
-              <p className="section-kicker">Why Families Book This Service</p>
-              <h2 className="section-title">A complete {puja.shortTitle} service in Bangalore</h2>
-              <p className="section-copy">Families across Bangalore choose North Hindi Pandit for sincere rituals, calm guidance, proper vidhi, and a smooth booking experience for {puja.shortTitle}.</p>
-            </div>
-            <div className="grid gap-4">
-              {puja.benefits.map((benefit) => (
-                <div key={benefit} className="info-card rise-card">
-                  <Check size={18} className="text-saffron shrink-0 mt-1" />
-                  <p className="text-base text-ink/75 leading-relaxed">{benefit}</p>
+          {/* Col 1: Benefits */}
+          <div className="rounded-3xl border border-ink/8 bg-white p-6 sm:p-10 shadow-xs">
+            <span className="section-kicker">Vedic Vidhi & Benefits</span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-3">
+              Why Devotees Arrange {puja.shortTitle}
+            </h2>
+            <p className="text-sm sm:text-base text-ink/70 leading-relaxed mb-6">
+              Conducted with strict adherence to Vedic Shastras, holy hawan, and Sanskrit mantras by Pandit Nilesh Kumar Pandey.
+            </p>
+
+            <div className="space-y-3">
+              {puja.benefits.map((benefit, index) => (
+                <div
+                  key={index}
+                  className="p-4 rounded-2xl bg-paper/60 border border-ink/6 flex items-start gap-3"
+                >
+                  <div className="h-7 w-7 rounded-full bg-saffron/10 text-saffron flex items-center justify-center shrink-0 mt-0.5">
+                    <Check size={16} />
+                  </div>
+                  <p className="text-sm sm:text-base text-ink/80 leading-relaxed">{benefit}</p>
                 </div>
               ))}
             </div>
 
-            <div className="booking-highlight-card mt-8">
-              <div>
-                <p className="section-kicker mb-2">Quick Booking</p>
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-ink">Talk to pandit ji now for {puja.shortTitle}</h3>
-                <p className="text-ink/68 mt-3 leading-relaxed">
-                  Call directly for fast confirmation or send your details on WhatsApp for date, muhurat, samagri, and booking support in Bangalore.
+            {/* In-content Booking Card */}
+            <div className="mt-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 via-saffron/10 to-emerald-500/10 border border-saffron/20">
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-ink mb-2">
+                Have a date in mind for {puja.shortTitle}?
+              </h3>
+              <p className="text-xs sm:text-sm text-ink/70 mb-4 leading-relaxed">
+                Connect instantly to check shubh muhurat and discuss the exact samagri list.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a
+                  href={`tel:${phoneNumber}`}
+                  className="cta-button cta-call text-xs sm:text-sm py-3 px-4"
+                >
+                  <Phone size={16} />
+                  <span>Call {phoneNumber}</span>
+                </a>
+                <a
+                  href={getWhatsAppLink(`${puja.shortTitle} Fast Booking`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button cta-whatsapp text-xs sm:text-sm py-3 px-4"
+                >
+                  <MessageCircle size={16} />
+                  <span>WhatsApp Booking</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Col 2: Ideal For & Inclusions */}
+          <div className="space-y-6">
+            <div className="rounded-3xl border border-ink/8 bg-paper/70 p-6 sm:p-8 shadow-xs">
+              <span className="section-kicker">Auspicious Occasions</span>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-ink mb-4">
+                When to Perform This Puja
+              </h2>
+              <div className="space-y-2.5">
+                {puja.idealFor.map((item, index) => (
+                  <div
+                    key={index}
+                    className="p-3.5 rounded-xl bg-white border border-ink/6 text-xs sm:text-sm text-ink/80 flex items-center gap-2.5"
+                  >
+                    <CalendarCheck size={16} className="text-saffron shrink-0" />
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-ink/8 bg-white p-6 sm:p-8 shadow-xs">
+              <span className="section-kicker">What We Arrange</span>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-ink mb-4">
+                Ceremony Inclusions
+              </h2>
+              <ul className="space-y-2 text-xs sm:text-sm text-ink/75">
+                {puja.includes.map((inc, i) => (
+                  <li key={i} className="flex items-start gap-2.5">
+                    <Check size={16} className="text-emerald-600 shrink-0 mt-0.5" />
+                    <span>{inc}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Step by Step Process */}
+      <section className="px-4 sm:px-6 pb-16">
+        <div className="max-w-7xl mx-auto rounded-3xl bg-white border border-ink/8 p-6 sm:p-10 shadow-xs">
+          <div className="max-w-2xl mb-8">
+            <span className="section-kicker">Simple 4-Step Process</span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-2">
+              How Your Puja is Conducted in Bangalore
+            </h2>
+            <p className="text-sm text-ink/70">
+              Clear steps from your initial query to the final aarti and prasad distribution.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {puja.process.map((step, idx) => (
+              <div
+                key={idx}
+                className="p-5 rounded-2xl bg-paper/60 border border-ink/6 relative"
+              >
+                <div className="h-8 w-8 rounded-full bg-saffron text-white font-bold flex items-center justify-center text-xs mb-3">
+                  {idx + 1}
+                </div>
+                <p className="text-xs sm:text-sm text-ink/80 leading-relaxed">{step}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Frequently Asked Questions */}
+      <section className="px-4 sm:px-6 pb-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <span className="section-kicker">Common Questions</span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink">
+              {puja.shortTitle} FAQs
+            </h2>
+          </div>
+
+          <div className="space-y-3">
+            {puja.faqs.map((faq, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border border-ink/6 bg-white p-5 shadow-xs"
+              >
+                <h3 className="font-bold text-sm sm:text-base text-ink mb-2 flex items-start gap-2.5">
+                  <HelpCircle size={18} className="text-saffron shrink-0 mt-0.5" />
+                  <span>{faq.question}</span>
+                </h3>
+                <p className="text-xs sm:text-sm text-ink/70 leading-relaxed pl-7">
+                  {faq.answer}
                 </p>
               </div>
-              <div className="booking-grid mt-6">
-                <a href={`tel:${phoneNumber}`} className="cta-button cta-call-premium text-sm md:text-base px-6 py-4">
-                  <Phone size={20} />
-                  Call {phoneNumber}
-                </a>
-                <a href={getWhatsAppLink(`${puja.shortTitle} Fast Booking`)} className="cta-button cta-whatsapp-premium text-sm md:text-base px-6 py-4">
-                  <MessageCircle size={20} />
-                  WhatsApp Booking
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="content-panel soft-cream">
-            <p className="section-kicker">Ideal For</p>
-            <h2 className="section-title">Perfect occasions for {puja.shortTitle}</h2>
-            <div className="space-y-4 mt-8">
-              {puja.idealFor.map((item) => (
-                <div key={item} className="rounded-[1.5rem] border border-ink/8 bg-white/90 px-5 py-4 shadow-soft">
-                  <p className="text-base text-ink/75 leading-relaxed">{item}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="mini-cta-stack mt-8">
-              <a href={`tel:${phoneNumber}`} className="cta-button cta-saffron text-sm px-5 py-4">
-                <Phone size={18} />
-                Speak to Pandit Ji
-              </a>
-              <a href={getWhatsAppLink(`${puja.shortTitle} Details`)} className="cta-button cta-whatsapp text-sm px-5 py-4">
-                <MessageCircle size={18} />
-                Send Details on WhatsApp
-              </a>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="px-6 pb-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="service-strip rounded-[2.5rem] px-8 py-10 md:px-12">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10">
-              <div>
-                <p className="section-kicker text-white/75">What You Receive</p>
-                <h2 className="section-title text-white">Everything arranged for a smooth and respectful puja experience</h2>
-                <div className="grid gap-4 mt-8">
-                  {puja.includes.map((item) => (
-                    <div key={item} className="glass-info-card">
-                      <Check size={18} className="text-gold shrink-0 mt-1" />
-                      <p className="text-white/88 leading-relaxed">{item}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <p className="section-kicker text-white/75">Simple Booking Process</p>
-                <h2 className="section-title text-white">How to confirm your puja in Bangalore</h2>
-                <div className="space-y-4 mt-8">
-                  {puja.process.map((step, index) => (
-                    <div key={step} className="glass-step-card">
-                      <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-saffron font-bold">{index + 1}</span>
-                      <p className="text-white/88 leading-relaxed">{step}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="booking-grid mt-8">
-                  <a href={`tel:${phoneNumber}`} className="cta-button cta-light text-sm md:text-base px-6 py-4">
-                    <Phone size={20} />
-                    Call for Slot Booking
-                  </a>
-                  <a href={getWhatsAppLink(`${puja.shortTitle} Puja Date`)} className="cta-button cta-outline-light text-sm md:text-base px-6 py-4">
-                    <MessageCircle size={20} />
-                    WhatsApp Your Date
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 pb-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="service-action-band">
+      {/* Related Pujas & Final Action Strip */}
+      <section className="px-4 sm:px-6 pb-20">
+        <div className="max-w-7xl mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-[#2a1306] via-[#752a0a] to-[#ff6321] text-white p-6 sm:p-10 lg:p-12 shadow-lg">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.28em] text-white/70 mb-3">Book This Puja</p>
-              <h2 className="font-serif text-3xl md:text-5xl font-bold text-white leading-[1.08]">
-                Reserve {puja.shortTitle} with premium call and WhatsApp support
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-4">
+                <Sparkles size={14} /> Immediate Bangalore Slot Confirmation
+              </span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white mb-3">
+                Book {puja.shortTitle} Today
               </h2>
-              <p className="text-white/84 text-lg leading-relaxed mt-4 max-w-3xl">
-                Get clear booking guidance, quick response, and trustworthy support from first contact to final puja confirmation for your family.
+              <p className="text-white/85 text-sm sm:text-base leading-relaxed mb-6">
+                Speak directly with Pandit Nilesh Kumar Pandey. Discuss your family preferences, gotra sankalp details, and shubh muhurat with one direct call or WhatsApp message.
               </p>
-            </div>
-            <div className="booking-grid mt-8">
-              <a href={`tel:${phoneNumber}`} className="cta-button cta-call-premium text-sm md:text-base px-6 py-4">
-                <Phone size={20} />
-                Call {phoneNumber}
-              </a>
-              <a href={getWhatsAppLink(`${puja.shortTitle} Premium Booking`)} className="cta-button cta-whatsapp-premium text-sm md:text-base px-6 py-4">
-                <MessageCircle size={20} />
-                WhatsApp Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 pb-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-[2.8rem] overflow-hidden border border-ink/8 bg-white shadow-soft">
-            <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr]">
-              <div className="px-8 py-12 md:px-12 md:py-16">
-                <p className="section-kicker">More Services</p>
-                <h2 className="section-title">Explore other puja services in Bangalore</h2>
-                <div className="grid gap-4 mt-8">
-                  {relatedPujas.map((item) => (
-                    <Link key={item.slug} href={`/services/${item.slug}/`} className="related-link-card">
-                      <div>
-                        <p className="font-serif text-2xl font-bold text-ink">{item.shortTitle}</p>
-                        <p className="text-sm text-ink/65 mt-1">{item.tagline}</p>
-                      </div>
-                      <ChevronRight size={20} className="text-saffron" />
-                    </Link>
-                  ))}
-                </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href={`tel:${phoneNumber}`}
+                  className="cta-button bg-white text-ink hover:bg-paper text-sm sm:text-base px-6 py-3.5 font-bold"
+                >
+                  <Phone size={17} className="text-saffron" />
+                  <span>Call {phoneNumber}</span>
+                </a>
+                <a
+                  href={getWhatsAppLink(`${puja.shortTitle} Booking Now`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button cta-whatsapp text-sm sm:text-base px-6 py-3.5"
+                >
+                  <MessageCircle size={17} />
+                  <span>WhatsApp Booking</span>
+                </a>
               </div>
+            </div>
 
-              <div className="final-cta-panel">
-                <p className="text-xs font-bold uppercase tracking-[0.28em] text-white/70 mb-4">North Hindi Pandit</p>
-                <h2 className="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-5">Book {puja.shortTitle} in Bangalore Today</h2>
-                <p className="text-white/82 text-lg leading-relaxed mb-8">Reserve your preferred slot and connect instantly for respectful, traditional, and properly guided puja service in Bangalore.</p>
-                <div className="flex flex-col gap-4 w-full">
-                  <a href={getWhatsAppLink(puja.shortTitle)} className="cta-button cta-light">
-                    <MessageCircle size={20} />
-                    Confirm on WhatsApp
-                  </a>
-                  <a href={`tel:${phoneNumber}`} className="cta-button cta-outline-light">
-                    <Phone size={20} />
-                    Call Now
-                  </a>
-                </div>
+            {/* Related Pujas list */}
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 sm:p-6 border border-white/15">
+              <p className="text-xs font-bold uppercase tracking-wider text-amber-300 mb-3">
+                Other Popular Pujas in Bangalore:
+              </p>
+              <div className="space-y-2">
+                {relatedPujas.map((rp) => (
+                  <Link
+                    key={rp.slug}
+                    href={`/services/${rp.slug}/`}
+                    className="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-white/20 transition-colors text-white text-xs sm:text-sm"
+                  >
+                    <span className="font-semibold">{rp.shortTitle}</span>
+                    <ChevronRight size={16} className="text-amber-300" />
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
@@ -312,7 +429,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
       </section>
 
       <Footer />
-      <MobileStickyBar whatsappLabel={`${puja.shortTitle} Booking`} />
+      <MobileStickyBar whatsappLabel={`${puja.shortTitle} Mobile Booking`} />
     </main>
   );
 }

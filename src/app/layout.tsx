@@ -7,8 +7,19 @@ const gtmId = 'GTM-TQLL35MP';
 
 export const metadata: Metadata = {
   title: 'North Hindi Pandit | Hindi Pandit in Bangalore | North Indian Pandit in Bangalore',
-  description: 'Northhindipandit.com connects you with trusted Hindi Pandit in Bangalore and North Indian Pandit in Bangalore services for authentic Vedic pujas, same-day booking, and complete puja samagri.',
-  keywords: ['Hindi Pandit in Bangalore', 'North Indian Pandit in Bangalore', 'North Hindi Pandit', 'Bangalore puja service', 'Vedic pandit Bangalore', 'Griha Pravesh Puja', 'Satyanarayan Puja', 'Wedding Puja', 'Puja Booking'],
+  description:
+    'Book experienced Hindi Pandit in Bangalore and North Indian Pandit in Bangalore for authentic Vedic pujas, Griha Pravesh, Satyanarayan Katha, Marriage, Rudrabhishek, Ganesh Puja with same-day booking and samagri guidance.',
+  keywords: [
+    'Hindi Pandit in Bangalore',
+    'North Indian Pandit in Bangalore',
+    'North Hindi Pandit',
+    'Bangalore puja service',
+    'Vedic pandit Bangalore',
+    'Griha Pravesh Puja Bangalore',
+    'Satyanarayan Puja Bangalore',
+    'North Indian Wedding Pandit Bangalore',
+    'Puja Booking Bangalore',
+  ],
   metadataBase: new URL('https://northhindipandit.com'),
   alternates: {
     canonical: 'https://northhindipandit.com',
@@ -22,7 +33,8 @@ export const metadata: Metadata = {
   creator: 'Pandit Nilesh Kumar Pandey',
   openGraph: {
     title: 'North Hindi Pandit | Hindi Pandit in Bangalore',
-    description: 'Book trusted North Indian Pandit in Bangalore with authentic rituals and full puja support.',
+    description:
+      'Book trusted North Indian Pandit in Bangalore with authentic Vedic rituals, shubh muhurat guidance, and complete puja support.',
     type: 'website',
     siteName: 'North Hindi Pandit',
     url: 'https://northhindipandit.com',
@@ -41,9 +53,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'North Hindi Pandit | Hindi Pandit in Bangalore',
-    description: 'Trusted North Indian Pandit in Bangalore for Griha Pravesh, Satyanarayan, wedding pujas and more.',
+    description:
+      'Trusted North Indian Pandit in Bangalore for Griha Pravesh, Satyanarayan, wedding pujas, and all family rituals.',
     images: ['/images/hindi-pandit-all-puja.webp'],
-    creator: '@PanditBangalore',
   },
   robots: {
     index: true,
@@ -56,28 +68,120 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
-  verification: {
-    google: 'add-your-google-search-console-code-here',
-    other: {
-      'msvalidate.01': 'add-your-bing-webmaster-tools-code-here',
-      'yandex-verification': 'add-your-yandex-code-here',
-    },
-  },
   other: {
-    'sitemap': 'https://northhindipandit.com/sitemap.xml',
+    sitemap: 'https://northhindipandit.com/sitemap.xml',
     'mobile-web-app-capable': 'yes',
-    'mobile-web-app-status-bar-style': 'black-translucent',
     'apple-mobile-web-app-capable': 'yes',
-    'apple-mobile-web-app-status-bar-style': 'black-translucent',
     'apple-mobile-web-app-title': 'North Hindi Pandit',
     'theme-color': '#FF6321',
     'format-detection': 'telephone=no',
   },
 };
 
+const jsonLdData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'LocalBusiness',
+      '@id': 'https://northhindipandit.com/#organization',
+      name: 'North Hindi Pandit',
+      url: 'https://northhindipandit.com',
+      logo: 'https://northhindipandit.com/favicon.svg',
+      image: 'https://northhindipandit.com/images/hindi-pandit-all-puja.webp',
+      telephone: '+91-6206471543',
+      priceRange: '₹₹',
+      description:
+        'Trusted Hindi Pandit and North Indian Pandit services in Bangalore for authentic Vedic pujas, same-day booking, and complete puja samagri.',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'National Games Village, Nearby Passport office, Koramangala',
+        addressLocality: 'Bangalore',
+        postalCode: '560095',
+        addressRegion: 'Karnataka',
+        addressCountry: 'IN',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: '12.9352',
+        longitude: '77.6245',
+      },
+      areaServed: [
+        'Bangalore',
+        'Koramangala',
+        'HSR Layout',
+        'Whitefield',
+        'Electronic City',
+        'Bellandur',
+        'Marathahalli',
+        'Sarjapur',
+        'Indiranagar',
+        'Hebbal',
+        'JP Nagar',
+        'Yelahanka',
+      ],
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: [
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday',
+            'Sunday',
+          ],
+          opens: '06:00',
+          closes: '21:00',
+        },
+      ],
+      sameAs: [
+        'https://www.instagram.com/north.indian.pandit.bangalore',
+        'https://www.facebook.com/nileshkumarpandey46365',
+        'https://www.youtube.com/@Pandit.Ji.Bangalore',
+      ],
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://northhindipandit.com/#person',
+      name: 'Pandit Nilesh Kumar Pandey',
+      jobTitle: 'Vedic Hindu Priest & Pandit',
+      telephone: '+91-6206471543',
+      worksFor: {
+        '@id': 'https://northhindipandit.com/#organization',
+      },
+      knowsAbout: [
+        'Vedic Rituals',
+        'Griha Pravesh Puja',
+        'Satyanarayan Puja',
+        'North Indian Wedding Puja',
+        'Rudrabhishek',
+        'Havan & Yagya',
+        'Shubh Muhurat',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://northhindipandit.com/#website',
+      url: 'https://northhindipandit.com',
+      name: 'North Hindi Pandit',
+      publisher: {
+        '@id': 'https://northhindipandit.com/#organization',
+      },
+      inLanguage: ['en-IN', 'hi-IN'],
+    },
+  ],
+};
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        />
+      </head>
       <body suppressHydrationWarning>
         <Script id="gtm-script" strategy="afterInteractive">
           {`

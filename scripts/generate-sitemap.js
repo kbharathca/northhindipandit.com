@@ -20,7 +20,12 @@ const OUT_DIR = path.join(__dirname, '..', 'out');
 const routes = [
   { path: '/', priority: '1.0', changefreq: 'weekly', lastmod: new Date().toISOString().split('T')[0] },
   { path: '/services', priority: '0.9', changefreq: 'weekly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/contact-us', priority: '0.8', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/about-us', priority: '0.85', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/contact-us', priority: '0.85', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/privacy-policy', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/terms-and-conditions', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/refund-policy', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/disclaimer', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
 ];
 
 // Service routes (pujas)

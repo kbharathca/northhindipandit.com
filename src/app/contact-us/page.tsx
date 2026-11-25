@@ -1,15 +1,34 @@
 import type { Metadata } from 'next';
-import { Facebook, Instagram, Mail, MapPin, MessageCircle, Phone, Sparkles, Youtube } from 'lucide-react';
+import {
+  Clock,
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  ShieldCheck,
+  Sparkles,
+  Youtube,
+} from 'lucide-react';
 import { Footer } from '@/components/Footer';
 import { MobileStickyBar } from '@/components/MobileStickyBar';
 import { SiteHeader } from '@/components/SiteHeader';
 import { getWhatsAppLink, phoneNumber } from '@/data/pujas';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | North Hindi Pandit Bangalore',
-  description: 'Contact North Hindi Pandit in Bangalore for puja booking, call support, WhatsApp booking, address details, and social media links.',
+  title: 'Contact Us | North Hindi Pandit in Bangalore | Call & WhatsApp',
+  description:
+    'Contact Pandit Nilesh Kumar Pandey at North Hindi Pandit Bangalore. Call 6206471543 or message on WhatsApp for immediate puja bookings, shubh muhurat discussion, and home visits across Bangalore.',
   alternates: {
     canonical: '/contact-us/',
+  },
+  openGraph: {
+    title: 'Contact Us | North Hindi Pandit Bangalore',
+    description:
+      'Direct contact, phone number, WhatsApp link, and Bangalore address for Pandit Nilesh Kumar Pandey.',
+    url: 'https://northhindipandit.com/contact-us/',
+    type: 'website',
   },
 };
 
@@ -18,107 +37,195 @@ export default function ContactUsPage() {
     <main className="min-h-screen relative selection:bg-saffron/30">
       <SiteHeader />
 
-      <section className="relative overflow-hidden px-6 pt-8 md:pt-12 pb-20">
+      {/* Header Section */}
+      <section className="relative px-4 sm:px-6 pt-8 md:pt-12 pb-14 overflow-hidden">
         <div className="absolute inset-0 hero-aura opacity-85" />
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/75 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-saffron shadow-soft mb-6">
+        <div className="max-w-7xl mx-auto relative z-10 text-center sm:text-left">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/85 border border-ink/8 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.24em] text-saffron shadow-xs mb-5">
               <Sparkles size={14} />
-              Contact North Hindi Pandit
+              <span>Contact North Hindi Pandit</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold leading-[1.04] text-ink mb-6">
-              Contact Us for Puja Booking in Bangalore
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-ink leading-[1.08] mb-5">
+              Get in Touch for Puja Bookings in Bangalore
             </h1>
-            <p className="text-lg md:text-xl text-ink/72 leading-relaxed max-w-3xl mb-8">
-              Call or message us for fast booking support, puja details, date availability, and guidance for family rituals across Bangalore.
+            <p className="text-base sm:text-lg text-ink/75 leading-relaxed mb-6 font-normal">
+              Speak directly with Pandit Nilesh Kumar Pandey. We assist North Indian families across Bangalore with immediate date confirmations, shubh muhurat calculations, and complete puja preparations.
             </p>
-            <p className="text-base md:text-lg text-saffron font-serif italic mb-8">
-              "भक्ति, विश्वास और सही विधि के साथ किया गया पूजन जीवन में मंगल लाता है।"
+            <p className="text-sm sm:text-base text-saffron font-serif italic mb-6">
+              &ldquo;भक्ति, विश्वास और सही विधि के साथ किया गया पूजन जीवन में मंगल लाता है।&rdquo;
             </p>
           </div>
         </div>
       </section>
 
-      <section className="px-6 pb-24">
+      {/* Contact Cards Grid */}
+      <section className="px-4 sm:px-6 pb-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="content-panel">
-            <p className="section-kicker">Contact Details</p>
-            <h2 className="section-title">Book your puja with confidence</h2>
-            <div className="grid gap-4 mt-8">
-              <div className="info-card">
-                <Phone size={20} className="text-saffron shrink-0 mt-1" />
+          {/* Direct Contact Details */}
+          <div className="rounded-3xl border border-ink/8 bg-white p-6 sm:p-10 shadow-xs">
+            <span className="section-kicker">Direct Contact Information</span>
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-ink mb-6">
+              Book with Complete Confidence
+            </h2>
+
+            <div className="space-y-4">
+              <div className="p-4 sm:p-5 rounded-2xl bg-paper/60 border border-ink/6 flex items-start gap-4">
+                <div className="h-10 w-10 rounded-full bg-saffron/10 text-saffron flex items-center justify-center shrink-0">
+                  <Phone size={20} />
+                </div>
                 <div>
-                  <p className="font-bold text-ink">Call Us</p>
-                  <a href={`tel:${phoneNumber}`} className="text-base text-ink/75">{phoneNumber}</a>
+                  <p className="font-bold text-ink text-sm sm:text-base">Direct Phone Call</p>
+                  <a
+                    href={`tel:${phoneNumber}`}
+                    className="text-base sm:text-lg text-saffron font-bold hover:underline"
+                  >
+                    +91 {phoneNumber}
+                  </a>
+                  <p className="text-xs text-ink/60 mt-0.5">Available 6:00 AM – 9:00 PM Daily</p>
                 </div>
               </div>
-              <div className="info-card">
-                <Mail size={20} className="text-saffron shrink-0 mt-1" />
+
+              <div className="p-4 sm:p-5 rounded-2xl bg-paper/60 border border-ink/6 flex items-start gap-4">
+                <div className="h-10 w-10 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0">
+                  <MessageCircle size={20} />
+                </div>
                 <div>
-                  <p className="font-bold text-ink">Email</p>
-                  <a href="mailto:contact@northhindipandit.com" className="text-base text-ink/75">contact@northhindipandit.com</a>
+                  <p className="font-bold text-ink text-sm sm:text-base">WhatsApp Support</p>
+                  <a
+                    href={getWhatsAppLink('Contact Page WhatsApp')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base sm:text-lg text-emerald-700 font-bold hover:underline"
+                  >
+                    +91 {phoneNumber}
+                  </a>
+                  <p className="text-xs text-ink/60 mt-0.5">Instant response for date and samagri</p>
                 </div>
               </div>
-              <div className="info-card">
-                <MapPin size={20} className="text-saffron shrink-0 mt-1" />
+
+              <div className="p-4 sm:p-5 rounded-2xl bg-paper/60 border border-ink/6 flex items-start gap-4">
+                <div className="h-10 w-10 rounded-full bg-saffron/10 text-saffron flex items-center justify-center shrink-0">
+                  <Mail size={20} />
+                </div>
                 <div>
-                  <p className="font-bold text-ink">Address</p>
-                  <p className="text-base text-ink/75 leading-relaxed">
-                    National Games Village
-                    <br />
-                    Nearby Passport office Koramangala Bangalore 560095
+                  <p className="font-bold text-ink text-sm sm:text-base">Official Email</p>
+                  <a
+                    href="mailto:contact@northhindipandit.com"
+                    className="text-sm sm:text-base text-ink/80 hover:text-saffron hover:underline"
+                  >
+                    contact@northhindipandit.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-5 rounded-2xl bg-paper/60 border border-ink/6 flex items-start gap-4">
+                <div className="h-10 w-10 rounded-full bg-saffron/10 text-saffron flex items-center justify-center shrink-0">
+                  <MapPin size={20} />
+                </div>
+                <div>
+                  <p className="font-bold text-ink text-sm sm:text-base">Address in Bangalore</p>
+                  <p className="text-xs sm:text-sm text-ink/75 leading-relaxed mt-1">
+                    National Games Village, Nearby Passport office, Koramangala, Bangalore - 560095
+                  </p>
+                  <p className="text-xs text-ink/50 mt-1">
+                    Doorstep service available across all Bangalore zones.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="booking-grid mt-8">
-              <a href={`tel:${phoneNumber}`} className="cta-button cta-call-premium text-sm md:text-base px-6 py-4">
-                <Phone size={20} />
-                Call {phoneNumber}
+
+            {/* Quick Action Buttons */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
+              <a
+                href={`tel:${phoneNumber}`}
+                className="cta-button cta-call text-sm sm:text-base py-3.5 px-4"
+              >
+                <Phone size={18} />
+                <span>Call {phoneNumber}</span>
               </a>
-              <a href={getWhatsAppLink('Contact Page Booking')} className="cta-button cta-whatsapp-premium text-sm md:text-base px-6 py-4">
-                <MessageCircle size={20} />
-                WhatsApp Booking
+              <a
+                href={getWhatsAppLink('Contact Page Fast Booking')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button cta-whatsapp text-sm sm:text-base py-3.5 px-4"
+              >
+                <MessageCircle size={18} />
+                <span>WhatsApp Booking</span>
               </a>
             </div>
           </div>
 
-          <div className="content-panel soft-cream">
-            <p className="section-kicker">Social Media</p>
-            <h2 className="section-title">Follow and connect with us</h2>
-            <div className="grid gap-4 mt-8">
-              <a href="https://www.instagram.com/north.indian.pandit.bangalore" target="_blank" rel="noreferrer" className="related-link-card">
-                <div className="flex items-center gap-4">
-                  <Instagram size={22} className="text-saffron" />
-                  <div>
-                    <p className="font-bold text-ink">Instagram</p>
-                    <p className="text-sm text-ink/65">north.indian.pandit.bangalore</p>
+          {/* Social Channels & Service Pledge */}
+          <div className="space-y-6">
+            <div className="rounded-3xl border border-ink/8 bg-paper/70 p-6 sm:p-10 shadow-xs">
+              <span className="section-kicker">Verified Channels</span>
+              <h2 className="text-xl sm:text-2xl font-serif font-bold text-ink mb-4">
+                Social Media & Devotional Videos
+              </h2>
+
+              <div className="space-y-3">
+                <a
+                  href="https://www.instagram.com/north.indian.pandit.bangalore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl bg-white border border-ink/6 flex items-center justify-between hover:border-saffron/30 hover:shadow-xs transition-all"
+                >
+                  <div className="flex items-center gap-3">
+                    <Instagram size={22} className="text-saffron" />
+                    <div>
+                      <p className="font-bold text-ink text-sm">Instagram</p>
+                      <p className="text-xs text-ink/60">@north.indian.pandit.bangalore</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.facebook.com/nileshkumarpandey46365" target="_blank" rel="noreferrer" className="related-link-card">
-                <div className="flex items-center gap-4">
-                  <Facebook size={22} className="text-saffron" />
-                  <div>
-                    <p className="font-bold text-ink">Facebook</p>
-                    <p className="text-sm text-ink/65">nileshkumarpandey46365</p>
+                  <span className="text-xs font-bold text-saffron">Follow &rarr;</span>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/nileshkumarpandey46365"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl bg-white border border-ink/6 flex items-center justify-between hover:border-saffron/30 hover:shadow-xs transition-all"
+                >
+                  <div className="flex items-center gap-3">
+                    <Facebook size={22} className="text-saffron" />
+                    <div>
+                      <p className="font-bold text-ink text-sm">Facebook</p>
+                      <p className="text-xs text-ink/60">nileshkumarpandey46365</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a href="https://www.youtube.com/@Pandit.Ji.Bangalore" target="_blank" rel="noreferrer" className="related-link-card">
-                <div className="flex items-center gap-4">
-                  <Youtube size={22} className="text-saffron" />
-                  <div>
-                    <p className="font-bold text-ink">YouTube</p>
-                    <p className="text-sm text-ink/65">@Pandit.Ji.Bangalore</p>
+                  <span className="text-xs font-bold text-saffron">Connect &rarr;</span>
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@Pandit.Ji.Bangalore"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-4 rounded-2xl bg-white border border-ink/6 flex items-center justify-between hover:border-saffron/30 hover:shadow-xs transition-all"
+                >
+                  <div className="flex items-center gap-3">
+                    <Youtube size={22} className="text-saffron" />
+                    <div>
+                      <p className="font-bold text-ink text-sm">YouTube</p>
+                      <p className="text-xs text-ink/60">@Pandit.Ji.Bangalore</p>
+                    </div>
                   </div>
-                </div>
-              </a>
+                  <span className="text-xs font-bold text-saffron">Watch &rarr;</span>
+                </a>
+              </div>
             </div>
-            <div className="booking-highlight-card mt-8">
-              <p className="font-serif text-2xl font-bold text-ink">North Hindi Pandit</p>
-              <p className="text-ink/68 mt-3 leading-relaxed">
-                Serving Bangalore families with respectful North Indian puja vidhi, clear guidance, and quick call or WhatsApp support for home bookings.
+
+            {/* Google Ads Compliance Box */}
+            <div className="rounded-3xl border border-ink/8 bg-white p-6 sm:p-8 shadow-xs">
+              <div className="flex items-center gap-2 text-saffron font-bold text-xs uppercase tracking-wider mb-2">
+                <ShieldCheck size={18} />
+                <span>Our Service Commitment</span>
+              </div>
+              <h3 className="font-serif text-xl font-bold text-ink mb-2">
+                Pure Vedic Tradition & Punctuality
+              </h3>
+              <p className="text-xs sm:text-sm text-ink/70 leading-relaxed">
+                We believe that performing a puja at home should bring complete peace of mind. Pandit Nilesh Kumar Pandey ensures transparent communication, zero hidden demands, and authentic Vedic rituals following ancient scriptures.
               </p>
             </div>
           </div>

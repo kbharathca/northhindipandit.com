@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${puja.seoTitle} | North Hindi Pandit Bangalore`,
+    title: puja.seoTitle,
     description: puja.seoDescription,
     keywords: [
       puja.title,

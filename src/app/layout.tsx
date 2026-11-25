@@ -6,9 +6,9 @@ import './globals.css';
 const gtmId = 'GTM-TQLL35MP';
 
 export const metadata: Metadata = {
-  title: 'North Hindi Pandit | Hindi Pandit in Bangalore | North Indian Pandit in Bangalore',
+  title: 'North Hindi Pandit | Hindi Pandit in Bangalore',
   description:
-    'Book experienced Hindi Pandit in Bangalore and North Indian Pandit in Bangalore for authentic Vedic pujas, Griha Pravesh, Satyanarayan Katha, Marriage, Rudrabhishek, Ganesh Puja with same-day booking and samagri guidance.',
+    'Book trusted Hindi Pandit in Bangalore for authentic Griha Pravesh, Satyanarayan Katha, Marriage & Rudrabhishek. Same-day booking & samagri support.',
   keywords: [
     'Hindi Pandit in Bangalore',
     'North Indian Pandit in Bangalore',

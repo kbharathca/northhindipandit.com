@@ -17,9 +17,9 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { getWhatsAppLink, phoneNumber } from '@/data/pujas';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | North Hindi Pandit in Bangalore | Call & WhatsApp',
+  title: 'Contact North Hindi Pandit Bangalore | Call 6206471543',
   description:
-    'Contact Pandit Nilesh Kumar Pandey at North Hindi Pandit Bangalore. Call 6206471543 or message on WhatsApp for immediate puja bookings, shubh muhurat discussion, and home visits across Bangalore.',
+    'Contact Pandit Nilesh Kumar Pandey in Koramangala Bangalore. Call 6206471543 or message on WhatsApp for instant puja bookings, muhurat & samagri.',
   alternates: {
     canonical: '/contact-us/',
   },

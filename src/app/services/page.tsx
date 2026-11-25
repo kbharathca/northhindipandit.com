@@ -8,9 +8,9 @@ import { SiteHeader } from '@/components/SiteHeader';
 import { getWhatsAppLink, phoneNumber, pujas } from '@/data/pujas';
 
 export const metadata: Metadata = {
-  title: 'All Puja Services in Bangalore | North Hindi Pandit',
+  title: 'Puja Services in Bangalore | North Hindi Pandit',
   description:
-    'Explore authentic Vedic puja services in Bangalore with North Hindi Pandit. Book Griha Pravesh, Satyanarayan, Ganesh Puja, Marriage, Rudrabhishek, Maha Mrityunjaya Jaap, Bhoomi Puja, and Shraadh.',
+    'Explore all 8 authentic North Indian Vedic puja services in Bangalore with Pandit Nilesh Kumar Pandey. Doorstep home visits, shubh muhurat & samagri.',
   alternates: {
     canonical: '/services/',
   },

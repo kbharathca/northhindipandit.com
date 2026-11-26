@@ -729,6 +729,573 @@ export const pujas: Puja[] = [
       },
     ],
   },
+  {
+    slug: 'hanuman-puja-bangalore',
+    title: 'Hanuman Puja in Bangalore | Sunderkand Paath Pandit',
+    shortTitle: 'Hanuman Puja & Sunderkand',
+    image: '/images/banners/hanuman-puja.webp',
+    tagline: 'Sacred worship of Sankat Mochan Lord Hanuman for strength, protection, and overcoming life obstacles.',
+    navLabel: 'Hanuman Puja',
+    heroTitle: 'Book Hanuman Puja & Sunderkand Paath in Bangalore with Experienced Hindi Pandit',
+    heroDescription:
+      'Invite divine courage, peace, and spiritual protection into your home with authentic Sunderkand Paath, Bajrang Baan, Hanuman Chalisa, sacred sindoor arpan, and havan vidhi across Bangalore.',
+    seoTitle: 'Hanuman Puja in Bangalore | Sunderkand Paath Pandit',
+    seoDescription:
+      'Book authentic Hanuman Puja and Sunderkand Paath in Bangalore with North Hindi Pandit. Includes Bajrang Baan, Sindoor Arpan, Hawan, and complete samagri support.',
+    benefits: [
+      'Removes negative energies, planetary afflictions (Shani dosha), and fear.',
+      'Brings peace of mind, physical vitality, and spiritual strength to the entire family.',
+      'Conducted with authentic Awadhi and Sanskrit chhandas with musical accompaniment where requested.',
+      'Available for home ceremonies, Tuesdays, Saturdays, and Hanuman Jayanti.',
+    ],
+    idealFor: [
+      'Tuesdays and Saturdays special bhakti puja at home',
+      'Overcoming chronic obstacles, health troubles, or mental stress',
+      'New house or business protection rituals',
+      'Hanuman Jayanti and spiritual thanksgiving',
+    ],
+    includes: [
+      'Pandit ji guidance for altar preparation and shubh muhurat',
+      'Sankalp, Hanuman Avahan, and sacred Sindoor Shringaar',
+      'Complete Sunderkand Paath, Bajrang Baan, and Hanuman Chalisa recitation',
+      'Sacred Hanuman Hawan with guggul and pure ghee',
+      'Boondi laddu bhog, Maha Aarti, and family blessings',
+    ],
+    process: [
+      'Share your Bangalore location and preferred date on WhatsApp or call.',
+      'Receive the puja preparation checklist and timing confirmation.',
+      'Pandit ji arrives on time and conducts the sacred 5-stage Hanuman vidhi.',
+      'Concludes with Aarti, prasad distribution, and raksha sutra.',
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Sankalp & Hanuman Avahan',
+        description: 'Taking sacred vow with gangajal and invoking Lord Hanuman onto the consecrated peetham.',
+        image: '/images/rituals/hanuman-puja/step1.webp',
+      },
+      {
+        step: 2,
+        title: 'Sindoor & Chameli Tel Arpan',
+        description: 'Offering sacred chola of pure orange sindoor and fragrant chameli oil along with red flowers.',
+        image: '/images/rituals/hanuman-puja/step2.webp',
+      },
+      {
+        step: 3,
+        title: 'Sunderkand & Bajrang Baan Paath',
+        description: 'Devotional recitation of Goswami Tulsidas ji’s sacred Sunderkand and powerful Bajrang Baan.',
+        image: '/images/rituals/hanuman-puja/step3.webp',
+      },
+      {
+        step: 4,
+        title: 'Sacred Hanuman Hawan',
+        description: 'Offering sacred herbal ahuti with guggul, camphor, and pure ghee into the consecrated hawan kund.',
+        image: '/images/rituals/hanuman-puja/step4.webp',
+      },
+      {
+        step: 5,
+        title: 'Boondi Laddu Bhog & Maha Aarti',
+        description: 'Offering sweet boondi laddus and betel leaf (paan bida), followed by glowing camphor aarti and blessings.',
+        image: '/images/rituals/hanuman-puja/step5.webp',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can Hanuman Puja and Sunderkand Paath be performed at home in Bangalore?',
+        answer: 'Yes, Pandit Nilesh Kumar Pandey conducts complete Hanuman Puja and melodious Sunderkand Paath at homes, apartments, and offices across all Bangalore localities.',
+      },
+      {
+        question: 'What days are most auspicious for Hanuman Puja?',
+        answer: 'Tuesdays and Saturdays are traditionally most auspicious for Lord Hanuman, but it can also be arranged on any shubh tithi or family occasion.',
+      },
+    ],
+  },
+  {
+    slug: 'durga-puja-bangalore',
+    title: 'Durga Puja in Bangalore | Navratri & Chandi Paath Pandit',
+    shortTitle: 'Durga Puja & Navratri',
+    image: '/images/banners/durga-puja.webp',
+    tagline: 'Invoking the supreme divine mother for power, prosperity, protection, and obstacle destruction.',
+    navLabel: 'Durga Puja',
+    heroTitle: 'Book Durga Puja & Navratri Chandi Paath in Bangalore with Vedic Hindi Pandit',
+    heroDescription:
+      'Experience divine maternal grace and strength with authentic Durga Saptashati Paath, Navratri Kalash Sthapana, Chandi Hawan, and Kanya Pujan conducted with strict Vedic rituals across Bangalore.',
+    seoTitle: 'Durga Puja in Bangalore | Navratri Chandi Paath Pandit Booking',
+    seoDescription:
+      'Book Durga Puja and Navratri Chandi Paath in Bangalore with experienced North Indian Hindi Pandit for Ghatasthapana, Saptashati, Chandi Hawan, and complete samagri.',
+    benefits: [
+      'Destroys negative forces, evil eye, and persistent obstacles in life.',
+      'Brings prosperity, family peace, and victorious energy to household and ventures.',
+      'Authentic North Indian vidhi with clear Sanskrit pronunciation and Hindi guidance.',
+      'Full arrangement for Navratri (Chaitra & Sharad), Durga Ashtami, and private homams.',
+    ],
+    idealFor: [
+      'Sharad and Chaitra Navratri 9-day or Ashtami puja',
+      'Overcoming court cases, planetary blockages, and family stress',
+      'New business launches, factory inaugurations, and home protection',
+      'Special devotional vows and gratitude offerings to Maa Bhagwati',
+    ],
+    includes: [
+      'Complete guidance for Ghatasthapana and Akhand Jyoti setup',
+      'Durga Avahan, Shodashopachara Pujan, and red chunri offerings',
+      'Sacred Durga Saptashati Paath or Navarna Mantra Japa',
+      'Sacred Chandi Hawan with lotus seeds, kheer, and pure samagri',
+      'Kanya Pujan guidance, Maha Aarti, and divine blessings',
+    ],
+    process: [
+      'Contact via call or WhatsApp with your date and Bangalore address.',
+      'Receive complete samagri list and timing instructions.',
+      'Pandit ji conducts the authentic mother goddess rituals with full devotion.',
+      'Concludes with peaceful hawan, kshama prarthana, and aarti.',
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Ghatasthapana & Durga Avahan',
+        description: 'Establishing the sacred clay kalash with sacred grains, coconut, and invoking Maa Durga.',
+        image: '/images/rituals/durga-puja/step1.webp',
+      },
+      {
+        step: 2,
+        title: 'Shodashopachara & Kumkum Archana',
+        description: 'Offering red hibiscus, chandan, sindoor, and reciting divine 108 names of the Mother Goddess.',
+        image: '/images/rituals/durga-puja/step2.webp',
+      },
+      {
+        step: 3,
+        title: 'Durga Saptashati Recitation',
+        description: 'Chanting sacred verses from Markandeya Purana celebrating the victory of divine feminine grace.',
+        image: '/images/rituals/durga-puja/step3.webp',
+      },
+      {
+        step: 4,
+        title: 'Sacred Chandi Hawan',
+        description: 'Offering sacred herbal ahutis, lotus seeds, and pure cow ghee into the blazing sacrificial fire.',
+        image: '/images/rituals/durga-puja/step4.webp',
+      },
+      {
+        step: 5,
+        title: 'Maha Aarti & Kanya Ashirwad',
+        description: 'Performing vibrant camphor aarti, distributing halwa-chana prasad, and receiving maternal grace.',
+        image: '/images/rituals/durga-puja/step5.webp',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do you provide Ghatasthapana for Navratri at home in Bangalore?',
+        answer: 'Yes, we provide authentic Ghatasthapana and Akhand Jyoti vidhi on Pratipada and complete Ashtami / Navami Hawan across Bangalore.',
+      },
+      {
+        question: 'Is complete puja samagri provided for Chandi Hawan?',
+        answer: 'Yes, we provide full samagri packages including dry fruits, lotus seeds, pure cow ghee, and hawan wood.',
+      },
+    ],
+  },
+  {
+    slug: 'lakshmi-puja-bangalore',
+    title: 'Lakshmi Puja in Bangalore | Diwali & Dhanteras Pandit Booking',
+    shortTitle: 'Lakshmi Puja',
+    image: '/images/banners/lakshmi-puja.webp',
+    tagline: 'Sacred worship of Goddess Maha Lakshmi for financial abundance, fortune, and lasting peace.',
+    navLabel: 'Lakshmi Puja',
+    heroTitle: 'Book Maha Lakshmi Puja in Bangalore with North Indian Hindi Pandit',
+    heroDescription:
+      'Welcome prosperity, financial stability, and auspicious abundance into your home, shop, or office with traditional Sri Suktam recitation, Lotus archana, Kuber pujan, and Lakshmi Hawan in Bangalore.',
+    seoTitle: 'Lakshmi Puja in Bangalore | Diwali Pujan Pandit Booking',
+    seoDescription:
+      'Book Maha Lakshmi Puja in Bangalore with experienced North Hindi Pandit for Diwali, Dhanteras, new business launch, Sri Suktam hawan, and complete puja samagri.',
+    benefits: [
+      'Attracts wealth, business growth, and eliminates financial distress.',
+      'Bestows peace, domestic harmony, and spiritual contentment.',
+      'Conducted with pure North Indian Vedic rituals, coin archana, and Sri Yantra pujan.',
+      'Available for homes, shops, corporate offices, and tech workspaces in Bangalore.',
+    ],
+    idealFor: [
+      'Diwali and Dhanteras Maha Lakshmi Pujan at home and workplace',
+      'Inauguration of new shops, offices, startups, and showrooms',
+      'Purnima and Friday special Lakshmi-Kuber pujan',
+      'Overcoming debt and inviting business growth',
+    ],
+    includes: [
+      'Pandit ji guidance on shubh muhurat and cash box (tijori) setup',
+      'Ganesh-Lakshmi sthapana, Kalash puja, and Sri Yantra consecration',
+      'Recitation of Sri Suktam, Kanakadhara Stotram, and Lakshmi Ashtakam',
+      'Sacred Maha Lakshmi Hawan with lotus seeds, honey, and ghee',
+      'Kheer prasad offering, Maha Aarti, and family blessings',
+    ],
+    process: [
+      'Book online or via WhatsApp with your preferred timing and location.',
+      'Receive the simple checklist for coins, sweets, and flowers.',
+      'Pandit ji performs the complete prosperity vidhi with sacred mantras.',
+      'Concludes with aarti, tilak, and tijori blessings.',
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Kalash & Lakshmi Sthapana',
+        description: 'Consecrating the golden altar with mangal kalash, sacred rice mandala, and Ganesh-Lakshmi idols.',
+        image: '/images/rituals/lakshmi-puja/step1.webp',
+      },
+      {
+        step: 2,
+        title: 'Lotus & Gold Coin Archana',
+        description: 'Offering fresh pink lotus flowers, bilva leaves, and gold/silver coins with sacred mantras.',
+        image: '/images/rituals/lakshmi-puja/step2.webp',
+      },
+      {
+        step: 3,
+        title: 'Sri Suktam Recitation',
+        description: 'Vedic chanting of Rigvedic Sri Suktam invoking the eternal radiant presence of Maha Lakshmi.',
+        image: '/images/rituals/lakshmi-puja/step3.webp',
+      },
+      {
+        step: 4,
+        title: 'Kuber & Lakshmi Hawan',
+        description: 'Offering pure ghee, dry fruits, and sacred wood for removing debts and attracting prosperity.',
+        image: '/images/rituals/lakshmi-puja/step4.webp',
+      },
+      {
+        step: 5,
+        title: 'Kheer Bhog & Maha Deepam Aarti',
+        description: 'Offering rich milk kheer prasad, performing 5-wick brass deepam aarti, and blessing the cash locker.',
+        image: '/images/rituals/lakshmi-puja/step5.webp',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can Lakshmi Puja be conducted in office premises in Bangalore?',
+        answer: 'Yes, we conduct Diwali and opening Lakshmi-Kuber pujas for offices, startups, tech parks, and commercial spaces across Bangalore.',
+      },
+      {
+        question: 'What items are needed for Lakshmi Pujan?',
+        answer: 'Standard items include lotus flowers, sweets (kheer/mithai), silver/gold coins, and pure ghee. We provide the complete samagri package.',
+      },
+    ],
+  },
+  {
+    slug: 'saraswati-puja-bangalore',
+    title: 'Saraswati Puja in Bangalore | Vidya Arambh Pandit Booking',
+    shortTitle: 'Saraswati Puja',
+    image: '/images/banners/saraswati-puja.webp',
+    tagline: 'Worship of Goddess Saraswati for supreme intellect, educational success, wisdom, and arts.',
+    navLabel: 'Saraswati Puja',
+    heroTitle: 'Book Saraswati Puja & Vidya Arambh in Bangalore with North Hindi Pandit',
+    heroDescription:
+      'Bless your children’s education, career, creative expression, and artistic endeavors with authentic Saraswati Puja, Aksharabyasam (Vidya Arambh), Medha Suktam hawan, and book worship in Bangalore.',
+    seoTitle: 'Saraswati Puja in Bangalore | Vidya Arambh Pandit Booking',
+    seoDescription:
+      'Book Saraswati Puja in Bangalore with North Hindi Pandit for Vasant Panchami, student educational blessings, Vidya Arambh, musical instruments pujan, and complete samagri.',
+    benefits: [
+      'Sharpens intellect, memory retention, concentration, and clarity of thought.',
+      'Ideal for students appearing for board exams, competitive exams, and college admissions.',
+      'Traditional Aksharabyasam ceremony for toddlers beginning their education.',
+      'Conducted in clear Hindi with complete devotion and student involvement.',
+    ],
+    idealFor: [
+      'Vasant Panchami festival celebrations at home, school, and academies',
+      'Vidya Arambh / Aksharabyasam for young children taking their first letters',
+      'Before major academic exams, board exams, or career milestones',
+      'Blessing of musical instruments, books, laptops, and creative studios',
+    ],
+    includes: [
+      'Pandit ji guidance on auspicious timing and study altar arrangement',
+      'Saraswati Avahan, Shweta Vastra offering, and white flower archana',
+      'Pustak-Lekhani (pen & book) pujan and Medha Suktam recitation',
+      'Sacred Saraswati Hawan with payasam and pure cow ghee',
+      'Vidya sankalp, pen blessing, Maha Aarti, and elder ashirwad',
+    ],
+    process: [
+      'Share your Bangalore address and child’s name for sankalp.',
+      'Receive preparation guidelines for study desk and books.',
+      'Pandit ji conducts the ceremony, guiding students throughout the vidhi.',
+      'Concludes with Akshara writing on rice, aarti, and blessings.',
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Shweta Vastra & Saraswati Avahan',
+        description: 'Draping white silks and invoking Goddess Saraswati onto the purified study peetham.',
+        image: '/images/rituals/saraswati-puja/step1.webp',
+      },
+      {
+        step: 2,
+        title: 'Pustak & Lekhani Pujan',
+        description: 'Anointing sacred textbooks, pens, notebooks, and learning instruments with chandan and haldi.',
+        image: '/images/rituals/saraswati-puja/step2.webp',
+      },
+      {
+        step: 3,
+        title: 'Medha Suktam & Vandana Chanting',
+        description: 'Reciting Vedic Medha Suktam and Saraswati Vandana for sharp intellect and retention.',
+        image: '/images/rituals/saraswati-puja/step3.webp',
+      },
+      {
+        step: 4,
+        title: 'Sacred Vidya Hawan',
+        description: 'Offering pure hawan samagri, samidha sticks, and ghee for removing mental sluggishness.',
+        image: '/images/rituals/saraswati-puja/step4.webp',
+      },
+      {
+        step: 5,
+        title: 'Aksharabyasam & Aarti',
+        description: 'Guiding the student to write ‘Om’ and alphabets on sacred rice, followed by glowing camphor aarti.',
+        image: '/images/rituals/saraswati-puja/step5.webp',
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is the right age for Vidya Arambh / Aksharabyasam?',
+        answer: 'Traditionally, Aksharabyasam is performed when the child is between 2.5 to 5 years of age on Vasant Panchami, Vijayadashami, or any auspicious day.',
+      },
+      {
+        question: 'Can you conduct Saraswati Puja in coaching centers or music schools in Bangalore?',
+        answer: 'Yes, we regularly perform Saraswati Puja for schools, dance academies, music institutes, and coaching centers across Bangalore.',
+      },
+    ],
+  },
+  {
+    slug: 'ram-puja-bangalore',
+    title: 'Shri Ram Puja in Bangalore | Ramcharitmanas Paath Pandit',
+    shortTitle: 'Shri Ram Puja',
+    image: '/images/banners/ram-puja.webp',
+    tagline: 'Devotional worship of Maryada Purushottam Lord Ram for righteousness, peace, and family harmony.',
+    navLabel: 'Shri Ram Puja',
+    heroTitle: 'Book Shri Ram Puja & Ramcharitmanas Paath in Bangalore with Hindi Pandit',
+    heroDescription:
+      'Bring righteousness, familial unity, and divine auspiciousness into your household with authentic Ram Darbar Puja, Ramcharitmanas Akhand/Sundarkand Paath, Ram Raksha Stotra, and Ram Hawan in Bangalore.',
+    seoTitle: 'Shri Ram Puja in Bangalore | Ramcharitmanas Paath Pandit Booking',
+    seoDescription:
+      'Book Shri Ram Puja and Ramcharitmanas Paath in Bangalore with experienced North Hindi Pandit for Ram Navami, family harmony, Ram Raksha Stotra, and complete hawan.',
+    benefits: [
+      'Cultivates deep moral values, peace, and unity among all family members.',
+      'Removes ancestral distress, negative energies, and fear of sudden mishaps.',
+      'Conducted in melodious Awadhi style with traditional dohas and chaupais.',
+      'Complete North Indian vidhi for Ram Navami, Diwali, and private milestones.',
+    ],
+    idealFor: [
+      'Ram Navami festival celebrations at home and community halls',
+      'Akhand Ramayan Paath (24 hours) or Sampoorna Sunderkand Paath',
+      'Establishing peace and resolving misunderstandings among family members',
+      'Spiritual milestone celebrations and elderly parents’ birthday blessings',
+    ],
+    includes: [
+      'Altar setup guidance with Ram Darbar (Ram, Sita, Lakshman, Hanuman)',
+      'Kalash sthapana, Panchamrit snan, and Tulsi mala offerings',
+      'Recitation of Ramcharitmanas verses and Ram Raksha Stotra',
+      'Sacred Ram Hawan with pure herbal samagri and cow ghee',
+      'Panjiri and kheer prasad, Shri Ramchandra Kripalu Aarti, and blessings',
+    ],
+    process: [
+      'Contact with preferred date and family details for sankalp.',
+      'Receive guidelines for Ram Darbar setup and offerings.',
+      'Pandit ji performs the complete Vedic and Pauranic Ram vidhi.',
+      'Family participates in chanting, aarti, and receives sacred charnamrit.',
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Ram Darbar Sthapana & Avahan',
+        description: 'Consecrating Shri Ram Darbar peetham with holy gangajal, yellow flowers, and akshat.',
+        image: '/images/rituals/ram-puja/step1.webp',
+      },
+      {
+        step: 2,
+        title: 'Tulsi & Peetambar Shringaar',
+        description: 'Adorning Lord Ram with fresh sacred tulsi malas, fragrant sandalwood, and yellow garments.',
+        image: '/images/rituals/ram-puja/step2.webp',
+      },
+      {
+        step: 3,
+        title: 'Ramcharitmanas Chopai Recitation',
+        description: 'Melodious recitation of inspiring verses narrating the divine qualities of Maryada Purushottam.',
+        image: '/images/rituals/ram-puja/step3.webp',
+      },
+      {
+        step: 4,
+        title: 'Sacred Ram Hawan',
+        description: 'Offering sacred ghee and herbs chanting the holy name of ‘Rama’ for domestic peace and purity.',
+        image: '/images/rituals/ram-puja/step4.webp',
+      },
+      {
+        step: 5,
+        title: 'Shri Ramchandra Kripalu Aarti',
+        description: 'Singing Saint Tulsidas’ timeless aarti with brass deepams, distributing sweet panjiri prasad.',
+        image: '/images/rituals/ram-puja/step5.webp',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do you conduct Akhand Ramayan Paath in Bangalore?',
+        answer: 'Yes, we provide teams of experienced North Indian pandits for 24-hour Akhand Ramayan Paath as well as shorter 3-hour Ram Puja ceremonies.',
+      },
+      {
+        question: 'Can Ram Puja be done on Ram Navami in apartments?',
+        answer: 'Yes, we perform home and society hall Ram Navami pujas across all apartment complexes in Bangalore.',
+      },
+    ],
+  },
+  {
+    slug: 'krishna-puja-bangalore',
+    title: 'Shri Krishna Puja in Bangalore | Janmashtami Pandit Booking',
+    shortTitle: 'Shri Krishna Puja',
+    image: '/images/banners/krishna-puja.webp',
+    tagline: 'Joyous devotional worship of Lord Krishna and Laddu Gopal for bliss, child blessings, and love.',
+    navLabel: 'Shri Krishna Puja',
+    heroTitle: 'Book Shri Krishna Puja & Laddu Gopal Seva in Bangalore with Hindi Pandit',
+    heroDescription:
+      'Celebrate supreme divine love, family happiness, and auspicious child blessings (Santana Gopal) with authentic Janmashtami Puja, Laddu Gopal Panchamrit Abhishek, and Bhagavad Gita hawan across Bangalore.',
+    seoTitle: 'Shri Krishna Puja in Bangalore | Janmashtami Pandit Booking',
+    seoDescription:
+      'Book Shri Krishna Puja in Bangalore with North Hindi Pandit for Janmashtami, Laddu Gopal Panchamrit snan, Santana Gopal Puja, Makhan bhog, and complete Vedic vidhi.',
+    benefits: [
+      'Brings joy, sweetness, harmony, and mutual affection in matrimonial and family life.',
+      'Santana Gopal prayers for couples praying for healthy and virtuous children.',
+      'Traditional North Indian Brij-style Krishna seva and melodious bhajans.',
+      'Available for Janmashtami midnight puja, monthly Rohini nakshatra, and home pujas.',
+    ],
+    idealFor: [
+      'Krishna Janmashtami festival celebrations at home and apartments',
+      'Santana Gopal Puja for childless couples seeking parenthood blessings',
+      'Laddu Gopal home entry, birthday celebration, and daily seva guidance',
+      'Family spiritual upliftment and devotion to Lord Govinda',
+    ],
+    includes: [
+      'Pandit ji guidance on palna (swing) setup and midnight muhurat',
+      'Panchamrit Abhishek with milk, curd, honey, ghee, and gangajal',
+      'Mor Mukut, bansuri, and pitamber shringaar with fresh tulsi leaves',
+      'Sacred Krishna Hawan with cow ghee and sweet samagri',
+      'Makhan-mishri and panchamrit bhog, Maha Aarti, and family blessings',
+    ],
+    process: [
+      'Share your Bangalore location and preferred date or Janmashtami slot.',
+      'Receive the simple checklist for panchamrit, butter, and flowers.',
+      'Pandit ji conducts the celebratory vidhi with authentic devotional chants.',
+      'Concludes with jhula seva, aarti, and prasad distribution.',
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Panchamrit Snan & Abhishek',
+        description: 'Bathing Lord Krishna with five sacred elixirs: milk, curd, honey, ghee, and gangajal.',
+        image: '/images/rituals/krishna-puja/step1.webp',
+      },
+      {
+        step: 2,
+        title: 'Mor Mukut & Bansuri Shringaar',
+        description: 'Adorning the deity with bright yellow silks, radiant peacock feather crown, and flutes.',
+        image: '/images/rituals/krishna-puja/step2.webp',
+      },
+      {
+        step: 3,
+        title: 'Madhurashtakam & Gita Chanting',
+        description: 'Reciting sweet Sanskrit hymns celebrating the all-attractive qualities of Lord Govinda.',
+        image: '/images/rituals/krishna-puja/step3.webp',
+      },
+      {
+        step: 4,
+        title: 'Sacred Santana Gopal Hawan',
+        description: 'Offering sweet hawan ahutis for children’s welfare, lineage continuity, and household joy.',
+        image: '/images/rituals/krishna-puja/step4.webp',
+      },
+      {
+        step: 5,
+        title: 'Makhan Mishri Bhog & Jhula Aarti',
+        description: 'Offering fresh white butter with rock sugar and gently rocking Bal Gopal in a flower-adorned swing.',
+        image: '/images/rituals/krishna-puja/step5.webp',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Do you perform Janmashtami midnight puja in Bangalore?',
+        answer: 'Yes, we conduct authentic midnight Janmashtami celebrations and abhishek rituals across Bangalore.',
+      },
+      {
+        question: 'Is Santana Gopal Puja included in this service?',
+        answer: 'Yes, Santana Gopal mantra japa and dedicated hawan are specially performed for couples praying for childbirth.',
+      },
+    ],
+  },
+  {
+    slug: 'navagraha-puja-bangalore',
+    title: 'Navagraha & Surya Puja in Bangalore | Grah Shanti Pandit Booking',
+    shortTitle: 'Navagraha & Surya Puja',
+    image: '/images/banners/navagraha-puja.webp',
+    tagline: 'Vedic planetary pacification and Surya worship for health, longevity, and removing planetary doshas.',
+    navLabel: 'Navagraha Puja',
+    heroTitle: 'Book Navagraha Shanti & Surya Puja in Bangalore with Vedic Hindi Pandit',
+    heroDescription:
+      'Harmonize the 9 cosmic planetary energies and invoke Bhagwan Surya for vitality, career growth, health, and peace with authentic Navagraha Mandala Sthapana, 9 samidha hawan, and Vedic japa in Bangalore.',
+    seoTitle: 'Navagraha Shanti & Surya Puja in Bangalore | Grah Shanti Pandit',
+    seoDescription:
+      'Book Navagraha Shanti and Surya Puja in Bangalore with North Hindi Pandit for planetary dosha nivaran, Shani Sade Sati, Aditya Hridaya Stotra, and 9-graha hawan.',
+    benefits: [
+      'Neutralizes adverse planetary transits (Shani Sade Sati, Rahu-Ketu, Mangal dosha).',
+      'Boosts health, vitality, eyesight, and willpower through direct Surya worship.',
+      'Brings career stability, government favor, and professional recognition.',
+      'Conducted strictly according to Vedic astronomy and individual janma kundali guidance.',
+    ],
+    idealFor: [
+      'Individuals experiencing career delays, health setbacks, or Sade Sati',
+      'Sunday Surya worship and Sankranti / Ratha Saptami festivals',
+      'Griha Shanti, wedding preparation, and business growth prayers',
+      'Family peace and pacification of conflicting planetary influences',
+    ],
+    includes: [
+      'Pandit ji guidance on kundali planetary alignment and shubh timing',
+      '9-color grain mandala setup for all 9 cosmic deities',
+      'Aditya Hridaya Stotra and specific graha mantra chanting',
+      'Sacred Navagraha Hawan with 9 sacred woods (arka, palash, khadir, etc.)',
+      'Graha daan guidance, Poornahuti, Maha Aarti, and raksha thread',
+    ],
+    process: [
+      'Share your birth details or planetary concerns with your Bangalore address.',
+      'Receive guidance on specific offerings (colored cloth, grains) and timing.',
+      'Pandit ji draws the authentic mandala and performs the 9-planet vidhi.',
+      'Concludes with peaceful hawan, planetary peace prayers, and blessings.',
+    ],
+    steps: [
+      {
+        step: 1,
+        title: 'Navagraha Mandala Sthapana',
+        description: 'Creating the sacred 9-section planetary mandala with consecrated grains, betel nuts, and colors.',
+        image: '/images/rituals/navagraha-puja/step1.webp',
+      },
+      {
+        step: 2,
+        title: 'Surya Arghya & Aditya Hridaya Paath',
+        description: 'Offering holy copper arghya with red flowers to Bhagwan Surya and chanting the victory hymn.',
+        image: '/images/rituals/navagraha-puja/step2.webp',
+      },
+      {
+        step: 3,
+        title: 'Planetary Vedic Japa',
+        description: 'Reciting authentic Vedic mantras for Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu.',
+        image: '/images/rituals/navagraha-puja/step3.webp',
+      },
+      {
+        step: 4,
+        title: 'Nine Sacred Samidha Hawan',
+        description: 'Offering specific medicinal tree woods and pure cow ghee for each of the nine cosmic deities.',
+        image: '/images/rituals/navagraha-puja/step4.webp',
+      },
+      {
+        step: 5,
+        title: 'Poornahuti & Shanti Ashirwad',
+        description: 'Concluding with sacred coconut poornahuti, shanti mantras, and tying protective raksha sutra.',
+        image: '/images/rituals/navagraha-puja/step5.webp',
+      },
+    ],
+    faqs: [
+      {
+        question: 'Why is Navagraha Shanti Hawan recommended before big life events?',
+        answer: 'It pacifies conflicting planetary forces and aligns cosmic energies so that new ventures, marriages, and homes progress smoothly.',
+      },
+      {
+        question: 'What are the 9 sacred woods used in Navagraha Hawan?',
+        answer: 'The traditional samidhas include Arka (Sun), Palash (Moon), Khadira (Mars), Apamarga (Mercury), Ashvattha (Jupiter), Audumbara (Venus), Shami (Saturn), Durva (Rahu), and Kusha (Ketu).',
+      },
+    ],
+  },
 ];
 
 export const pujaMap = new Map(pujas.map((puja) => [puja.slug, puja]));

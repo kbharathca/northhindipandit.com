@@ -21,7 +21,7 @@ import { getWhatsAppLink, phoneNumber, pujas } from '@/data/pujas';
 export const metadata: Metadata = {
   title: 'Puja Services in Bangalore | North Hindi Pandit',
   description:
-    'Explore all 8 authentic North Indian Vedic puja services in Bangalore with Pandit Nilesh Kumar Pandey. Doorstep home visits, shubh muhurat & samagri.',
+    'Explore authentic North Indian Vedic puja services in Bangalore with Pandit Nilesh Kumar Pandey. Doorstep home visits, shubh muhurat & samagri.',
   alternates: {
     canonical: '/services/',
   },
@@ -53,7 +53,7 @@ export default function ServicesPage() {
               Authentic Vedic Puja Services in Bangalore
             </h1>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-6 font-normal">
-              Browse all 8 traditional North Indian ceremonies conducted by <strong>Pandit Nilesh Kumar Pandey</strong>. From housewarmings and family milestones to sacred wedding rituals and ancestral prayers, we provide sincere vidhi, Sanskrit chanting, and clear Hindi guidance.
+              Browse all 15 traditional North Indian ceremonies conducted by <strong>Pandit Nilesh Kumar Pandey</strong>. From housewarmings and family milestones to sacred wedding rituals and ancestral prayers, we provide sincere vidhi, Sanskrit chanting, and clear Hindi guidance.
             </p>
             <p className="text-sm sm:text-base text-saffron font-serif italic mb-8">
               &ldquo;पूजा केवल विधि नहीं, परिवार की आस्था और मंगल का पवित्र संकल्प है।&rdquo;
@@ -92,7 +92,7 @@ export default function ServicesPage() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="section-kicker">Sanatana Dharma Vidhi</span>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-ink mb-3">
-              Eight Auspicious Ceremonies
+              Sacred Vedic Ceremonies
             </h2>
             <p className="text-sm sm:text-base text-ink/70">
               Each puja includes step-by-step guidance, holy hawan, and doorstep service across Bangalore.

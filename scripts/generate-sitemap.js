@@ -38,6 +38,13 @@ const pujas = [
   'marriage-puja-bangalore',
   'rudrabhishek-puja-bangalore',
   'shraadh-puja-bangalore',
+  'hanuman-puja-bangalore',
+  'durga-puja-bangalore',
+  'lakshmi-puja-bangalore',
+  'saraswati-puja-bangalore',
+  'ram-puja-bangalore',
+  'krishna-puja-bangalore',
+  'navagraha-puja-bangalore',
 ];
 
 // Add service routes

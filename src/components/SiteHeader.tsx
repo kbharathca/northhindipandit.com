@@ -129,7 +129,7 @@ export function SiteHeader() {
                       onClick={() => setIsServicesOpen(false)}
                       className="mb-2 flex items-center justify-between rounded-xl bg-paper px-3.5 py-2.5 text-xs font-bold text-ink hover:text-saffron transition-colors"
                     >
-                      <span>View All 8 Puja Services</span>
+                      <span>View All 15 Puja Services</span>
                       <Sparkles size={14} className="text-saffron" />
                     </Link>
                     <div className="grid gap-1">

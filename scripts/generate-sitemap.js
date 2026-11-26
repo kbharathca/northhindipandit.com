@@ -15,20 +15,21 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Configuration
 const DOMAIN = 'https://northhindipandit.com';
 const OUT_DIR = path.join(__dirname, '..', 'out');
+const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 
-// All static routes
+// All static routes with strict trailing slash alignment
 const routes = [
   { path: '/', priority: '1.0', changefreq: 'weekly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/services', priority: '0.9', changefreq: 'weekly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/about-us', priority: '0.85', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/contact-us', priority: '0.85', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/privacy-policy', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/terms-and-conditions', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/refund-policy', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
-  { path: '/disclaimer', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/services/', priority: '0.9', changefreq: 'weekly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/about-us/', priority: '0.85', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/contact-us/', priority: '0.85', changefreq: 'monthly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/privacy-policy/', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/terms-and-conditions/', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/refund-policy/', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
+  { path: '/disclaimer/', priority: '0.5', changefreq: 'yearly', lastmod: new Date().toISOString().split('T')[0] },
 ];
 
-// Service routes (pujas)
+// Service routes (all 15 pujas)
 const pujas = [
   'griha-pravesh-puja-bangalore',
   'satyanarayan-puja-bangalore',
@@ -47,10 +48,10 @@ const pujas = [
   'navagraha-puja-bangalore',
 ];
 
-// Add service routes
+// Add service routes with trailing slash
 pujas.forEach((slug) => {
   routes.push({
-    path: `/services/${slug}`,
+    path: `/services/${slug}/`,
     priority: '0.85',
     changefreq: 'monthly',
     lastmod: new Date().toISOString().split('T')[0],
@@ -91,11 +92,13 @@ function writeSitemap() {
     }
 
     const sitemapContent = generateSitemapXML();
-    const sitemapPath = path.join(OUT_DIR, 'sitemap.xml');
+    const sitemapPathOut = path.join(OUT_DIR, 'sitemap.xml');
+    const sitemapPathPublic = path.join(PUBLIC_DIR, 'sitemap.xml');
 
-    fs.writeFileSync(sitemapPath, sitemapContent, 'utf-8');
+    fs.writeFileSync(sitemapPathOut, sitemapContent, 'utf-8');
+    fs.writeFileSync(sitemapPathPublic, sitemapContent, 'utf-8');
     console.log('✓ Generated sitemap.xml');
-    console.log(`  📍 Location: out/sitemap.xml`);
+    console.log(`  📍 Locations: out/sitemap.xml and public/sitemap.xml`);
     console.log(`  🌐 Domain: ${DOMAIN}`);
     console.log(`  📄 Pages: ${routes.length}`);
   } catch (error) {

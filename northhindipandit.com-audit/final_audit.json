@@ -1,0 +1,41 @@
+{
+  "domain": "https://northhindipandit.com",
+  "total_pages_audited": 23,
+  "technical": {
+    "robots_txt": true,
+    "sitemap_xml": true,
+    "sitemap_urls_count": 23,
+    "https_status": true,
+    "status_200_count": 23,
+    "trailing_slash_consistent": true
+  },
+  "on_page": {
+    "optimal_titles_count": 23,
+    "optimal_meta_desc_count": 23,
+    "single_h1_count": 23,
+    "zero_missing_alt_images_count": 23,
+    "total_images_scanned": 467
+  },
+  "schema": {
+    "local_business_count": 23,
+    "person_count": 23,
+    "service_schema_count": 15,
+    "faq_schema_count": 16,
+    "breadcrumb_schema_count": 16
+  },
+  "mobile_ux": {
+    "responsive_viewport_count": 23,
+    "zero_horizontal_overflow": true,
+    "click_to_call_cta_present": true,
+    "whatsapp_cta_present": true,
+    "native_mobile_bottom_bar": true
+  },
+  "scores": {
+    "overall_health_score": 99.7,
+    "technical_seo": 100,
+    "on_page_seo": 100,
+    "schema_structured_data": 100,
+    "mobile_responsiveness_cwv": 100,
+    "local_seo_conversion_ux": 98
+  }
+}

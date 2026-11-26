@@ -46,6 +46,9 @@ const pujas = [
   'ram-puja-bangalore',
   'krishna-puja-bangalore',
   'navagraha-puja-bangalore',
+  'mool-shanti-puja-bangalore',
+  'antim-sanskar-bangalore',
+  'pitru-paksha-puja-bangalore',
 ];
 
 // Add service routes with trailing slash

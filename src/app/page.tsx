@@ -362,7 +362,7 @@ export default function HomePage() {
               className="cta-button cta-saffron text-sm sm:text-base px-8 py-4 shadow-md"
             >
               <Sparkles size={18} />
-              <span>View All 15 Puja Services Overview</span>
+              <span>View All 18 Puja Services Overview</span>
             </Link>
           </div>
         </div>

@@ -76,7 +76,7 @@ export default function ServicesPage() {
               Authentic Vedic Puja Services in Bangalore
             </h1>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-6 font-normal">
-              Browse all 15 traditional North Indian ceremonies conducted by <strong>Pandit Nilesh Kumar Pandey</strong>. From housewarmings and family milestones to sacred wedding rituals and ancestral prayers, we provide sincere vidhi, Sanskrit chanting, and clear Hindi guidance.
+              Browse all 18 traditional North Indian ceremonies conducted by <strong>Pandit Nilesh Kumar Pandey</strong>. From housewarmings and family milestones to sacred wedding rituals and ancestral prayers, we provide sincere vidhi, Sanskrit chanting, and clear Hindi guidance.
             </p>
             <p className="text-sm sm:text-base text-saffron font-serif italic mb-8">
               &ldquo;पूजा केवल विधि नहीं, परिवार की आस्था और मंगल का पवित्र संकल्प है।&rdquo;

@@ -1,0 +1,701 @@
+{
+  "total_pages_checked": 23,
+  "pages": {
+    "/": {
+      "url": "https://northhindipandit.com/",
+      "status": 200,
+      "title": "North Hindi Pandit | Hindi Pandit in Bangalore",
+      "title_len": 46,
+      "meta_desc": "Book trusted Hindi Pandit in Bangalore for authentic Griha Pravesh, Satyanarayan Katha, Marriage & Rudrabhishek. Same-day booking & samagri support.",
+      "meta_desc_len": 148,
+      "canonical": "https://northhindipandit.com/",
+      "h1_tags": [
+        "Book Experienced Hindi Pandit in Bangalore for Vedic Pujas & Rituals"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "Explore Our Authentic Puja Services",
+        "Why North Indian Families in Bangalore Choose Us",
+        "What Families in Bangalore Say",
+        "Providing Home Puja Services Across Bangalore",
+        "Frequently Asked Questions",
+        "Plan Your Puja in Bangalore with North Hindi Pandit"
+      ],
+      "images_total": 32,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 90,
+      "external_links_count": 23
+    },
+    "/services/": {
+      "url": "https://northhindipandit.com/services/",
+      "status": 200,
+      "title": "Puja Services in Bangalore | North Hindi Pandit",
+      "title_len": 47,
+      "meta_desc": "Explore authentic North Indian Vedic puja services in Bangalore with Pandit Nilesh Kumar Pandey. Doorstep home visits, shubh muhurat & samagri.",
+      "meta_desc_len": 143,
+      "canonical": "https://northhindipandit.com/services/",
+      "h1_tags": [
+        "Authentic Vedic Puja Services in Bangalore"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "Sacred Vedic Ceremonies",
+        "Griha Pravesh Puja",
+        "Satyanarayan Puja",
+        "Ganesh Puja",
+        "Maha Mrityunjaya Jaap",
+        "Bhoomi Puja",
+        "Marriage Puja"
+      ],
+      "images_total": 30,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 85,
+      "external_links_count": 23
+    },
+    "/services/griha-pravesh-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/griha-pravesh-puja-bangalore/",
+      "status": 200,
+      "title": "Griha Pravesh Puja in Bangalore | North Hindi Pandit",
+      "title_len": 52,
+      "meta_desc": "Book Griha Pravesh Puja in Bangalore with North Hindi Pandit for vastu shanti, housewarming rituals, shubh muhurat guidance, and complete puja samagri.",
+      "meta_desc_len": 151,
+      "canonical": "https://northhindipandit.com/services/griha-pravesh-puja-bangalore/",
+      "h1_tags": [
+        "Book Griha Pravesh Puja in Bangalore with Experienced North Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Griha Pravesh Puja",
+        "Why Devotees Arrange Griha Pravesh Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Griha Pravesh Puja FAQs",
+        "Book Griha Pravesh Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/satyanarayan-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/satyanarayan-puja-bangalore/",
+      "status": 200,
+      "title": "Satyanarayan Puja in Bangalore | North Hindi Pandit",
+      "title_len": 51,
+      "meta_desc": "Book Satyanarayan Puja in Bangalore with North Hindi Pandit for complete Katha, Vishnu puja, prasad rituals, and authentic North Indian vidhi at home.",
+      "meta_desc_len": 150,
+      "canonical": "https://northhindipandit.com/services/satyanarayan-puja-bangalore/",
+      "h1_tags": [
+        "Book Satyanarayan Puja in Bangalore for Family Peace and Blessings"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Satyanarayan Puja",
+        "Why Devotees Arrange Satyanarayan Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Satyanarayan Puja FAQs",
+        "Book Satyanarayan Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/ganesh-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/ganesh-puja-bangalore/",
+      "status": 200,
+      "title": "Ganesh Puja in Bangalore | North Hindi Pandit",
+      "title_len": 45,
+      "meta_desc": "Book Ganesh Puja in Bangalore with North Hindi Pandit for home, office, new business, vehicle, education, and auspicious start ceremonies.",
+      "meta_desc_len": 138,
+      "canonical": "https://northhindipandit.com/services/ganesh-puja-bangalore/",
+      "h1_tags": [
+        "Book Ganesh Puja in Bangalore for Auspicious New Beginnings"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Ganesh Puja",
+        "Why Devotees Arrange Ganesh Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Ganesh Puja FAQs",
+        "Book Ganesh Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/rudrabhishek-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/rudrabhishek-puja-bangalore/",
+      "status": 200,
+      "title": "Rudrabhishek Puja in Bangalore | North Hindi Pandit",
+      "title_len": 51,
+      "meta_desc": "Book Rudrabhishek Puja in Bangalore with North Hindi Pandit for Shiva abhishek, mantra chanting, havan, and family blessings at home.",
+      "meta_desc_len": 133,
+      "canonical": "https://northhindipandit.com/services/rudrabhishek-puja-bangalore/",
+      "h1_tags": [
+        "Book Rudrabhishek Puja in Bangalore with Trusted Shiv Bhakt Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Rudrabhishek Puja",
+        "Why Devotees Arrange Rudrabhishek Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Rudrabhishek Puja FAQs",
+        "Book Rudrabhishek Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/maha-mrityunjaya-jaap-bangalore/": {
+      "url": "https://northhindipandit.com/services/maha-mrityunjaya-jaap-bangalore/",
+      "status": 200,
+      "title": "Maha Mrityunjaya Jaap in Bangalore | North Hindi Pandit",
+      "title_len": 55,
+      "meta_desc": "Book Maha Mrityunjaya Jaap in Bangalore with North Hindi Pandit for Shiva mantra chanting, healing prayers, spiritual protection, and family peace at home.",
+      "meta_desc_len": 155,
+      "canonical": "https://northhindipandit.com/services/maha-mrityunjaya-jaap-bangalore/",
+      "h1_tags": [
+        "Book Maha Mrityunjaya Jaap in Bangalore for Health, Protection, and Peace"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Maha Mrityunjaya Jaap",
+        "Why Devotees Arrange Maha Mrityunjaya Jaap",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Maha Mrityunjaya Jaap FAQs",
+        "Book Maha Mrityunjaya Jaap Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/marriage-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/marriage-puja-bangalore/",
+      "status": 200,
+      "title": "Marriage Puja in Bangalore | North Hindi Pandit",
+      "title_len": 47,
+      "meta_desc": "Book Marriage Puja in Bangalore with North Hindi Pandit for North Indian wedding rituals, engagement puja, pheras, havan, and complete shaadi vidhi.",
+      "meta_desc_len": 148,
+      "canonical": "https://northhindipandit.com/services/marriage-puja-bangalore/",
+      "h1_tags": [
+        "Book North Indian Marriage Puja in Bangalore with Hindi-Speaking Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Marriage Puja",
+        "Why Devotees Arrange Marriage Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Marriage Puja FAQs",
+        "Book Marriage Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/bhoomi-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/bhoomi-puja-bangalore/",
+      "status": 200,
+      "title": "Bhoomi Puja in Bangalore | North Hindi Pandit",
+      "title_len": 45,
+      "meta_desc": "Book Bhoomi Puja in Bangalore with North Hindi Pandit for plot blessing, construction start rituals, Vastu prayers, and sacred land worship.",
+      "meta_desc_len": 140,
+      "canonical": "https://northhindipandit.com/services/bhoomi-puja-bangalore/",
+      "h1_tags": [
+        "Book Bhoomi Puja in Bangalore Before Construction or Site Work"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Bhoomi Puja",
+        "Why Devotees Arrange Bhoomi Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Bhoomi Puja FAQs",
+        "Book Bhoomi Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/shraadh-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/shraadh-puja-bangalore/",
+      "status": 200,
+      "title": "Shraadh Puja in Bangalore | North Hindi Pandit",
+      "title_len": 46,
+      "meta_desc": "Book Shraadh Puja in Bangalore with North Hindi Pandit for Pitru rituals, tithi shraddh, ancestral prayers, and respectful North Indian vidhi at home.",
+      "meta_desc_len": 150,
+      "canonical": "https://northhindipandit.com/services/shraadh-puja-bangalore/",
+      "h1_tags": [
+        "Book Shraadh Puja in Bangalore with Experienced North Indian Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Shraadh Puja",
+        "Why Devotees Arrange Shraadh Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Shraadh Puja FAQs",
+        "Book Shraadh Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/hanuman-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/hanuman-puja-bangalore/",
+      "status": 200,
+      "title": "Hanuman Puja in Bangalore | Sunderkand Paath Pandit",
+      "title_len": 51,
+      "meta_desc": "Book authentic Hanuman Puja and Sunderkand Paath in Bangalore with North Hindi Pandit. Includes Bajrang Baan, Sindoor Arpan, Hawan, and complete samagri support.",
+      "meta_desc_len": 161,
+      "canonical": "https://northhindipandit.com/services/hanuman-puja-bangalore/",
+      "h1_tags": [
+        "Book Hanuman Puja & Sunderkand Paath in Bangalore with Experienced Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Hanuman Puja & Sunderkand",
+        "Why Devotees Arrange Hanuman Puja & Sunderkand",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Hanuman Puja & Sunderkand FAQs",
+        "Book Hanuman Puja & Sunderkand Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/durga-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/durga-puja-bangalore/",
+      "status": 200,
+      "title": "Durga Puja in Bangalore | Navratri Chandi Paath Pandit Booking",
+      "title_len": 62,
+      "meta_desc": "Book Durga Puja and Navratri Chandi Paath in Bangalore with experienced North Indian Hindi Pandit for Ghatasthapana, Saptashati, Chandi Hawan, and complete samagri.",
+      "meta_desc_len": 164,
+      "canonical": "https://northhindipandit.com/services/durga-puja-bangalore/",
+      "h1_tags": [
+        "Book Durga Puja & Navratri Chandi Paath in Bangalore with Vedic Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Durga Puja & Navratri",
+        "Why Devotees Arrange Durga Puja & Navratri",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Durga Puja & Navratri FAQs",
+        "Book Durga Puja & Navratri Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/lakshmi-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/lakshmi-puja-bangalore/",
+      "status": 200,
+      "title": "Lakshmi Puja in Bangalore | Diwali Pujan Pandit Booking",
+      "title_len": 55,
+      "meta_desc": "Book Maha Lakshmi Puja in Bangalore with experienced North Hindi Pandit for Diwali, Dhanteras, new business launch, Sri Suktam hawan, and complete puja samagri.",
+      "meta_desc_len": 160,
+      "canonical": "https://northhindipandit.com/services/lakshmi-puja-bangalore/",
+      "h1_tags": [
+        "Book Maha Lakshmi Puja in Bangalore with North Indian Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Lakshmi Puja",
+        "Why Devotees Arrange Lakshmi Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Lakshmi Puja FAQs",
+        "Book Lakshmi Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/saraswati-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/saraswati-puja-bangalore/",
+      "status": 200,
+      "title": "Saraswati Puja in Bangalore | Vidya Arambh Pandit Booking",
+      "title_len": 57,
+      "meta_desc": "Book Saraswati Puja in Bangalore with North Hindi Pandit for Vasant Panchami, student educational blessings, Vidya Arambh, musical instruments pujan, and complete samagri.",
+      "meta_desc_len": 171,
+      "canonical": "https://northhindipandit.com/services/saraswati-puja-bangalore/",
+      "h1_tags": [
+        "Book Saraswati Puja & Vidya Arambh in Bangalore with North Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Saraswati Puja",
+        "Why Devotees Arrange Saraswati Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Saraswati Puja FAQs",
+        "Book Saraswati Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/ram-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/ram-puja-bangalore/",
+      "status": 200,
+      "title": "Shri Ram Puja in Bangalore | Ramcharitmanas Paath Pandit Booking",
+      "title_len": 64,
+      "meta_desc": "Book Shri Ram Puja and Ramcharitmanas Paath in Bangalore with experienced North Hindi Pandit for Ram Navami, family harmony, Ram Raksha Stotra, and complete hawan.",
+      "meta_desc_len": 163,
+      "canonical": "https://northhindipandit.com/services/ram-puja-bangalore/",
+      "h1_tags": [
+        "Book Shri Ram Puja & Ramcharitmanas Paath in Bangalore with Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Shri Ram Puja",
+        "Why Devotees Arrange Shri Ram Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Shri Ram Puja FAQs",
+        "Book Shri Ram Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/krishna-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/krishna-puja-bangalore/",
+      "status": 200,
+      "title": "Shri Krishna Puja in Bangalore | Janmashtami Pandit Booking",
+      "title_len": 59,
+      "meta_desc": "Book Shri Krishna Puja in Bangalore with North Hindi Pandit for Janmashtami, Laddu Gopal Panchamrit snan, Santana Gopal Puja, Makhan bhog, and complete Vedic vidhi.",
+      "meta_desc_len": 164,
+      "canonical": "https://northhindipandit.com/services/krishna-puja-bangalore/",
+      "h1_tags": [
+        "Book Shri Krishna Puja & Laddu Gopal Seva in Bangalore with Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Shri Krishna Puja",
+        "Why Devotees Arrange Shri Krishna Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Shri Krishna Puja FAQs",
+        "Book Shri Krishna Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/services/navagraha-puja-bangalore/": {
+      "url": "https://northhindipandit.com/services/navagraha-puja-bangalore/",
+      "status": 200,
+      "title": "Navagraha Shanti & Surya Puja in Bangalore | Grah Shanti Pandit",
+      "title_len": 63,
+      "meta_desc": "Book Navagraha Shanti and Surya Puja in Bangalore with North Hindi Pandit for planetary dosha nivaran, Shani Sade Sati, Aditya Hridaya Stotra, and 9-graha hawan.",
+      "meta_desc_len": 161,
+      "canonical": "https://northhindipandit.com/services/navagraha-puja-bangalore/",
+      "h1_tags": [
+        "Book Navagraha Shanti & Surya Puja in Bangalore with Vedic Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "5 Sacred Stages of Navagraha & Surya Puja",
+        "Why Devotees Arrange Navagraha & Surya Puja",
+        "When to Perform This Puja",
+        "Ceremony Inclusions",
+        "Navagraha & Surya Puja FAQs",
+        "Book Navagraha & Surya Puja Today"
+      ],
+      "images_total": 21,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown",
+        "Service"
+      ],
+      "internal_links_count": 60,
+      "external_links_count": 14
+    },
+    "/about-us/": {
+      "url": "https://northhindipandit.com/about-us/",
+      "status": 200,
+      "title": "About Us | Pandit Nilesh Kumar Pandey | North Hindi Pandit Bangalore",
+      "title_len": 68,
+      "meta_desc": "Learn about Pandit Nilesh Kumar Pandey and North Hindi Pandit. 15+ years of Vedic tradition, Sanskrit chanting, and trusted North Indian puja services across Bangalore.",
+      "meta_desc_len": 168,
+      "canonical": "https://northhindipandit.com/about-us/",
+      "h1_tags": [
+        "About Pandit Nilesh Kumar Pandey & North Hindi Pandit"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "Bridging Sacred Vedic Traditions for Bangalore Families",
+        "Our Spiritual Commitments"
+      ],
+      "images_total": 15,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 54,
+      "external_links_count": 7
+    },
+    "/contact-us/": {
+      "url": "https://northhindipandit.com/contact-us/",
+      "status": 200,
+      "title": "Contact North Hindi Pandit Bangalore | Call 6206471543",
+      "title_len": 54,
+      "meta_desc": "Contact Pandit Nilesh Kumar Pandey in Koramangala Bangalore. Call 6206471543 or message on WhatsApp for instant puja bookings, muhurat & samagri.",
+      "meta_desc_len": 145,
+      "canonical": "https://northhindipandit.com/contact-us/",
+      "h1_tags": [
+        "Get in Touch for Puja Bookings in Bangalore"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "Book with Complete Confidence",
+        "Social Media & Devotional Videos"
+      ],
+      "images_total": 15,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 56,
+      "external_links_count": 11
+    },
+    "/privacy-policy/": {
+      "url": "https://northhindipandit.com/privacy-policy/",
+      "status": 200,
+      "title": "Privacy Policy | North Hindi Pandit Bangalore",
+      "title_len": 45,
+      "meta_desc": "Privacy Policy for North Hindi Pandit Bangalore. Transparent information on how we collect, use, and protect your contact and booking data in compliance with Google Ads policies.",
+      "meta_desc_len": 178,
+      "canonical": "https://northhindipandit.com/privacy-policy/",
+      "h1_tags": [
+        "Privacy Policy"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "1. Information We Collect",
+        "2. How We Use Your Data",
+        "3. Data Security & Retention",
+        "4. Google Advertising & Policy Compliance",
+        "5. Contact Our Privacy Lead"
+      ],
+      "images_total": 15,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 54,
+      "external_links_count": 6
+    },
+    "/terms-and-conditions/": {
+      "url": "https://northhindipandit.com/terms-and-conditions/",
+      "status": 200,
+      "title": "Terms and Conditions | North Hindi Pandit Bangalore",
+      "title_len": 51,
+      "meta_desc": "Terms and conditions for booking authentic Vedic puja services in Bangalore with North Hindi Pandit.",
+      "meta_desc_len": 100,
+      "canonical": "https://northhindipandit.com/terms-and-conditions/",
+      "h1_tags": [
+        "Terms & Conditions"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "1. Scope of Services",
+        "2. Booking Confirmation & Timings",
+        "3. Samagri & Preparations",
+        "4. Conduct & Sanctity",
+        "5. Inquiries & Escalations"
+      ],
+      "images_total": 15,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 54,
+      "external_links_count": 6
+    },
+    "/disclaimer/": {
+      "url": "https://northhindipandit.com/disclaimer/",
+      "status": 200,
+      "title": "Disclaimer & Faith-Based Service Disclosure | North Hindi Pandit",
+      "title_len": 64,
+      "meta_desc": "Spiritual and religious service disclosure for North Hindi Pandit Bangalore, ensuring transparency and 100% compliance with Google Ads policies.",
+      "meta_desc_len": 144,
+      "canonical": "https://northhindipandit.com/disclaimer/",
+      "h1_tags": [
+        "Disclaimer & Religious Service Disclosure"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "1. No Guarantees of Supernatural or Material Outcomes",
+        "2. No Medical, Legal, or Financial Advice",
+        "3. Professional Integrity & Cultural Service",
+        "4. Questions & Direct Contact"
+      ],
+      "images_total": 15,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 53,
+      "external_links_count": 6
+    },
+    "/refund-policy/": {
+      "url": "https://northhindipandit.com/refund-policy/",
+      "status": 200,
+      "title": "Refund & Cancellation Policy | North Hindi Pandit Bangalore",
+      "title_len": 59,
+      "meta_desc": "Fair and transparent refund and cancellation policies for puja bookings with North Hindi Pandit in Bangalore.",
+      "meta_desc_len": 109,
+      "canonical": "https://northhindipandit.com/refund-policy/",
+      "h1_tags": [
+        "Refund & Cancellation Policy"
+      ],
+      "h2_tags": [
+        "Preparing your devotional page",
+        "1. Free Date Rescheduling",
+        "2. Cancellation Policy",
+        "3. Refund Processing Timeline",
+        "4. How to Request Rescheduling or Cancellation"
+      ],
+      "images_total": 15,
+      "images_missing_alt": 0,
+      "has_schema": true,
+      "schemas_found": [
+        "Unknown"
+      ],
+      "internal_links_count": 53,
+      "external_links_count": 6
+    }
+  },
+  "technical": {
+    "robots_txt": false,
+    "sitemap_xml": false,
+    "sitemap_urls_count": 0,
+    "ssl_tls": true,
+    "status_200_count": 23,
+    "robots_txt_err": "HTTP Error 403: Forbidden",
+    "sitemap_err": "HTTP Error 403: Forbidden"
+  },
+  "on_page": {
+    "titles_optimal": 23,
+    "descriptions_optimal": 21,
+    "single_h1": 23,
+    "alt_tags_complete": 23
+  },
+  "schema": {
+    "local_business": false,
+    "person": false,
+    "breadcrumbs": 0,
+    "faq_pages": 0,
+    "service_schema": 15
+  },
+  "mobile_performance": {
+    "viewport_configured": 23,
+    "webp_images_ratio": 1.0,
+    "zero_overflow": true
+  }
+}

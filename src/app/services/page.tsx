@@ -38,6 +38,29 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <main className="min-h-screen relative selection:bg-saffron/30">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://northhindipandit.com/',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Services',
+                item: 'https://northhindipandit.com/services/',
+              },
+            ],
+          }),
+        }}
+      />
       <SiteHeader />
 
       {/* 1. HEADER BANNER WITH DEVOTIONAL SUNRISE GRADIENT */}

@@ -90,34 +90,73 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   const relatedPujas = pujas.filter((item) => item.slug !== puja.slug).slice(0, 3);
 
-  // Schema for individual puja service
+  // Schema for individual puja service, breadcrumbs, and FAQs
   const serviceJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: puja.title,
-    description: puja.heroDescription,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: 'North Hindi Pandit',
-      telephone: '+91-6206471543',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'National Games Village, Nearby Passport office, Koramangala',
-        addressLocality: 'Bangalore',
-        postalCode: '560095',
-        addressCountry: 'IN',
+    '@graph': [
+      {
+        '@type': 'Service',
+        '@id': `https://northhindipandit.com/services/${puja.slug}/#service`,
+        name: puja.title,
+        description: puja.heroDescription,
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'North Hindi Pandit',
+          telephone: '+91-6206471543',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'National Games Village, Nearby Passport office, Koramangala',
+            addressLocality: 'Bangalore',
+            postalCode: '560095',
+            addressCountry: 'IN',
+          },
+        },
+        areaServed: {
+          '@type': 'City',
+          name: 'Bangalore',
+        },
+        serviceType: 'Vedic Hindu Religious Ceremony',
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'INR',
+          availability: 'https://schema.org/InStock',
+        },
       },
-    },
-    areaServed: {
-      '@type': 'City',
-      name: 'Bangalore',
-    },
-    serviceType: 'Vedic Hindu Religious Ceremony',
-    offers: {
-      '@type': 'Offer',
-      priceCurrency: 'INR',
-      availability: 'https://schema.org/InStock',
-    },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://northhindipandit.com/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Services',
+            item: 'https://northhindipandit.com/services/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: puja.shortTitle,
+            item: `https://northhindipandit.com/services/${puja.slug}/`,
+          },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: puja.faqs.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: faq.answer,
+          },
+        })),
+      },
+    ],
   };
 
   return (

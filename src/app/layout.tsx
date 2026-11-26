@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://northhindipandit.com',
   },
+  verification: {
+    google: 'ASQfLJbRbbtdcVdUq9dovR6m6q8LJzpZrr0Uu-4ZbJ4',
+  },
   authors: [
     {
       name: 'Pandit Nilesh Kumar Pandey',
@@ -196,6 +199,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="ASQfLJbRbbtdcVdUq9dovR6m6q8LJzpZrr0Uu-4ZbJ4"
+        />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />

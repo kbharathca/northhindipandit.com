@@ -150,7 +150,7 @@ export const Footer = () => {
                   <Instagram size={16} />
                 </a>
                 <a
-                  href="https://www.facebook.com/nileshkumarpandey46365"
+                  href="https://www.facebook.com/share/1EZDZJnDFo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"

@@ -179,7 +179,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative aspect-[16/9] sm:aspect-[4/3] lg:aspect-[16/10] rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg bg-paper border border-ink/8">
                   <Image
-                    src="/images/hindi-pandit-all-puja.webp"
+                    src="/images/banners/hindi-pandit-bangalore.webp"
                     alt="Authentic North Indian Vedic Pandit conducting sacred puja ceremony in Bangalore"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -420,7 +420,7 @@ export default function HomePage() {
           <div className="bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/20 shadow-xl text-white">
             <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 bg-paper/20 border border-white/20">
               <Image
-                src="/images/about-pandit-ji.webp"
+                src="/images/banners/about-pandit-ji.webp"
                 alt="Pandit Nilesh Kumar Pandey portrait"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

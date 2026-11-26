@@ -37,7 +37,7 @@ export const pujas: Puja[] = [
     slug: 'griha-pravesh-puja-bangalore',
     title: 'Griha Pravesh Puja in Bangalore',
     shortTitle: 'Griha Pravesh Puja',
-    image: '/images/griha-pravesh-puja-all-puja.webp',
+    image: '/images/banners/griha-pravesh-puja.webp',
     tagline: 'A sacred housewarming puja for peace, prosperity, and auspicious beginnings in your new home.',
     navLabel: 'Griha Pravesh',
     heroTitle: 'Book Griha Pravesh Puja in Bangalore with Experienced North Hindi Pandit',
@@ -76,35 +76,35 @@ export const pujas: Puja[] = [
         title: 'Dwar Puja & Toran Sthapana',
         description:
           'Sacred worship at the threshold with mango leaf toran, swastika, and kalash before the auspicious first entry into the home.',
-        image: '/images/pujas/griha-pravesh/step1-dwar-puja.webp',
+        image: '/images/rituals/griha-pravesh/step1-dwar-puja.webp',
       },
       {
         step: 2,
         title: 'Vastu Purusha Mandala Pujan',
         description:
           'Invoking the 81-pada Vastu Purusha and directional deities with sacred grain mandalas to eliminate architectural doshas.',
-        image: '/images/pujas/griha-pravesh/step2-vastu-mandala.webp',
+        image: '/images/rituals/griha-pravesh/step2-vastu-mandala.webp',
       },
       {
         step: 3,
         title: 'Dugdh Ubalan (Milk Boiling) Vidhi',
         description:
           'Traditional boiling of pure cow milk in a new vessel until it overflows, symbolising abundance, peace, and eternal prosperity.',
-        image: '/images/pujas/griha-pravesh/step3-milk-boiling.webp',
+        image: '/images/rituals/griha-pravesh/step3-milk-boiling.webp',
       },
       {
         step: 4,
         title: 'Vastu Shanti & Navagraha Hawan',
         description:
           'Vedic fire ceremony with 108 mantra ahutis, pure ghee, dry fruits, and sacred wood to purify the home atmosphere.',
-        image: '/images/pujas/griha-pravesh/step4-vastu-havan.webp',
+        image: '/images/rituals/griha-pravesh/step4-vastu-havan.webp',
       },
       {
         step: 5,
         title: 'Maha Aarti & Family Blessings',
         description:
           'Concluding camphor aarti with all family members, sprinkling holy kalash water in all corners, and sharing sweet prasad.',
-        image: '/images/pujas/griha-pravesh/step5-maha-aarti.webp',
+        image: '/images/rituals/griha-pravesh/step5-maha-aarti.webp',
       },
     ],
     faqs: [
@@ -124,7 +124,7 @@ export const pujas: Puja[] = [
     slug: 'satyanarayan-puja-bangalore',
     title: 'Satyanarayan Puja in Bangalore',
     shortTitle: 'Satyanarayan Puja',
-    image: '/images/satyanarayan-puja-all-puja.webp',
+    image: '/images/banners/satyanarayan-puja.webp',
     tagline: 'A sacred Vishnu puja for family peace, prosperity, and spiritual thanksgiving.',
     navLabel: 'Satyanarayan',
     heroTitle: 'Book Satyanarayan Puja in Bangalore for Family Peace and Blessings',
@@ -163,35 +163,35 @@ export const pujas: Puja[] = [
         title: 'Altar & Mandap Sthapana',
         description:
           'Decorating the sacred wooden choki with yellow silk cloth, fresh banana stems, kalash, and placing Lord Vishnu murti.',
-        image: '/images/pujas/satyanarayan/step1-altar-mandap.webp',
+        image: '/images/rituals/satyanarayan/step1-altar-mandap.webp',
       },
       {
         step: 2,
         title: 'Panchamrit Snan & Vishnu Pujan',
         description:
           'Bathing the sacred idol with milk, curd, honey, ghee, and sugar water accompanied by fresh tulsi leaves and Vedic hymns.',
-        image: '/images/pujas/satyanarayan/step2-panchamrit-snan.webp',
+        image: '/images/rituals/satyanarayan/step2-panchamrit-snan.webp',
       },
       {
         step: 3,
         title: 'Shri Satyanarayan Katha Recitation',
         description:
           'Reciting the 5 sacred chapters of the Satyanarayan Mahatmya from the Skanda Purana with clear Hindi explanations.',
-        image: '/images/pujas/satyanarayan/step3-katha-recitation.webp',
+        image: '/images/rituals/satyanarayan/step3-katha-recitation.webp',
       },
       {
         step: 4,
         title: 'Hawan & Sacred Mantra Ahuti',
         description:
           'Performing sacred fire offerings with hawan samagri, camphor, and gugal to invoke divine grace for family well-being.',
-        image: '/images/pujas/satyanarayan/step4-havan-ahuti.webp',
+        image: '/images/rituals/satyanarayan/step4-havan-ahuti.webp',
       },
       {
         step: 5,
         title: 'Sheera Prasad & Maha Aarti',
         description:
           'Offering the traditional panjiri / roasted wheat flour sheera prasad with bananas and concluding with a devotional aarti.',
-        image: '/images/pujas/satyanarayan/step5-prasad-aarti.webp',
+        image: '/images/rituals/satyanarayan/step5-prasad-aarti.webp',
       },
     ],
     faqs: [
@@ -211,7 +211,7 @@ export const pujas: Puja[] = [
     slug: 'ganesh-puja-bangalore',
     title: 'Ganesh Puja in Bangalore',
     shortTitle: 'Ganesh Puja',
-    image: '/images/ganesh-puja-all-puja.webp',
+    image: '/images/banners/ganesh-puja.webp',
     tagline: 'Invoke Lord Ganesha before every auspicious start for wisdom, prosperity, and obstacle removal.',
     navLabel: 'Ganesh Puja',
     heroTitle: 'Book Ganesh Puja in Bangalore for Auspicious New Beginnings',
@@ -250,35 +250,35 @@ export const pujas: Puja[] = [
         title: 'Ganapati Avahan & Sthapana',
         description:
           'Consecration of the idol on a clean altar, invoking Lord Ganesha with Vedic mantras and applying chandan tilak.',
-        image: '/images/pujas/ganesh-puja/step1-ganesh-avahan.webp',
+        image: '/images/rituals/ganesh-puja/step1-ganesh-avahan.webp',
       },
       {
         step: 2,
         title: 'Sankalp & Mandala Pujan',
         description:
           'Taking sacred sankalp with family names and gotra, invoking blessings on colored rice mandalas for auspicious success.',
-        image: '/images/pujas/ganesh-puja/step2-mandala-sankalp.webp',
+        image: '/images/rituals/ganesh-puja/step2-mandala-sankalp.webp',
       },
       {
         step: 3,
         title: '21 Durva Grass & Modak Arpan',
         description:
           'Offering 21 blades of sacred green durva grass and fresh steamed modaks with chanting of the 108 names of Ganapati.',
-        image: '/images/pujas/ganesh-puja/step3-durva-modak-puja.webp',
+        image: '/images/rituals/ganesh-puja/step3-durva-modak-puja.webp',
       },
       {
         step: 4,
         title: 'Ganesh Homa & Ahuti Vidhi',
         description:
           'Performing sacred fire offerings with gugal, pure ghee, and modak samagri to invoke obstacle-free prosperity.',
-        image: '/images/pujas/ganesh-puja/step4-ganesh-havan.webp',
+        image: '/images/rituals/ganesh-puja/step4-ganesh-havan.webp',
       },
       {
         step: 5,
         title: 'Modak Maha Aarti & Ashirwad',
         description:
           'Devotional singing of Sukhkarta Dukhharta aarti, distributing prasad, and receiving blessings for all participants.',
-        image: '/images/pujas/ganesh-puja/step5-modak-maha-aarti.webp',
+        image: '/images/rituals/ganesh-puja/step5-modak-maha-aarti.webp',
       },
     ],
     faqs: [
@@ -298,7 +298,7 @@ export const pujas: Puja[] = [
     slug: 'maha-mrityunjaya-jaap-bangalore',
     title: 'Maha Mrityunjaya Jaap in Bangalore',
     shortTitle: 'Maha Mrityunjaya Jaap',
-    image: '/images/maha-mrityunjaya-jaap-bangalore.webp',
+    image: '/images/banners/maha-mrityunjaya-jaap.webp',
     tagline: 'A sacred Shiva mantra ritual for healing prayers, protection, peace, and spiritual strength.',
     navLabel: 'Maha Mrityunjaya',
     heroTitle: 'Book Maha Mrityunjaya Jaap in Bangalore for Health, Protection, and Peace',
@@ -337,35 +337,35 @@ export const pujas: Puja[] = [
         title: 'Shiva Lingam & Yantra Sthapana',
         description:
           'Consecrating the sacred Shivalinga and Maha Mrityunjaya Yantra on a brass peeth with holy gangajal and chandan.',
-        image: '/images/pujas/maha-mrityunjaya/step1-yantra-altar.webp',
+        image: '/images/rituals/maha-mrityunjaya/step1-yantra-altar.webp',
       },
       {
         step: 2,
         title: 'Rudraksha Mala Japa',
         description:
           'Chanting the powerful 32-syllable Vedic mantra with dedicated 108-bead rudraksha malas for divine healing energy.',
-        image: '/images/pujas/maha-mrityunjaya/step2-rudraksha-japa.webp',
+        image: '/images/rituals/maha-mrityunjaya/step2-rudraksha-japa.webp',
       },
       {
         step: 3,
         title: 'Bilva Patra & Bhasma Archana',
         description:
           'Offering tri-leaf green bilva patra, sacred bhasma, white flowers, and milk to Lord Shiva with every mantra cycle.',
-        image: '/images/pujas/maha-mrityunjaya/step3-bilva-archana.webp',
+        image: '/images/rituals/maha-mrityunjaya/step3-bilva-archana.webp',
       },
       {
         step: 4,
         title: 'Samput Hawan & Mantra Ahuti',
         description:
           'Performing sacred fire offerings with samidha wood, pure cow ghee, and specialized Ayurvedic medicinal herbs.',
-        image: '/images/pujas/maha-mrityunjaya/step4-samput-havan.webp',
+        image: '/images/rituals/maha-mrityunjaya/step4-samput-havan.webp',
       },
       {
         step: 5,
         title: 'Maha Aarti & Raksha Sutra',
         description:
           'Concluding with Shiva aarti, tying the sacred protective thread on the wrists of all family members, and blessing the home.',
-        image: '/images/pujas/maha-mrityunjaya/step5-aarti-blessing.webp',
+        image: '/images/rituals/maha-mrityunjaya/step5-aarti-blessing.webp',
       },
     ],
     faqs: [
@@ -385,7 +385,7 @@ export const pujas: Puja[] = [
     slug: 'bhoomi-puja-bangalore',
     title: 'Bhoomi Puja in Bangalore',
     shortTitle: 'Bhoomi Puja',
-    image: '/images/bhoomi-puja-bangalore.webp',
+    image: '/images/banners/bhoomi-puja.webp',
     tagline: 'Begin construction, renovation, and plot development with sacred Vedic blessings.',
     navLabel: 'Bhoomi Puja',
     heroTitle: 'Book Bhoomi Puja in Bangalore Before Construction or Site Work',
@@ -424,35 +424,35 @@ export const pujas: Puja[] = [
         title: 'Site Sanctification & Kalash Sthapana',
         description:
           'Cleaning the northeast (Ishanya) corner of the plot and setting up the sacred brass kalash with mango leaves and coconut.',
-        image: '/images/pujas/bhoomi-puja/step1-site-sthapana.webp',
+        image: '/images/rituals/bhoomi-puja/step1-site-sthapana.webp',
       },
       {
         step: 2,
         title: 'Bhoomi Devi & Vastu Avahan',
         description:
           'Invoking Mother Earth and the directional deities with flower offerings and Vedic mantras for stability and protection.',
-        image: '/images/pujas/bhoomi-puja/step2-bhoomi-devi-avahan.webp',
+        image: '/images/rituals/bhoomi-puja/step2-bhoomi-devi-avahan.webp',
       },
       {
         step: 3,
         title: 'Navratna & Foundation Stone Puja',
         description:
           'Placing 9 sacred gems, silver snake idol, and the first foundation brick with kumkum, haldi, and holy water.',
-        image: '/images/pujas/bhoomi-puja/step3-foundation-puja.webp',
+        image: '/images/rituals/bhoomi-puja/step3-foundation-puja.webp',
       },
       {
         step: 4,
         title: 'Vastu & Kuber Hawan',
         description:
           'Sacred fire offerings to remove subterranean energies and invoke prosperity and safety for all construction workers.',
-        image: '/images/pujas/bhoomi-puja/step4-vastu-kuber-havan.webp',
+        image: '/images/rituals/bhoomi-puja/step4-vastu-kuber-havan.webp',
       },
       {
         step: 5,
         title: 'Shubh Aarti & Coconut Breaking',
         description:
           'Breaking the auspicious coconut, performing aarti, distributing sweets, and inaugurating the site work with positive energy.',
-        image: '/images/pujas/bhoomi-puja/step5-shubh-aarti.webp',
+        image: '/images/rituals/bhoomi-puja/step5-shubh-aarti.webp',
       },
     ],
     faqs: [
@@ -472,7 +472,7 @@ export const pujas: Puja[] = [
     slug: 'marriage-puja-bangalore',
     title: 'Marriage Puja in Bangalore',
     shortTitle: 'Marriage Puja',
-    image: '/images/marriage-puja-pandit.webp',
+    image: '/images/banners/marriage-puja.webp',
     tagline: 'Traditional North Indian wedding rituals conducted with Vedic precision, warmth, and dignity.',
     navLabel: 'Marriage Puja',
     heroTitle: 'Book North Indian Marriage Puja in Bangalore with Hindi-Speaking Pandit',
@@ -511,35 +511,35 @@ export const pujas: Puja[] = [
         title: 'Mandap Arrival & Jaimala',
         description:
           'Welcoming the groom with dwarchar, toran blessing, and the auspicious mutual exchange of floral garlands (jaimala).',
-        image: '/images/pujas/marriage/step1-mandap-varmala.webp',
+        image: '/images/rituals/marriage/step1-mandap-varmala.webp',
       },
       {
         step: 2,
         title: 'Kanyadaan & Hastamelap',
         description:
           'The sacred joining of hands by the parents, tying the holy granthi knot accompanied by sacred Vedic mantras.',
-        image: '/images/pujas/marriage/step2-kanyadaan.webp',
+        image: '/images/rituals/marriage/step2-kanyadaan.webp',
       },
       {
         step: 3,
         title: 'Agni Parikrama (Sacred Pheras)',
         description:
           'Walking together around the holy witness agni fire with commitment to dharma, artha, kama, and moksha.',
-        image: '/images/pujas/marriage/step3-agni-parikrama.webp',
+        image: '/images/rituals/marriage/step3-agni-parikrama.webp',
       },
       {
         step: 4,
         title: 'Saptapadi (7 Sacred Vows)',
         description:
           'Taking 7 sacred steps together on northern betel leaves, promising mutual respect, health, prosperity, and companionship.',
-        image: '/images/pujas/marriage/step4-saptapadi-vows.webp',
+        image: '/images/rituals/marriage/step4-saptapadi-vows.webp',
       },
       {
         step: 5,
         title: 'Sindoor Daan & Mangalsutra',
         description:
           'The groom anoints the bride with vermillion (sindoor) and ties the sacred mangalsutra, followed by elder family blessings.',
-        image: '/images/pujas/marriage/step5-sindoor-mangalsutra.webp',
+        image: '/images/rituals/marriage/step5-sindoor-mangalsutra.webp',
       },
     ],
     faqs: [
@@ -559,7 +559,7 @@ export const pujas: Puja[] = [
     slug: 'rudrabhishek-puja-bangalore',
     title: 'Rudrabhishek Puja in Bangalore',
     shortTitle: 'Rudrabhishek Puja',
-    image: '/images/rudrabhishek-puja-all-puja.webp',
+    image: '/images/banners/rudrabhishek-puja.webp',
     tagline: 'A sacred Shiva abhishek for peace, strength, positivity, and divine protection.',
     navLabel: 'Rudrabhishek',
     heroTitle: 'Book Rudrabhishek Puja in Bangalore with Trusted Shiv Bhakt Pandit',
@@ -598,35 +598,35 @@ export const pujas: Puja[] = [
         title: 'Shivalinga Sthapana & Avahan',
         description:
           'Consecrating the sacred brass and stone Shivalinga on a brass peeth with pure gangajal, chandan, and incense.',
-        image: '/images/pujas/rudrabhishek/step1-shivling-sthapana.webp',
+        image: '/images/rituals/rudrabhishek/step1-shivling-sthapana.webp',
       },
       {
         step: 2,
         title: 'Panchamrit & Gangajal Abhishek',
         description:
           'Continuous sacred stream of milk, curd, honey, ghee, sugarcane juice, and holy water while chanting Vedic mantras.',
-        image: '/images/pujas/rudrabhishek/step2-abhishekam-snan.webp',
+        image: '/images/rituals/rudrabhishek/step2-abhishekam-snan.webp',
       },
       {
         step: 3,
         title: 'Bilva Patra & Bhasma Shringaar',
         description:
           'Adorning Mahadev with fresh tri-leaf bilva patra, dhatura flowers, white kaner, and sacred tripundra bhasma.',
-        image: '/images/pujas/rudrabhishek/step3-bilva-bhasma.webp',
+        image: '/images/rituals/rudrabhishek/step3-bilva-bhasma.webp',
       },
       {
         step: 4,
         title: 'Shiva Hawan & Namakam Ahuti',
         description:
           'Performing sacred fire offerings with hawan herbs and pure ghee, chanting Shri Rudram for peace and positivity.',
-        image: '/images/pujas/rudrabhishek/step4-shiva-havan.webp',
+        image: '/images/rituals/rudrabhishek/step4-shiva-havan.webp',
       },
       {
         step: 5,
         title: 'Karpoor Maha Aarti & Ashirwad',
         description:
           'Glowing camphor aarti with family members, receiving holy charnamrit, and seeking Lord Shiva’s eternal blessings.',
-        image: '/images/pujas/rudrabhishek/step5-karpura-aarti.webp',
+        image: '/images/rituals/rudrabhishek/step5-karpura-aarti.webp',
       },
     ],
     faqs: [
@@ -646,7 +646,7 @@ export const pujas: Puja[] = [
     slug: 'shraadh-puja-bangalore',
     title: 'Shraadh Puja in Bangalore',
     shortTitle: 'Shraadh Puja',
-    image: '/images/shraadh-puja-all-puja.webp',
+    image: '/images/banners/shraadh-puja.webp',
     tagline: 'Respectful ancestral rituals performed with sincerity, tradition, and proper Vedic guidance.',
     navLabel: 'Shraadh Puja',
     heroTitle: 'Book Shraadh Puja in Bangalore with Experienced North Indian Pandit',
@@ -685,35 +685,35 @@ export const pujas: Puja[] = [
         title: 'Pitru Sankalp & Purvaja Avahan',
         description:
           'The family head sits facing south, holding sacred kusha grass and water to take solemn sankalp for ancestral peace.',
-        image: '/images/pujas/shraadh/step1-pitru-sankalp.webp',
+        image: '/images/rituals/shraadh/step1-pitru-sankalp.webp',
       },
       {
         step: 2,
         title: 'Kusha & Til Sthapana',
         description:
           'Arranging sacred black sesame seeds (til), barley grains, and darbha grass on fresh banana leaves with Vedic mantras.',
-        image: '/images/pujas/shraadh/step2-kusha-til-sthapana.webp',
+        image: '/images/rituals/shraadh/step2-kusha-til-sthapana.webp',
       },
       {
         step: 3,
         title: 'Pinda Daan Ceremony',
         description:
           'Preparing and offering sacred cooked rice, honey, and ghee pindas to honour three generations of ancestors.',
-        image: '/images/pujas/shraadh/step3-pinda-daan.webp',
+        image: '/images/rituals/shraadh/step3-pinda-daan.webp',
       },
       {
         step: 4,
         title: 'Tarpan & Visarjan Rituals',
         description:
           'Offering holy water oblations with gangajal and black sesame seeds from fingertips for the soul’s peace and liberation.',
-        image: '/images/pujas/shraadh/step4-tarpan-visarjan.webp',
+        image: '/images/rituals/shraadh/step4-tarpan-visarjan.webp',
       },
       {
         step: 5,
         title: 'Brahman Bhojan & Family Ashirwad',
         description:
           'Offering dakshina, satvik meal offerings (panchagavya), and receiving ancestral blessings for lineage harmony.',
-        image: '/images/pujas/shraadh/step5-brahman-bhojan-blessings.webp',
+        image: '/images/rituals/shraadh/step5-brahman-bhojan-blessings.webp',
       },
     ],
     faqs: [

@@ -196,7 +196,7 @@ export default function ContactUsPage() {
                 </a>
 
                 <a
-                  href="https://www.facebook.com/nileshkumarpandey46365"
+                  href="https://www.facebook.com/share/1EZDZJnDFo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-2xl bg-white border border-ink/6 flex items-center justify-between hover:border-saffron/30 hover:shadow-xs transition-all"
@@ -205,7 +205,7 @@ export default function ContactUsPage() {
                     <Facebook size={22} className="text-saffron" />
                     <div>
                       <p className="font-bold text-ink text-sm">Facebook</p>
-                      <p className="text-xs text-ink/60">nileshkumarpandey46365</p>
+                      <p className="text-xs text-ink/60">Official Facebook Page</p>
                     </div>
                   </div>
                   <span className="text-xs font-bold text-saffron">Connect &rarr;</span>

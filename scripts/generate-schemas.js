@@ -31,10 +31,10 @@ const organizationSchema = {
   },
   description:
     'Trusted Hindi Pandit and North Indian Pandit services in Bangalore for authentic Vedic pujas, same-day booking, and complete puja support.',
-  image: `${DOMAIN}/images/hindi-pandit-all-puja.webp`,
+  image: `${DOMAIN}/images/banners/hindi-pandit-bangalore.webp`,
   sameAs: [
     'https://www.instagram.com/north.indian.pandit.bangalore',
-    'https://www.facebook.com/nileshkumarpandey46365',
+    'https://www.facebook.com/share/1EZDZJnDFo/',
     'https://www.youtube.com/@Pandit.Ji.Bangalore',
   ],
   address: {

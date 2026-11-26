@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     alternateLocale: 'hi_IN',
     images: [
       {
-        url: '/images/hindi-pandit-all-puja.webp',
+        url: '/images/banners/hindi-pandit-bangalore.webp',
         width: 1200,
         height: 630,
         alt: 'North Hindi Pandit in Bangalore',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: 'North Hindi Pandit | Hindi Pandit in Bangalore',
     description:
       'Trusted North Indian Pandit in Bangalore for Griha Pravesh, Satyanarayan, wedding pujas, and all family rituals.',
-    images: ['/images/hindi-pandit-all-puja.webp'],
+    images: ['/images/banners/hindi-pandit-bangalore.webp'],
   },
   robots: {
     index: true,
@@ -87,7 +87,7 @@ const jsonLdData = {
       name: 'North Hindi Pandit',
       url: 'https://northhindipandit.com',
       logo: 'https://northhindipandit.com/favicon.svg',
-      image: 'https://northhindipandit.com/images/hindi-pandit-all-puja.webp',
+      image: 'https://northhindipandit.com/images/banners/hindi-pandit-bangalore.webp',
       telephone: '+91-6206471543',
       priceRange: '₹₹',
       description:
@@ -137,7 +137,7 @@ const jsonLdData = {
       ],
       sameAs: [
         'https://www.instagram.com/north.indian.pandit.bangalore',
-        'https://www.facebook.com/nileshkumarpandey46365',
+        'https://www.facebook.com/share/1EZDZJnDFo/',
         'https://www.youtube.com/@Pandit.Ji.Bangalore',
       ],
     },

@@ -8,6 +8,7 @@
     "build": "node scripts/build-static.js",
     "build:cloudflare": "node scripts/build-static.js",
     "build:static": "node scripts/build-static.js",
+    "deploy": "npm run build && npx wrangler pages deploy out --project-name northhindipanditbangalore-com --branch main",
     "start": "next start",
     "type-check": "tsc --noEmit"
   },
